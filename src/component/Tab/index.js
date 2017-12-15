@@ -6,25 +6,24 @@ export default class Tab extends Component{
         return(
                 <nav className="footer">
                     <NavLink exact to="/">
-                        <i className="glyphicon glyphicon-home">
+                        <i className="iconfont icon-shouye">
                         </i>
                         <span>首页</span>
                     </NavLink>
                     <NavLink to="/list">
-                        <i className="glyphicon glyphicon-th-list">
+                        <i className="iconfont icon-fenlei">
 
                         </i>
                         <span>分类</span>
                     </NavLink>
                     <NavLink to="/cart">
-                        <i className="glyphicon glyphicon-shopping-cart">
+                        <i className="iconfont icon-cart">
 
-                        </i>
+                         </i>
                         <span>购物车</span>
                     </NavLink>
                     <NavLink to="/personal">
-                        <i className="glyphicon glyphicon-user">
-
+                        <i className="iconfont icon-gerenzhongxin">
                         </i>
                         <span>我的优选</span>
                     </NavLink>

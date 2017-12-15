@@ -25,16 +25,27 @@ let write=(url,data,cb)=>{
 // let urlencodedParser = bodyParser.urlencoded({ extended: false });//获取 URL编码的请求体
 
 let homeDatas=require("./data/Static/swiper");//轮播数据+导航(10条)
+
+
+let listDatas=require("./data/Static/list"); //获取列表分类数据
+
 app.use(bodyParser.json());
 
 //跨域响应头
 app.use((req,res,next)=>{
-    res.setHeader("Access-Control-Allow-Origin", "*");
-    res.setHeader("Access-Control-Allow-Headers", "Content-Type,Content-Length, Authorization, Accept,X-Requested-With");
-    res.setHeader("Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS");
-    res.setHeader("X-Powered-By",' 3.2.1');
-    if(req.method==="OPTIONS") return res.end();
-    next();
+    res.header("Access-Control-Allow-Origin","http://localhost:8080");
+    //服务器允许客户发送的请求方式
+    res.header("Access-Control-Allow-Methods","GET,POST,DELETE,PUT");
+    //服务器允许的请求头
+    res.header("Access-Control-Allow-Headers","Content-Type,Accept");
+    //允许客户端把cookie发送过来
+    res.header("Access-Control-Allow-Credentials","true");
+    //如果请求的方法是OPTIONS  那就意味着客户端只要响应头,直接结束响应
+    if(req.method=="OPTIONS"){
+        res.end();
+    }else{
+        next();
+    }
 });
 //所有请求 success成功1 失败0
 //首页
@@ -77,6 +88,12 @@ app.get("/public/recommend",(req,res)=>{
     retrievData(req,res,res.data)
 });
 
+// list 列表页面
+
+app.get("/list",(req,res)=>{
+    listDatas.length>0?res.send({code:0,success:"成功获取列表页数据",listDatas}): res.send({code:1,error:"获取数据失败"})
+});
+
 //点击 classification  每个分类 classification 传参 关键字 keyWords
 app.get("/public/classification",(req,res)=>{
     let keyWords=req.query.keyWords||"";
@@ -105,8 +122,8 @@ app.get("/public/details",(req,res)=>{
 
 //搜索 search    传参 关键字 keyWords
 app.get("/public/search",(req,res)=>{
-    let keyWords=req.query.keyWords||"";
-    if(keyWords.length>0){
+    let keyWord=req.query.keyWords||"";
+    if(keyWord.length>0){
            let searchs=res.data.filter(item=>item.recommendTitle.includes(keyWords))||[];
            searchs.length>0? res.send({code:0,searchs}):res.send({code:1,err:"抱歉,您搜索的商品未找到!"});
        }else {
@@ -267,7 +284,5 @@ app.post("/changepassword",(req,res)=>{
 
 // newpassword=crpyto.createHash("md5").update(user.password).digest("hex");
 //公共
-app.all("*",(req,res)=>{
-    res.end("not find")
-});
+app.all("*",(req,res)=>{res.end("not find")});
 app.listen(post,()=>console.log(`端口${post}监听成功`));

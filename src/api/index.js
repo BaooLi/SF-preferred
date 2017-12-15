@@ -1,6 +1,6 @@
 const HOST="http://localhost:8000";
 
-export let get=(url)=>{
+export let get=(url,data)=>{
    return fetch(HOST+url,{
         method:"GET",
        "credentials":"include",

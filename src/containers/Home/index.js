@@ -1,13 +1,12 @@
 import React,{Component} from "react";
 import {getCarousel,getRecommend} from "../../api/index"
 import "./index.less"
-import Search from "../../component/Search/index";
 import {
     Route,
     Link
 } from "react-router-dom"
 
-export default class Home extends Component{
+export default class d extends Component{
     constructor(){
         super();
         this.state={homeCarousel:[],recommend:[],offset:0,hasMore:true, decide:false};
@@ -32,7 +31,6 @@ export default class Home extends Component{
                                  <p>全球美食 精选好货</p>
                              </div>
                          </div>
-                         <Route path="/search" component={Search}/>
                      </div>
 
         );
