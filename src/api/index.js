@@ -1,23 +1,23 @@
-import axios from "axios";
+const HOST="http://localhost:8000";
 
-axios.defaults.baseURL = "http://localhost:8000";
+export let get=(url)=>{
+   return fetch(HOST+url,{
+        method:"GET",
+       "credentials":"include",
+       headers:{
+           "Accept":"application/json",
+       }
+    }).then(res=>res.json())
+};
 
-export let getCarousel = () => axios.get("/home/carousel");
-
-
-export let getRecommend = (offset) => axios.get(`/public/recommend?offset=${offset}`);
-
-
-export let dd = () => axios.post(`/public/cart`, {
-    recommendID: "b4db0e3f-4098-4572-b648-8981f7b48337", userName: "zzz", count: 18
-
-});
-export let removeCar = () => axios.post(`/removeCart`, {
-    recommendID: "dsads", userName: "zazasdas"
-});
-
-export let emptiedCart = () => axios.delete(`/emptiedCart?userName=dd`
-);
-export let findCart = () => axios.get(`/emptiedCart?userName=dd`);
-
-axios.interceptors.response.use(res => res.data);
+export let post=(url,data)=>{
+    return fetch(HOST+url,{
+        method:"POST",
+        "credentials":"include",
+        headers:{
+            "Content-Type":"application/json",
+            "Accept":"application/json"
+        },
+        body:JSON.stringify(data)
+    }).then(res=>res.json())
+};

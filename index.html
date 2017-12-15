@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>虎子</title>
+    <link rel="stylesheet" href="http://iconfont.cn/manage/index?spm=a313x.7781069.1998910419.df0a31819&manage_type=mylikes">
 </head>
 <body>
+<script>
+    ~function () {
+        window.addEventListener('resize', computed, false);
+        computed();
+        function computed() {
+            let deviceW = document.documentElement.clientWidth;
+            if (deviceW > 750) return;
+            document.documentElement.style.fontSize = deviceW / 750 * 100 + 'px';
+        }
+    }();
+</script>
 <div id="root"></div>
 </body>
 </html>
