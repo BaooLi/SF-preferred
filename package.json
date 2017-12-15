@@ -48,7 +48,8 @@
   },
   "scripts": {
     "dev": "webpack-dev-server --open",
-    "build": "webpack -p"
+    "build": "webpack -p",
+    "start": "react-scripts start"
   },
   "repository": {
     "type": "git",
