@@ -94,18 +94,6 @@ app.get("/list",(req,res)=>{
     listDatas.length>0?res.send({code:0,success:"成功获取列表页数据",listDatas}): res.send({code:1,error:"获取数据失败"})
 });
 
-//点击 classification  每个分类 classification 传参 关键字 keyWords
-app.get("/public/classification",(req,res)=>{
-    let keyWords=req.query.keyWords||"";
-    if(keyWords){
-        let classifications=res.data.filter(item=>item.classification===keyWords);
-        res.send({code:0,classifications,success:"成功获取分类页数据"});
-    }else {
-        res.send({code:1,err:"访问错误请检查路径参数"});
-    }
-});
-
-
 // 商品详情页 details   该商品details 类似similar  评论comment
 app.get("/public/details",(req,res)=>{
       let id=req.query.id;
@@ -119,18 +107,47 @@ app.get("/public/details",(req,res)=>{
           }
 });
 
-
+//商品排序
+function commoditySort(commodityData,type) {
+    if(type=="price") {
+        commodityData = commodityData.sort((a, b) => {
+            return parseInt(a.recommendPrice) - parseInt(b.recommendPrice)
+        })
+    }else if(type=="comment"){
+        commodityData = commodityData.sort((a, b) => {
+            return parseInt(b.graphicComment) - parseInt(a.graphicComment)
+        })
+    }else if(type=="origin"){
+        commodityData = commodityData.sort((a, b) => {
+            return a.graphicOrigin.localeCompare(b.graphicOrigin,"zh-Hans-CN");
+        });
+    }
+    return  commodityData;
+}
+//点击 classification  每个分类 classification 传参 关键字 keyWords
+app.get("/public/classification",(req,res)=>{
+    let keyWord=req.query.keyWord||"";
+    let type=req.query.type;
+    if(keyWord.length>0){
+        let classifications=res.data.filter(item=>item.classification===keyWord);
+        type?classifications=commoditySort(classifications,type):null;
+        res.send({code:0,classifications,success:"成功获取分类页数据"});
+    }else {
+        res.send({code:1,err:"访问错误请检查路径参数"});
+    }
+});
 //搜索 search    传参 关键字 keyWords
 app.get("/public/search",(req,res)=>{
-    let keyWord=req.query.keyWords||"";
+    let keyWord=req.query.keyWord||"";
+    let type=req.query.type;
     if(keyWord.length>0){
-           let searchs=res.data.filter(item=>item.recommendTitle.includes(keyWords))||[];
-           searchs.length>0? res.send({code:0,searchs}):res.send({code:1,err:"抱歉,您搜索的商品未找到!"});
+           let searchs=res.data.filter(item=>item.recommendTitle.includes(keyWord))||[];
+               type?searchs=commoditySort(searchs,type):null;
+        res.send({code:0,success:"成功获取搜索数据",searchs});
        }else {
-           res.send(res.data)
-       }
+        res.send({code:1,err:"抱歉,您搜索的商品未找到!"});
+    }
 });
-
 //public/cart 添加购物车   修改数量
 app.post("/public/cart",(req,res)=>{
     if (!req.body) return res.sendStatus(400);

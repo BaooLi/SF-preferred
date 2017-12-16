@@ -21,6 +21,7 @@
     "graphicWeight": "1.3（kg）",
     "graphicStorage": "恒温15-22度",
     "graphicLife": "3650天",
+    "graphicComment": "42",
     "graphicDescription": "http://p01.sfbest.com/1400004497/1400004497_05.jpg",
     "graphicPriceDescription": "https://ps.sfbest.com/web/4caee424/4caee424bbab7622a6ca5f95e63b805d.jpg",
     "recommendID": "4e0e939a-ff32-4f47-819a-aed079ca6a3b"
@@ -31,6 +32,8 @@
     "classification": "酒水饮料",
     "recommendDescribe": "优雅馥郁  圆润丰泽",
     "recommendPrice": "499",
+    "graphicOrigin": "法国",
+    "graphicComment": "42",
     "recommendID": "d3e6eb9f-19de-466f-8125-d1421128dea0"
   },
   {
@@ -39,6 +42,8 @@
     "recommendDescribe": "颜值清新  风味独特",
     "classification": "酒水饮料",
     "recommendPrice": "199",
+    "graphicOrigin": "英国",
+    "graphicComment": "42",
     "recommendID": "b4db0e3f-4098-4572-b648-8981f7b48337"
   },
   {
@@ -48,6 +53,8 @@
     "classification": "新鲜果蔬",
     "recommendPrice": "32",
     "recommendGift": "满赠",
+    "graphicOrigin": "美国",
+    "graphicComment": "42",
     "recommendID": "49365952-ce40-4400-a557-9dbb63d8b49e"
   },
   {
@@ -56,7 +63,9 @@
     "recommendDescribe": "甘冽可口  果味十足",
     "classification": "酒水饮料",
     "recommendGift": "多陪积分",
+    "graphicOrigin": "德国",
     "recommendPrice": "299",
+    "graphicComment": "80",
     "recommendID": "3d0b2522-ce6c-4c2f-b42f-707ca364037b"
   },
   {
@@ -66,6 +75,8 @@
     "recommendPrice": "169",
     "classification": "酒水饮料",
     "recommendGift": "满赠",
+    "graphicOrigin": "葡萄牙",
+    "graphicComment": "150",
     "recommendID": "7f5e1280-ffe7-4d7c-89a1-b678533a5a54"
   },
   {
@@ -76,6 +87,8 @@
     "recommendPrice": "699",
     "recommendGift": "加价购",
     "recommendMember": "650",
+    "graphicOrigin": "牙买加",
+    "graphicComment": "115",
     "recommendID": "7b7d8fa5-69fa-4194-bda6-f82de3754fe5"
   },
   {
@@ -85,6 +98,8 @@
     "classification": "酒水饮料",
     "recommendPrice": "45",
     "recommendGift": "加价购",
+    "graphicOrigin": "肯尼亚",
+    "graphicComment": "123",
     "recommendID": "dcbbd246-24af-4766-bf5a-f7751536dbb6"
   },
   {
@@ -93,6 +108,8 @@
     "recommendDescribe": "甘冽可口  果味十足",
     "classification": "新鲜果蔬",
     "recommendPrice": "99",
+    "graphicOrigin": "迪拜",
+    "graphicComment": "230",
     "recommendID": "bdc4fee5-0161-4434-9976-02315b6f3161"
   },
   {
@@ -102,6 +119,8 @@
     "classification": "粮油干货",
     "recommendPrice": "24.5",
     "recommendGift": "满赠",
+    "graphicOrigin": "中国",
+    "graphicComment": "128",
     "recommendID": "ded18ee3-23aa-4adb-96d4-8fb24aaa2019"
   },
   {
@@ -111,6 +130,8 @@
     "classification": "休闲糖巧",
     "recommendPrice": "17.8",
     "recommendGift": "满赠",
+    "graphicOrigin": "英国",
+    "graphicComment": "256",
     "recommendID": "8be53ae9-f9ab-440a-a1de-1c30fbc7e13b"
   },
   {
@@ -121,6 +142,8 @@
     "recommendPrice": "199",
     "recommendGift": "满赠",
     "recommendMember": "180",
+    "graphicOrigin": "中国",
+    "graphicComment": "558",
     "recommendID": "670c16e5-8245-4da8-81cf-f63b0c238ad2"
   },
   {
@@ -129,6 +152,8 @@
     "recommendDescribe": "深海野生  肉质紧密",
     "classification": "肉类海鲜",
     "recommendPrice": "58",
+    "graphicOrigin": "阿根廷",
+    "graphicComment": "682",
     "recommendID": "5ad74b2d-ea14-4db0-b902-8ea251062c73"
   },
   {
@@ -137,6 +162,8 @@
     "classification": "肉类海鲜",
     "recommendDescribe": "香辣可口  美味鲜香",
     "recommendPrice": "14.9",
+    "graphicOrigin": "非礼宾",
+    "graphicComment": "747",
     "recommendID": "9e26111f-563c-45c9-b129-692f393a86f0"
   },
   {
@@ -146,6 +173,8 @@
     "recommendPrice": "59.9",
     "recommendMember": "50",
     "classification": "肉类海鲜",
+    "graphicOrigin": "新加波",
+    "graphicComment": "254",
     "recommendID": "247319fd-2ad4-4f48-bac0-01a53e054456"
   },
   {
@@ -154,6 +183,8 @@
     "classification": "新鲜果蔬",
     "recommendDescribe": "滑嫩绵密 健康轻食",
     "recommendPrice": "67",
+    "graphicOrigin": "俄罗斯",
+    "graphicComment": "432",
     "recommendID": "0d7ee370-c3bf-4226-8320-cd0e012be520"
   },
   {
@@ -163,6 +194,8 @@
     "classification": "酒水饮料",
     "recommendPrice": "299",
     "recommendMember": "280",
+    "graphicOrigin": "俄罗斯",
+    "graphicComment": "741",
     "recommendID": "f9e22258-40ff-4d1f-b023-39e06ab3a06f"
   },
   {
@@ -171,6 +204,8 @@
     "recommendDescribe": "有机种植  化渣率高",
     "classification": "新鲜果蔬",
     "recommendPrice": "129",
+    "graphicOrigin": "俄罗斯",
+    "graphicComment": "125",
     "recommendID": "427e2f4a-b035-40af-a087-670a99f14caf"
   },
   {
@@ -179,6 +214,8 @@
     "recommendDescribe": "现摘现发  新鲜如初",
     "recommendPrice": "79",
     "classification": "新鲜果蔬",
+    "graphicOrigin": "俄罗斯",
+    "graphicComment": "147",
     "recommendID": "fe5d4b22-a519-4aef-89bc-77c3979d9d21"
   },
   {
@@ -187,7 +224,9 @@
     "recommendDescribe": "甘冽可口  果味十足",
     "classification": "肉类海鲜",
     "recommendPrice": "36",
+    "graphicOrigin": "澳大利亚",
     "recommendGift": "满赠",
+    "graphicComment": "147",
     "recommendID": "9fb8ad03-9187-42c7-bae9-84f808706c0f"
   },
   {
@@ -196,6 +235,8 @@
     "recommendDescribe": "好喝芝麻  唯美的糊",
     "recommendPrice": "48",
     "classification": "冲调茶饮",
+    "graphicOrigin": "澳大利亚",
+    "graphicComment": "741",
     "recommendID": "13ea4bef-b495-4ca5-bb1a-d574e0f206c1"
   },
   {
@@ -204,6 +245,8 @@
     "recommendDescribe": "甘冽可口  果味十足",
     "classification": "速食冷藏",
     "recommendPrice": "40",
+    "graphicOrigin": "澳大利亚",
+    "graphicComment": "574",
     "recommendID": "1b456ac5-b878-41e7-bea5-b636f006e361"
   },
   {
@@ -212,6 +255,8 @@
     "recommendDescribe": "甘冽可口  果味十足",
     "classification": "酒水饮料",
     "recommendPrice": "299",
+    "graphicOrigin": "中国",
+    "graphicComment": "148",
     "recommendID": "380a7835-ff71-4362-9488-c3ff9a22ff54"
   },
   {
@@ -220,6 +265,8 @@
     "recommendDescribe": "甘冽可口  果味十足",
     "classification": "速食冷藏",
     "recommendPrice": "30",
+    "graphicOrigin": "中国",
+    "graphicComment": "236",
     "recommendID": "a76fa2ca-aa5f-43da-8af6-3dfc101d94db"
   },
   {
@@ -327,7 +374,7 @@
     "recommendImg": "https://ps.sfbest.com/mapp/resource/17/1751fedb969214e1129a88508e169cc5.jpg",
     "recommendTitle": "路易亚都世家 世家马孔白葡萄酒  750ml",
     "classification": "酒水饮料",
-    "recommendPrice": "299",
+    "recommendPrice": "520",
     "graphicOrigin": "法国",
     "graphicComment": "500",
     "recommendID": "d0a037d1-394d-4903-9c10-78a6c3f34598"

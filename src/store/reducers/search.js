@@ -10,7 +10,7 @@ export default function (state=initSearch,action) {
         case types.SEARCH:
             return {...state, loading:true};
         case types.SEARCH_SUCCESS:
-            return {...state,search:[action.payload],loading:true};
+            return {...state,search:action.payload.searchs,loading:false};
         default :
             return state;
     }
