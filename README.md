@@ -5,49 +5,6 @@
 ![Alt text](./SF-02.png)
 
 
-├──src # 前端目录
-│   ├── api
-│   │   ├── 
-│   │   ├──
-│   │   ├──
-│   │   ├── 
-│   │   ├── 
-│   │   └── 
-│   ├── 
-│   ├── component # 公用组件
-│   │   ├── 
-│   │   ├──
-│   │   ├──
-│   │   ├── 
-│   │   ├── 
-│   │   └── 
-│   ├──containers # 容器组件
-│   │   ├── 
-│   │   ├──
-│   │   ├──
-│   │   ├── 
-│   │   ├── 
-│   │   └── 
-│   ├── style # 公用样式
-│   ├── store#仓库
-│   │   ├── actions # redux action
-│   │   └── reducer # redux reducer
-│   ├── 
-│   ├── index.html# HTML页面模板
-│   └── util # 工具类库
-├── 
-├── dist # 编译后的目录
-├── 
-├── config # 配置文件
-│   └── api
-├── router 
-├── static # 静态资源服务
-│   └── img
-│       └── 
-└── 
-
-
-
 ####代码克隆：
 
 git clone https://github.com/xiexiaoge/SF-preferred
