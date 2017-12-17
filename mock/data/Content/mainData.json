@@ -1,11 +1,12 @@
 [
   {
+    "classification": "酒水饮料",
     "recommendImg": "https://ps.sfbest.com/mapp/resource/17/1751fedb969214e1129a88508e169cc5.jpg",
     "recommendTitle": "路易亚都世家 世家马孔白葡萄酒  750ml",
     "recommendDescribe": "甘冽可口  果味十足",
-    "classification": "酒水饮料",
     "recommendPrice": "299",
     "recommendGift": "多陪积分",
+    "productsFeatured":"推荐",
     "graphicImg": [
       "http://p02.sfbest.com/2013/1400004497/original_1400004497_1_1_1.jpg",
       "http://p02.sfbest.com/2013/1400004497/original_1400004497_1_2_1.jpg",
@@ -27,48 +28,53 @@
     "recommendID": "4e0e939a-ff32-4f47-819a-aed079ca6a3b"
   },
   {
+    "classification": "酒水饮料",
     "recommendImg": "https://ps.sfbest.com/mapp/resource/b5/b5979c35a29dce42a69ef5b7ea7741d0.jpg",
     "recommendTitle": "马爹利 MARTELL名士干邑 700ml",
-    "classification": "酒水饮料",
     "recommendDescribe": "优雅馥郁  圆润丰泽",
     "recommendPrice": "499",
+    "productsFeatured":"推荐",
     "graphicOrigin": "法国",
     "graphicComment": "42",
     "recommendID": "d3e6eb9f-19de-466f-8125-d1421128dea0"
   },
   {
+    "classification": "酒水饮料",
     "recommendImg": "https://ps.sfbest.com/mapp/resource/b0/b0a46f6969be04ec389c2739f2c1a509.jpg",
     "recommendTitle": "新玛利庄园 珍匣苏维翁白葡萄酒 750ml",
     "recommendDescribe": "颜值清新  风味独特",
-    "classification": "酒水饮料",
     "recommendPrice": "199",
+    "productsFeatured":"推荐",
     "graphicOrigin": "英国",
     "graphicComment": "42",
     "recommendID": "b4db0e3f-4098-4572-b648-8981f7b48337"
   },
   {
+    "classification": "新鲜果蔬",
     "recommendImg": "https://ps02.sfbest.com/2017/1300266631/middle_1300266631_1_3.jpg",
     "recommendTitle": "酷玛熊 五木彩色蔬菜线面 360g",
     "recommendDescribe": "柔韧爽滑  味美醇厚",
-    "classification": "新鲜果蔬",
     "recommendPrice": "32",
     "recommendGift": "满赠",
+    "productsFeatured":"推荐",
     "graphicOrigin": "美国",
     "graphicComment": "42",
     "recommendID": "49365952-ce40-4400-a557-9dbb63d8b49e"
   },
   {
+    "classification": "酒水饮料",
     "recommendImg": "https://ps.sfbest.com/mapp/resource/17/1751fedb969214e1129a88508e169cc5.jpg",
     "recommendTitle": "路易亚都世家 世家马孔白葡萄酒  750ml",
     "recommendDescribe": "甘冽可口  果味十足",
-    "classification": "酒水饮料",
     "recommendGift": "多陪积分",
+    "productsFeatured":"推荐",
     "graphicOrigin": "德国",
     "recommendPrice": "299",
     "graphicComment": "80",
     "recommendID": "3d0b2522-ce6c-4c2f-b42f-707ca364037b"
   },
   {
+    "productsFeatured":"推荐",
     "recommendImg": "https://ps.sfbest.com/mapp/resource/69/69bfb8ce36afc2c3ead7b676cb27c499.jpg",
     "recommendTitle": "马玉山 黑芝麻谷物固体饮料组合装（黑芝麻黑豆粉450g+黑芝麻紫薯米坚果粉 450g） 900g （海外直采）",
     "recommendDescribe": "食材丰富  口感醇厚",
@@ -89,6 +95,7 @@
     "recommendMember": "650",
     "graphicOrigin": "牙买加",
     "graphicComment": "115",
+    "productsFeatured":"推荐",
     "recommendID": "7b7d8fa5-69fa-4194-bda6-f82de3754fe5"
   },
   {
@@ -100,6 +107,7 @@
     "recommendGift": "加价购",
     "graphicOrigin": "肯尼亚",
     "graphicComment": "123",
+    "productsFeatured":"推荐",
     "recommendID": "dcbbd246-24af-4766-bf5a-f7751536dbb6"
   },
   {
@@ -109,6 +117,7 @@
     "classification": "新鲜果蔬",
     "recommendPrice": "99",
     "graphicOrigin": "迪拜",
+    "productsFeatured":"推荐",
     "graphicComment": "230",
     "recommendID": "bdc4fee5-0161-4434-9976-02315b6f3161"
   },
@@ -119,6 +128,7 @@
     "classification": "粮油干货",
     "recommendPrice": "24.5",
     "recommendGift": "满赠",
+    "productsFeatured":"推荐",
     "graphicOrigin": "中国",
     "graphicComment": "128",
     "recommendID": "ded18ee3-23aa-4adb-96d4-8fb24aaa2019"
@@ -131,6 +141,7 @@
     "recommendPrice": "17.8",
     "recommendGift": "满赠",
     "graphicOrigin": "英国",
+    "productsFeatured":"推荐",
     "graphicComment": "256",
     "recommendID": "8be53ae9-f9ab-440a-a1de-1c30fbc7e13b"
   },
@@ -143,6 +154,7 @@
     "recommendGift": "满赠",
     "recommendMember": "180",
     "graphicOrigin": "中国",
+    "productsFeatured":"推荐",
     "graphicComment": "558",
     "recommendID": "670c16e5-8245-4da8-81cf-f63b0c238ad2"
   },

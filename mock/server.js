@@ -4,14 +4,16 @@ let fs=require("fs");
 let uuid=require("uuid");// 唯一字符串
 let bodyParser=require("body-parser");//读取请求体里面的数据
 let post=8000;//端口号
-let retrievData=require("./retrievData/index"); //获取数据执行的函数
 let session=require("express-session"); //session
-app.use(session({
-        resave:true,
-        saveUninitialized:true,
-        secret:"six"
-    }));
+
 let crpyto=require("crypto");//加密
+
+let retrievData=require("./retrievData/index"); //获取数据执行的函数
+
+let commoditySort=require("./commoditySort/index");//商品排序
+
+
+
 let read=(url,cb)=>{
     fs.readFile(url,"utf-8",(err,data)=>{
         if(err||data.length===0) return cb([]);
@@ -21,11 +23,19 @@ let read=(url,cb)=>{
 let write=(url,data,cb)=>{
     fs.writeFile(url,JSON.stringify(data),cb)
 }; //写数据方法
+
+app.use(session({
+        resave:true,
+        saveUninitialized:true,
+        secret:"six"
+    }));
+
 // let jsonParser = bodyParser.json();//获取  JSON 编码的请求体
 // let urlencodedParser = bodyParser.urlencoded({ extended: false });//获取 URL编码的请求体
 
 let homeDatas=require("./data/Static/swiper");//轮播数据+导航(10条)
 
+let hotSearch=require("./data/Static/hotSearch");//热门搜索数据
 
 let listDatas=require("./data/Static/list"); //获取列表分类数据
 
@@ -70,10 +80,10 @@ let getComment=(res,data,next)=>{
 };
 //获取列表数据 并且加上id属性
 app.use("/public",(req,res,next)=>{
-    read("./data/Content/recommend.json",data=>{
+    read("./data/Content/mainData.json",data=>{
         if(!data[data.length-1].recommendID){
            data.forEach((item,index)=>item.recommendID=uuid.v4());
-            write("./data/Content/recommend.json",data,()=>{
+            write("./data/Content/mainData.json",data,()=>{
                 getComment(res,data,next);
                 res.data=data;
            })
@@ -107,24 +117,8 @@ app.get("/public/details",(req,res)=>{
           }
 });
 
-//商品排序
-function commoditySort(commodityData,type) {
-    if(type=="price") {
-        commodityData = commodityData.sort((a, b) => {
-            return parseInt(a.recommendPrice) - parseInt(b.recommendPrice)
-        })
-    }else if(type=="comment"){
-        commodityData = commodityData.sort((a, b) => {
-            return parseInt(b.graphicComment) - parseInt(a.graphicComment)
-        })
-    }else if(type=="origin"){
-        commodityData = commodityData.sort((a, b) => {
-            return a.graphicOrigin.localeCompare(b.graphicOrigin,"zh-Hans-CN");
-        });
-    }
-    return  commodityData;
-}
-//点击 classification  每个分类 classification 传参 关键字 keyWords
+
+//点击 classification  每个分类 classification 传参 关键字 keyWords   排序
 app.get("/public/classification",(req,res)=>{
     let keyWord=req.query.keyWord||"";
     let type=req.query.type;
@@ -136,10 +130,22 @@ app.get("/public/classification",(req,res)=>{
         res.send({code:1,err:"访问错误请检查路径参数"});
     }
 });
-//搜索 search    传参 关键字 keyWords
+
+
+//搜索 search    传参 关键字 keyWords 排序
 app.get("/public/search",(req,res)=>{
     let keyWord=req.query.keyWord||"";
     let type=req.query.type;
+    keyWord&&read("./data/Content/historical.json",historical=>{
+        let flag =historical.some(item=>item==keyWord);
+        console.log(flag);
+        if(!flag){
+            historical=[...historical,keyWord];
+            write("./data/Content/historical.json",historical,()=>{
+                console.log("写入成功");
+            })
+        }
+    });
     if(keyWord.length>0){
            let searchs=res.data.filter(item=>item.recommendTitle.includes(keyWord))||[];
                type?searchs=commoditySort(searchs,type):null;
@@ -148,7 +154,8 @@ app.get("/public/search",(req,res)=>{
         res.send({code:1,err:"抱歉,您搜索的商品未找到!"});
     }
 });
-//public/cart 添加购物车   修改数量
+
+//public/cart 添加购物车    修改数量
 app.post("/public/cart",(req,res)=>{
     if (!req.body) return res.sendStatus(400);
     let {userName,recommendID,count}=req.body;
@@ -189,7 +196,7 @@ app.post("/public/cart",(req,res)=>{
         })
     });
 });
-//删除
+//删除购物车
 app.post("/removeCart",(req,res)=>{
     if (!req.body) return res.sendStatus(400);
     let {userName,recommendID}=req.body;
@@ -206,6 +213,7 @@ app.post("/removeCart",(req,res)=>{
         }
     })
 });
+
 //清空购物车
 app.delete("/emptiedCart",(req,res)=>{
     let userName=req.query.userName;
@@ -231,7 +239,28 @@ app.get("/findCart",(req,res)=>{
         }
     })
 });
-//public/deleteCar
+
+
+//热门搜索
+app.get("/hotSearch",(req,res)=>{
+    hotSearch.length>0?res.send({code:0,success:"成功获取列表页数据",hotSearch}): res.send({code:1,error:"获取数据失败"})
+});
+
+//获取历史纪录和清空历史记录
+app.get("/historical",(req,res)=>{
+    let type=req.query.type;
+    read("./data/Content/historical.json",historical=>{
+        if(!type){
+            console.log(1);
+            res.send({code:10,success:"成功获取历史记录",historical})
+        }else{
+            write("./data/Content/historical.json",[],()=>{
+                res.send({code:1,success:"清除历史记录成功"})
+            })
+        }
+    })
+});
+
 
 //注册
 app.post("/reg",(req,res)=>{
