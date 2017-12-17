@@ -19,3 +19,6 @@ export const GET_LIST_SUCCESS="GET_LIST_SUCCESS";
 
 //热门搜索
 export const HOT_SEARCH="HOT_SEARCH";
+
+//历史记录
+export const GET_HISTORY="GET_HISTORY";

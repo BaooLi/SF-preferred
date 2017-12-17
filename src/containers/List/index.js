@@ -6,7 +6,8 @@ import actions from "../../store/actions/list"
         this.props.fetchLists();
     }
     render(){
-        let dataLists=this.props.listDatas;
+        let dataLists=this.props.list.listDatas;
+        console.log(this.props);
         return(
             <div>
                 <ul>
@@ -25,6 +26,6 @@ import actions from "../../store/actions/list"
     }
 }
 export default connect(
-    state=>state.list,
+    state=>state,
     actions
 )(List);
