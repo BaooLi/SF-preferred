@@ -28,6 +28,8 @@ export default class App extends Component{
                                 <Route path="/login" component={Login}/>
                                 <Route path="/reg" component={Reg}/>
                                 <Route path="/search" component={Search}/>
+                                <Route path="/detail/:id" component={Detail}/>
+                                <Route path="/comments/:id" component={Comments}/>
                             </Switch>
                         </div>
                     </ConnectedRouter>
