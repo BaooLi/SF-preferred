@@ -1,13 +1,1 @@
-import * as types from '../action-types';
-import {getSliders} from '../../api/home'
-export default {
-    fetchSliders(){
-        return function (dispatch,getState) {
-            dispatch({type:types.FETCH_SLIDERS});
-            dispatch({
-                type:types.FETCH_SLIDERS_SUCCESS,
-                payload:getSliders()
-            })
-        }
-    }
-}
+import * as types from '../action-types';import {getSliders} from '../../api/home'export default {    fetchSliders(){        return function (dispatch,getState) {          dispatch({type:types.FETCH_SLIDERS,payload:null});          getSliders().then((payload)=>{              dispatch({type:types.FETCH_SLIDERS_SUCCESS,payload})              console.log(payload,"这个是成功后获取的数据");          })        }    }}

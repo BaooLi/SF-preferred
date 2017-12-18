@@ -1,38 +1,1 @@
-import React,{Component} from "react";
-import {getCarousel,getRecommend} from "../../api/index"
-import "./index.less"
-import {
-    Route,
-    Link
-} from "react-router-dom"
-
-export default class d extends Component{
-    constructor(){
-        super();
-        this.state={homeCarousel:[],recommend:[],offset:0,hasMore:true, decide:false};
-    }
-       // async getData(){
-    //     if(!this.state.decide&&this.state.offset<13){
-    //         this.setState({decide:true});
-    //         let  {recommend,hasMore}=await getRecommend(this.state);
-    //         this.setState({recommend:[...this.state.recommend,...recommend],hasMore,decide:false},()=>{
-    //             console.log(this.state.offset);
-    //             this.setState({offset:this.state.offset+5})
-    //         });
-    //     }
-    // }
-    render(){
-        return (
-                     <div>
-                         <Link to="/search"> <input type="text"/></Link>
-                         <div className="content">
-                               <div className="sm-title">
-                                 <h2>为你推荐</h2>
-                                 <p>全球美食 精选好货</p>
-                             </div>
-                         </div>
-                     </div>
-
-        );
-    }
-}
+import React,{Component} from 'react';import './index.less';import {Link} from 'react-router-dom'import Search from "./SearchTop/index";import HomeSlider from "./Swiper/index";import Scroll from "./Scroll/index";import Nav from "./Nav/index";import VipOnly from "./VipOnly/index";import NewProduct from "./NewProduct/index";import Recommend from "./Recommend/index";import CountDown from "./CountDown/index";import {connect} from 'react-redux';import actions from '../../store/actions/home';import {TransitionGroup,CSSTransition} from 'react-transition-group';import Time from "./Time/index"; class Home extends Component{     constructor(){         super();         this.state={isShow:false}     }    componentDidMount(){        console.log(this.props);        setTimeout(()=>{            this.props.fetchSliders();        },0)        console.log(this.props,"这是Home的state");        console.log(this.props,"这是轮播图数据");        window.location.hash = window.decodeURIComponent(window.location.hash);    }     // scrollToAnchor = (anchorName) => {     //     if (anchorName) {     //         // 找到锚点     //         let anchorElement = document.getElementById(anchorName);     //         console.log(anchorElement);     //         // 如果对应id的锚点存在，就跳转到锚点     //         if(anchorElement){     //             anchorElement.scrollIntoView();     //         }     //     //     }     //     this.setState({isShow:!this.state.isShow},()=>{     //         console.log(this.state.isShow);     //     });     // }     change=()=>{         let distance=document.getElementById('recommend').offsetTop;         window.scrollTo(0, distance);       setTimeout(()=>{           this.setState({isShow:!this.state.isShow},()=>{               console.log(this.state.isShow);           },1000);       })     }     backTop=()=>{         window.scrollTo(0, 0);         setTimeout(()=>{             this.setState({isShow:!this.state.isShow},()=>{                 console.log(this.state.isShow);             },1000);         })     }         render(){      let homeDatas=this.props.homeDatas;      let homeCarousel=homeDatas?homeDatas.homeCarousel:[];      let homeNavigation=homeDatas?homeDatas.homeNavigation:[];        return (            <div className='home'>                <Search />                <HomeSlider sliders={homeCarousel}/>                <Nav navImages={homeNavigation}/>                <img style={{width:"100%",height:'100%'}} src="../../../mock/img/home/icon/bg02.jpg" alt=""/>                <Time/>                <CountDown/>                <Scroll/>                <Scroll/>                <VipOnly/>                <img style={{width:"100%",height:'100%'}} src="https://ps.sfbest.com/mapp/resource/32/32b91fb1f26b6796ba7798e5550c1b6a.jpg" alt=""/>                <NewProduct/>                <img id="recommend" style={{width:"100%",height:'100%'}} src="https://ps.sfbest.com/mapp/resource/32/32c5a318cbcbd1b78cb75afc08147aae.jpg" alt=""/>                <Recommend />                    {                        this.state.isShow==true? <a className='back-top' onClick={this.backTop} >回到顶部</a>:<a className='back-top'   onClick={this.change}>为你推荐</a>                    }            </div>        )    }}export default connect(state=>state.home,actions)(Home)// <HomeSlider sliders={this.props.homeImages.homeCarousel}/>//  <HomeSlider sliders={homeCarousel}/>/*{                       this.state.isShow==true? <a className='back-top' href='javascript: scroll(0, 0)'>回到顶部</a>:<a className='back-top'   onClick={()=>this.scrollToAnchor('recommend')}>为你推荐</a>                    }componentDidMount() {  // Decode entities in the URL  // Sometimes a URL like #/foo#bar will be encoded as #/foo%23bar  window.location.hash = window.decodeURIComponent(window.location.hash);  const scrollToAnchor = () => {    const hashParts = window.location.hash.split('#');    if (hashParts.length > 2) {      const hash = hashParts.slice(-1)[0];      document.querySelector(`#${hash}`).scrollIntoView();    }  };  scrollToAnchor();  window.onhashchange = scrollToAnchor;} <a className='back-top' onClick={()=>this.scrollToAnchor('recommend')}  > div{                      this.state.isShow=='true'?<i className='iconfont icon-zhiding i-top'></i>:<a className='back-top' onClick={()=>this.scrollToAnchor('recommend')}  ></a>                    }                </a> */
