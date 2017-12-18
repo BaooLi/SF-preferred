@@ -3,7 +3,8 @@ import * as types from "../action-types";
 let initSearch={
     loading:false,
     search:[],
-    hotSearch:[]
+    hotSearch:[],
+    historical:[]
 };
 
 export default function (state=initSearch,action) {
@@ -13,8 +14,10 @@ export default function (state=initSearch,action) {
         case types.SEARCH_SUCCESS:
             return {...state,search:action.payload.searchs,loading:false};
         case types.HOT_SEARCH:
-            return {...state,hotSearch:action.payload.hotSearch};
+           return {...state,hotSearch:action.payload.hotSearch};
+        case types.HISTORICAL:
+            return {...state,historical:action.payload.historical};
             default :
-            return state;
+         return state;
     }
 }
