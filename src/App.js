@@ -23,7 +23,7 @@ export default class App extends Component{
                             <Switch>
                                 <Route exact path="/" component={Home}/>
                                 <Route exact path="/list" component={List}/>
-                                <Route path="/list/classification" component={Classification}/>
+                                <Route path="/list/classification/:title" component={Classification}/>
                                 <Route path="/cart" component={Cart}/>
                                 <Route path="/personal" component={Personal}/>
                                 <Route path="/search" component={Search}/>

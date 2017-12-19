@@ -122,8 +122,10 @@ app.get("/public/details",(req,res)=>{
 app.get("/public/classification",(req,res)=>{
     let keyWord=req.query.keyWord||"";
     let type=req.query.type;
+    console.log(keyWord,type);
     if(keyWord.length>0){
         let classifications=res.data.filter(item=>item.classification===keyWord);
+        console.log(classifications);
         type?classifications=commoditySort(classifications,type):null;
         res.send({code:0,classifications,success:"成功获取分类页数据"});
     }else {

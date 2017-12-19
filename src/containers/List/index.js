@@ -19,7 +19,7 @@ import {Link} from 'react-router-dom';
                     {
                         dataLists&&dataLists.map((item,index)=>(
                             <li key={index}>
-                                <Link key={index} to='/list/classification'>
+                                <Link key={index} to={{pathname:`/list/classification/${item.title}`}}>
 
                                     <img src={item.listImg} alt=""/>
                                     <h3>{item.title}</h3>

@@ -14,8 +14,14 @@ export const FETCH_SLIDERS_SUCCESS="FETCH_SLIDERS_SUCCESS";
 
 //获取分类数据
 export const GET_LIST="GET_LIST";
-//获取成功
+//获取分类数据成功
 export const GET_LIST_SUCCESS="GET_LIST_SUCCESS";
+
+//获取每个分类数据
+export const GET_CLASSIFICATION='GET_CLASSIFICATION';
+//获取每个分类数据成功
+export const GET_CLASSIFICATION_SUCCESS='GET_CLASSIFICATION_SUCCESS';
+
 
 //热门搜索
 export const HOT_SEARCH="HOT_SEARCH";
