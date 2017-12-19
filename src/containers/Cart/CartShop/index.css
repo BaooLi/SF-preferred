@@ -1,0 +1,156 @@
+.iconfont{
+    font-size:.4rem;
+}
+.cart-shop{
+    width:100%;
+    height:100%;
+}
+.top{
+    height:1.27rem;
+    width:100%;
+    padding-right:0.39rem;
+    border-bottom:0.01rem solid #f0f2f6;
+}
+.top .icon-fanhui{
+    margin-left:.3rem;
+    color:green;
+    margin-right:1rem;
+}
+.top .icon-icon-yxj-a{
+    display:inline-block;
+    height:0.42rem;
+    width:0.42rem;
+    margin-right:0.2rem;
+    line-height:1.27rem;
+
+}
+.top .dizhi{
+     line-height:1.47rem;
+     font-size:0.42rem;
+     color:#1d1d1d;
+
+}
+.top .bianji{
+    font-size:0.42rem;
+    color:#69af05;
+    float:right;
+    line-height:1.47rem;
+    margin-right:.4rem;
+}
+.container{
+   width:100%;
+}
+.container .better{
+    width:100%;
+    height:1.22rem;
+    border-bottom:0.02rem solid #f0f2f6;
+}
+.container .better .iconfont{
+    float:left;
+    margin-right:.4rem;
+   line-height:1.22rem;
+}
+.container .better h5{
+    float:left;
+    font-size:0.42rem;
+    color:#050505;
+    margin-top:0.4rem;
+}
+.container .products{
+    width:100%;
+
+}
+.container .product{
+    border-bottom:0.03rem solid #f0f2f6;
+}
+.product .product-left{
+    float: left;
+    width: 40%;
+    height: 2rem;
+}
+.product-left .iconfont{
+    margin-top:1.29rem;
+}
+.product-left  img{
+    width: 80%;
+    height: 95%;
+    margin-top:.3rem;
+}
+.container .products .detail{
+    width: 50%;
+    float: right;
+    margin-right: .3rem;
+}
+.container .products .detail .p1{
+    margin-top:.4rem;
+}
+.container .products .detail .p1,.detail .p2{
+    font-size:0.28rem;
+    line-height:0.5rem;
+
+}
+.container .products .detail .p3{
+    color:#fa6400;
+    font-size:0.36rem;
+
+}
+.container .products .detail .p4{
+    color:#fa6400;
+    font-size:0.36rem;
+}
+.count{
+    margin-left: .5rem;
+}
+.count .icon-jianhao3{
+    margin-right:.25rem;
+}
+.count .icon-jiahao{
+    margin-left:.25rem;
+}
+.wei{
+    height:2rem;
+    background:#f1f2f6;
+}
+.wei h5{
+    font-size:.45rem;
+    text-align:center;
+    line-height:2rem;
+    margin-top:.35rem;
+}
+.shop-footer{
+    position:fixed;
+    left:0;
+    bottom:7.5%;
+    width:100%;
+    height:1.2rem;
+    padding-left:.36rem;
+}
+.shop-footer .footer-left{
+    height:100%;
+    width:60%;
+    float:left;
+}
+.shop-footer .footer-left .iconfont{
+    text-align:center;
+    margin:.36rem .36rem .36rem 0;
+}
+.shop-footer .footer-left .span1{
+    font-size:.45rem;
+}
+.shop-footer .footer-left .span2{
+    color:#fa6400;
+    font-size:.45rem;
+    margin-right:1rem;
+}
+.shop-footer .footer-left .span3{
+     font-size:.36rem;
+
+}
+.shop-footer button{
+    height:1.2rem;
+    width:40%;
+    float:left;
+    background:#69af05;
+    color:#fff;
+    font-size:.4rem;
+}
