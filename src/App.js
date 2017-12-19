@@ -8,6 +8,8 @@ import Cart from "./containers/Cart/index";
 import Personal from "./containers/Personal/index";
 import Login from "./containers/Login/index";
 import Reg from "./containers/Reg/index";
+import Detail from "./containers/Details/index";
+import Comments from "./containers/Details/Comments/index";
 import Tab from "./component/Tab/index";
 import createHashHistory from "history/createHashHistory"
 import {ConnectedRouter} from "react-router-redux"
