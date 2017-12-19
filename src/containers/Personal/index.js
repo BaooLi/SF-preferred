@@ -1,7 +1,9 @@
 import React, {Component} from "react";
 import './index.less';
+import {connect} from 'react-redux';
+import actions from '../../store/actions/personal';
 import {Link} from 'react-router-dom';
-export default class Personal extends Component {
+class Personal extends Component {
     render() {
         return (
             <div className="personal">
@@ -46,3 +48,7 @@ export default class Personal extends Component {
         )
     }
 }
+export default connect(
+    state => state.personal,
+    actions
+)(Personal)
