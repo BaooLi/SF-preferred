@@ -33,7 +33,7 @@ app.use(session({
 // let jsonParser = bodyParser.json();//获取  JSON 编码的请求体
 // let urlencodedParser = bodyParser.urlencoded({ extended: false });//获取 URL编码的请求体
 
-let homeDatas=require("./data/Static/swiper");//轮播数据+导航(10条)
+let homeDatas=require("./data/Static/swiper");//轮播数据+导航(10条)+会员+秒杀
 
 let hotSearch=require("./data/Static/hotSearch");//热门搜索数据
 
@@ -59,7 +59,7 @@ app.use((req,res,next)=>{
 });
 //所有请求 success成功1 失败0
 //首页
-///home/carousel  轮播+图标导航 homeCarousel
+///home/carousel  轮播数据+导航(10条)+会员+秒杀
 app.get("/home/carousel",(req,res)=>{
     Object.keys(homeDatas).length>0?res.send({homeDatas,code:0,success:"获取数据成功"}):res.send({code:1,error:"获取数据失败,检查接口"});
 });
@@ -132,13 +132,13 @@ app.get("/public/classification",(req,res)=>{
 });
 
 
+
 //搜索 search    传参 关键字 keyWords 排序
 app.get("/public/search",(req,res)=>{
     let keyWord=req.query.keyWord||"";
     let type=req.query.type;
     keyWord&&read("./data/Content/historical.json",historical=>{
         let flag =historical.some(item=>item==keyWord);
-        console.log(flag);
         if(!flag){
             historical=[...historical,keyWord];
             write("./data/Content/historical.json",historical,()=>{
@@ -149,9 +149,9 @@ app.get("/public/search",(req,res)=>{
     if(keyWord.length>0){
            let searchs=res.data.filter(item=>item.recommendTitle.includes(keyWord))||[];
                type?searchs=commoditySort(searchs,type):null;
-        res.send({code:0,success:"成功获取搜索数据",searchs});
+               searchs.length>0? res.send({code:0,success:"成功获取搜索数据",searchs}):  res.send({code:1,error:"抱歉,您搜索的商品未找到!"});
        }else {
-        res.send({code:1,err:"抱歉,您搜索的商品未找到!"});
+        res.send({code:1,error:"抱歉,您搜索的商品未找到!"});
     }
 });
 
@@ -240,7 +240,29 @@ app.get("/findCart",(req,res)=>{
     })
 });
 
-
+//搜索 search    传参 关键字 keyWords 排序
+app.get("/public/search",(req,res)=>{
+    let keyWord=req.query.keyWord||"";
+    console.log(keyWord);
+    let type=req.query.type;
+    keyWord&&read("./data/Content/historical.json",historical=>{
+        let flag =historical.some(item=>item==keyWord);
+        if(!flag){
+            historical=[...historical,keyWord];
+            console.log(historical);
+            write("./data/Content/historical.json",historical,()=>{
+                console.log("写入成功");
+            })
+        }
+    });
+    if(keyWord.length>0){
+        let searchs=res.data.filter(item=>item.recommendTitle.includes(keyWord))||[];
+        type&&searchs.length>0?searchs=commoditySort(searchs,type):null;
+       searchs.length>0? res.send({code:0,success:"成功获取搜索数据",searchs}):res.send({code:1,error:"抱歉,您搜索的商品未找到!"});
+    }else {
+        res.send({code:1,error:"抱歉,您搜索的商品未找到!"});
+    }
+});
 //热门搜索
 app.get("/hotSearch",(req,res)=>{
     hotSearch.length>0?res.send({code:0,success:"成功获取列表页数据",hotSearch}): res.send({code:1,error:"获取数据失败"})
@@ -250,12 +272,12 @@ app.get("/hotSearch",(req,res)=>{
 app.get("/historical",(req,res)=>{
     let type=req.query.type;
     read("./data/Content/historical.json",historical=>{
-        if(!type){
-            console.log(1);
-            res.send({code:10,success:"成功获取历史记录",historical})
+        if(type=="undefined"){
+            res.send({code:0,success:"成功获取历史记录",historical})
         }else{
+            console.log("呵呵");
             write("./data/Content/historical.json",[],()=>{
-                res.send({code:1,success:"清除历史记录成功"})
+                res.send({code:0,success:"清除历史记录成功"})
             })
         }
     })

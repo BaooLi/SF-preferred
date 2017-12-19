@@ -11,7 +11,8 @@ import {Link} from 'react-router-dom';
         this.props.fetchLists();
     }
     render(){
-        let dataLists=this.props.listDatas;
+        let dataLists=this.props.list.listDatas;
+        console.log(this.props);
         return(
             <div>
                 <Header/>
@@ -35,6 +36,6 @@ import {Link} from 'react-router-dom';
     }
 }
 export default connect(
-    state=>state.list,
+    state=>state,
     actions
 )(List);
