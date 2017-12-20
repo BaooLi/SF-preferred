@@ -11,25 +11,27 @@ import ScrollList from "./ScrollList/index";
 class Details extends Component {
     constructor() {
         super();
-        this.state={num:1,fade:true}
+        this.state = {num: 1, fade: true}
     }
 
     componentDidMount() {
         let id = this.props.match.params.id
-        this.props.detailInfo('d3e6eb9f-19de-466f-8125-d1421128dea0')
+        this.props.detailInfo('2b74dfd5-6271-4140-a4f2-d088714dd1a1')
     }
 
     handleClick = (event, type) => {
-        let num= parseInt(this.goodNum.placeholder);
-        if(type=='add'){
+        let num = parseInt(this.goodNum.placeholder);
+        if (type == 'add') {
             num++
             this.setState({num})
-            this.state.fade?null:this.setState({fade:true})
-        }else if(type=='sub'){
+            this.state.fade ? null : this.setState({fade: true})
+        } else if (type == 'sub') {
             num--
-            if(num<=0){num=1}
+            if (num <= 0) {
+                num = 1
+            }
             this.setState({num})
-            this.state.fade?this.setState({fade:false}):null
+            this.state.fade ? this.setState({fade: false}) : null
         }
     }
 
@@ -38,12 +40,13 @@ class Details extends Component {
         let comments = this.props.comment.text
 
         //商品录播图列表
-        let img = this.props.details.graphicImg?this.props.details.graphicImg:[this.props.details.recommendImg]
+        let img = this.props.details.graphicImg ? this.props.details.graphicImg : [this.props.details.recommendImg]
         return (
             <div className="detail">
                 <Header id={this.props.details.recommendID}/>
                 <div className="product" ref='scroll'>
-                    <ScrollList element={this.refs.scroll}>
+                    <ScrollList history={this.props.history} id={this.props.details.recommendID}
+                                element={this.refs.scroll}>
                         <Sliders imgs={img}/>
                         <div className="productInfo">
                             <h1>
@@ -56,11 +59,13 @@ class Details extends Component {
                             <div className="goods-info">
                                 <ul className="goods-from">
                                     {
-                                        this.props.details.graphicOrigin ? <li>产地：{this.props.details.graphicOrigin}</li> :
+                                        this.props.details.graphicOrigin ?
+                                            <li>产地：{this.props.details.graphicOrigin}</li> :
                                             <li>产地：不详</li>
                                     }
                                     {
-                                        this.props.details.graphicBrand ? <li>品牌：{this.props.details.graphicBrand}</li> :
+                                        this.props.details.graphicBrand ?
+                                            <li>品牌：{this.props.details.graphicBrand}</li> :
                                             <li>品牌：不详</li>
                                     }
                                     {
@@ -77,21 +82,24 @@ class Details extends Component {
                                 <i></i>
                             </div>
                             <div className="delivery">
-                                <div className="address">
+                                <div className="address" onClick={()=>{javascript:location.href='http://localhost:8000/baiduMap'}}>
                                     <span>送至</span>
                                     <p><i></i>北京东城区</p>
                                     <p>由顺丰优选发货，并提供售后服务。如果您在10:30前下单，预计12月15日为您送达！</p>
+
                                 </div>
                                 <div className="goods-num">
                                     <span>数量</span>
                                     <div className="goods-nums">
                                         <i onClick={(event) => {
-                                            this.handleClick(event,'add')
-                                        }} className={this.state.fade?"add":"add fade"}></i>
-                                        <input ref={input => this.goodNum = input} type="text" placeholder={this.state.num}/>
+                                            this.handleClick(event, 'add')
+                                        }} className={this.state.fade ? "add" : "add fade"}></i>
+                                        <input ref={input => this.goodNum = input} type="text"
+                                               placeholder={this.state.num}/>
                                         <i onClick={(event) => {
-                                            this.handleClick(event,'sub')
-                                        }} href="javascript:void(0);" className={this.state.fade?"sub fade":"sub"}></i>
+                                            this.handleClick(event, 'sub')
+                                        }} href="javascript:void(0);"
+                                           className={this.state.fade ? "sub fade" : "sub"}></i>
 
                                     </div>
                                 </div>
@@ -101,7 +109,8 @@ class Details extends Component {
                                     <h1 className=".clearfix:after {
 "><span>用户评价 ({comments ? comments.length : 0}条)</span></h1>
 
-                                    <Link to={"/comments/"+this.props.details.recommendID}><i className="ico-loadmore"></i></Link>
+                                    <Link to={"/comments/" + this.props.details.recommendID}><i
+                                        className="ico-loadmore"></i></Link>
                                 </div>
                                 <ul>
                                     {
@@ -117,8 +126,11 @@ class Details extends Component {
                             <div>
                             </div>
                         </div>
+                        <div className="detailMore">
+                            <span className="morelink">释放查看更多详情
+                            <i className="iconfont icon-fanhui"></i></span>
+                        </div>
                     </ScrollList>
-
                 </div>
                 <Tab num={this.state.num}/>
             </div>
