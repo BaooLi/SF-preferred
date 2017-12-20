@@ -15,7 +15,7 @@ class Reg extends Component{
     handleReg = () => {
         let username = this.username.value;
         let password = this.password.value;
-        let usertest =/^[a-zA-Z0-9_-]{4,16}$/;
+        let usertest =/^[a-zA-Z]\w{4,7}$/;
         let pdtest = /^(\w){6,8}$/;
         if (usertest.test(username)&&pdtest.test(password)){
             this.props.reg({username, password});
@@ -32,9 +32,7 @@ class Reg extends Component{
                     优选注册
                 </div>
                 <input ref={input => this.username = input} type="text" placeholder="请输入用户名" className="input"/>
-                <input ref={input => this.password = input} type="text" placeholder="请输入密码" className="input">
-
-                </input>
+                <input ref={input => this.password = input} type="text" placeholder="请输入密码" className="input"/>
                 <div className="reg-btn" onClick={this.handleReg}>注册</div>
                 <div className="reg-warn">{this.state.msg}</div>
                 <Alert></Alert>

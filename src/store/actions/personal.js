@@ -3,9 +3,10 @@
  */
 
 import * as types from '../action-types';
-import {reg, login, logout, validate, changepassword,} from '../../api/personal';
+import {reg, login, logout, validate, changepassword} from '../../api/personal';
 import {push} from 'react-router-redux'
 export default {
+    //注册
     reg(user){
         return function (dispatch, getState) {
             reg(user).then(result => {
@@ -20,6 +21,7 @@ export default {
             })
         }
     },
+    //登录
     login(user){
         return function (dispatch, getState) {
             login(user).then(result => {
@@ -34,6 +36,7 @@ export default {
             })
         }
     },
+    //退出
     logout(){
         return function (dispatch, getState) {
             logout().then(result => {
@@ -51,6 +54,7 @@ export default {
             type: types.CLEARMESSAGE
         }
     },
+    //判断有没有登录
     validate(){
         return function (dispatch, getState) {
             validate().then(result => {
@@ -58,17 +62,18 @@ export default {
                 dispatch({
                     type: types.VALIDATE,
                     payload: {success, error, user}
-                })
-            })
+                });
+            });
         }
     },
-    changepassword(user){
+    //修改
+    changepassword({user,newpassword}){
         return function (dispatch, getState) {
-            changepassword(user).then(result=>{
+            changepassword({user,newpassword}).then(result => {
                 let {code, success, error, user} = result;
                 dispatch({
-                    type:types.CHANGEPASSWORD,
-                    payload:{success,error,user}
+                    type: types.CHANGEPASSWORD,
+                    payload: {success, error, user}
                 });
                 if (code == 0) {
                     dispatch(push('/login'));

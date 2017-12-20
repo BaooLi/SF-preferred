@@ -305,15 +305,13 @@ app.post("/reg",(req,res)=>{
 app.post("/login",(req,res)=>{
     let user=req.body;
     user.password=crpyto.createHash("md5").update(user.password).digest("hex");
-    console.log(user.password);
     read("./data/Content/userInfo.json",userInfos=>{
         let newUser=userInfos.find(item=>item.username==user.username);
         if(newUser){
             if(newUser.password==user.password){
-                console.log("登录");
+                req.session.user=newUser;
                 res.send({code:0,error:"登录成功",user});
             }else if(newUser.password!==user.password) {
-                console.log("密码错误");
                 res.send({code:1,error:"密码错误"})
             }
         }else {
@@ -338,18 +336,19 @@ app.get("/validate",(req,res)=>{
 app.post("/changepassword",(req,res)=>{
     let {user,newpassword}=req.body;
     read("./data/Content/userInfo.json",userInfos=>{
-        userInfos.forEach(item=>{
-            if(item.username==user.userName&&item.password==user.password){
-                item.password=crpyto.createHash("md5").update(newpassword).digest("hex");
-                write("./data/Content/userInfo.json",userInfos,()=>{
-                    res.send({code:0,success:"修改密码成功"});
-                });
-            }else{
-                res.send({code:1,error:"密码错误"});
-            }
-        })
+        console.log(userInfos);
+        let newUser=userInfos.find(item=>item.username==user.username);// 找到用户
+        if(newUser.password==user.password){  //判断密码 是否一样
+            newUser.password=crpyto.createHash("md5").update(newpassword).digest("hex");
+            write("./data/Content/userInfo.json",userInfos,()=>{
+                res.send({code:0,success:"修改密码成功"});
+            });
+        }else{
+            res.send({code:1,error:"密码错误"});
+        }
     })
 });
+
 
 // newpassword=crpyto.createHash("md5").update(user.password).digest("hex");
 //公共

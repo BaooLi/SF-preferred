@@ -15,7 +15,6 @@ class Personal extends Component {
                         this.props.user?<span className="login-btn">{this.props.user.username}</span>:<Link to='/login' className="login-btn">登录</Link>
 
                     }
-                    <span className="logout" onClick={this.handleLogout}>退出 <i className="spe">&gt;</i></span>
                 </div>
                 <div className="order">
                     我的优选订单
@@ -49,6 +48,8 @@ class Personal extends Component {
                     <li><i className="iconfont icon-liulanlishi1 spe2"></i>历史浏览 <i className="spe1">&gt;</i></li>
                     <li><i className="iconfont icon-anquanzhongxin spe2"></i>安全中心 <i className="spe1">&gt;</i></li>
                     <li><i className="iconfont icon-kefu1 spe2"></i>客服热线 <i className="spe1">&gt;</i></li>
+                    <li><i className="iconfont icon-kefu1 spe2"></i><Link to='/changepassword'>修改密码</Link> <i className="spe1">&gt;</i></li>
+                    <li className="logout" onClick={this.handleLogout}><i className="iconfont icon-kefu1 spe2"></i>退出登录<i className="spe1">&gt;</i></li>
                 </ul>
             </div>
         )
