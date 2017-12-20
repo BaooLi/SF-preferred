@@ -159,6 +159,7 @@ app.get("/public/search",(req,res)=>{
 app.post("/public/cart",(req,res)=>{
     if (!req.body) return res.sendStatus(400);
     let {userName,recommendID,count}=req.body;
+    console.log(req.body);
     let ss=res.data.find(item=>item.recommendID==recommendID); //商品
     read("./data/Content/userCommodity.json",userCommodities=>{
         if(userCommodities.length==0){
@@ -228,10 +229,12 @@ app.delete("/emptiedCart",(req,res)=>{
 //查看
 app.get("/findCart",(req,res)=>{
     let userName=req.query.userName;
-    console.log(userName);
+
     if (!req.query.userName) return res.sendStatus(400);
     read("./data/Content/userCommodity.json",userCommodities=>{
-       let userCommoditie=userCommodities.find(item=>item.userName==userName);
+        let userCommoditie=userCommodities.find(item=>{
+            return item.userName==userName
+        });
         if(userCommoditie){
            res.send({code:0,success:"查看购物车成功",userCommoditie})
         }else {

@@ -25,9 +25,9 @@
 
 }
 .top .dizhi{
-     line-height:1.47rem;
-     font-size:0.42rem;
-     color:#1d1d1d;
+    line-height:1.47rem;
+    font-size:0.42rem;
+    color:#1d1d1d;
 
 }
 .top .bianji{
@@ -38,7 +38,7 @@
     margin-right:.4rem;
 }
 .container{
-   width:100%;
+    width:100%;
 }
 .container .better{
     width:100%;
@@ -48,7 +48,7 @@
 .container .better .iconfont{
     float:left;
     margin-right:.4rem;
-   line-height:1.22rem;
+    line-height:1.22rem;
 }
 .container .better h5{
     float:left;
@@ -61,8 +61,10 @@
 
 }
 .container .product{
-    border-bottom:0.03rem solid #f0f2f6;
+    border-bottom:0.02rem solid #f0f2f6;
+    margin-bottom:.2rem;
 }
+
 .product .product-left{
     float: left;
     width: 40%;
@@ -140,11 +142,25 @@
 .shop-footer .footer-left .span2{
     color:#fa6400;
     font-size:.45rem;
-    margin-right:1rem;
+    position:absolute;
+    left:105px;
+    bottom:25px;
 }
 .shop-footer .footer-left .span3{
-     font-size:.36rem;
-
+    font-size:.36rem;
+    position:absolute;
+    left:.18rem;
+    bottom:.06rem;
+}
+.shop-footer .footer-left .span4{
+    position:absolute;
+    left:1.7rem;
+    bottom:.06rem;
+}
+.shop-footer .footer-left .span5{
+    position:absolute;
+    left:2.8rem;
+    bottom:.06rem;
 }
 .shop-footer button{
     height:1.2rem;
