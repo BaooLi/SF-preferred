@@ -12,6 +12,14 @@ let retrievData=require("./retrievData/index"); //获取数据执行的函数
 
 let commoditySort=require("./commoditySort/index");//商品排序
 
+app.set('view engine','ejs')
+
+//指定模板位置
+app.set('views', __dirname + '/views');
+
+app.get("/baiduMap", function(req, res) {
+    res.render('home.ejs', {});
+});
 
 
 let read=(url,cb)=>{
@@ -308,6 +316,7 @@ app.post("/login",(req,res)=>{
     read("./data/Content/userInfo.json",userInfos=>{
         userInfos.forEach(item=>{
             if(item.username==user.userName&&item.password==user.password){
+                req.session.user=user
                 console.log("登录");
                 res.send({code:0,error:"登录成功",user});
             }else if(item.password!==user.password) {
