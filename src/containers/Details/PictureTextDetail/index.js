@@ -11,16 +11,12 @@ class PictureTextDetail extends Component {
                 img.push(this.props.details.graphicDescription)
             }
         }
-        if (img.length == 0) {
-            img = [
-                require('../img/1.png')
-            ]
-        }
         return (
             <div className="pictureText">
                 <div className="head">图文详情<i onClick={()=>{this.props.history.goBack()}}></i></div>
                 <ul>
                     {
+                        img.length == 0?(<li>暂无评价</li>):
                         img.map((item, index) => (
                             <li key={index}><img src={item} alt="图文不存在"/></li>
                         ))
