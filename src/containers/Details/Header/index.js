@@ -11,7 +11,7 @@ export default class Header extends Component {
                 <a href="javascript:void(0);">
                     <span>商品</span>
                 </a>
-                <Link to="/productDetail">
+                <Link to={"/pictureTextDetail/"+this.props.id}>
                       <span>详情</span>
                 </Link>
                 <Link to={"/comments/"+this.props.id}>
