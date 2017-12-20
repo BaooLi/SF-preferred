@@ -12,6 +12,8 @@ import {ConnectedRouter} from "react-router-redux"
 import Search from "./containers/Search/index";
 import Home from "./containers/Home/index";
 import Recommend from "./containers/Home/Recommend/index";
+import Details from "./containers/Details/index";
+import MenuVideo from "./containers/Home/MenuVideo/index";
 let history=createHashHistory();
 export default class App extends Component{
     render(){
@@ -26,6 +28,8 @@ export default class App extends Component{
                                 <Route path="/cart" component={Cart}/>
                                 <Route path="/personal" component={Personal}/>
                                 <Route path="/search" component={Search}/>
+                                <Route path="/detail" component={Details}/>
+                                <Route path="/menu" component={MenuVideo}/>
                             </Switch>
                         </div>
                     </ConnectedRouter>
