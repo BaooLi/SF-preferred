@@ -285,39 +285,40 @@ app.get("/historical",(req,res)=>{
 
 
 //注册
+//注册  前后台成功
 app.post("/reg",(req,res)=>{
-   let user=req.body;
-   read("./data/Content/userInfo.json",userInfos=>{
-       userInfos.forEach(item=>{
-           if(item.username==user.userName){
-               res.send({code:1,error:"用户名已经存在请重新输入"})
-           }else {
-               user.password=crpyto.createHash("md5").update(user.password).digest("hex");
-               userInfos.push(user);
-               write("./data/Content/userInfo.json",userInfos,()=>{
-                   res.send({code:0,success:"注册成功"})
-               })
-           }
-       })
-   })
+    let user=req.body;
+    read("./data/Content/userInfo.json",userInfos=>{
+        let newUser=userInfos.find(item=>item.username==user.username);
+        if(newUser){
+            res.send({code:1,error:"用户名已经存在请重新输入"})
+        }else {
+            user.password=crpyto.createHash("md5").update(user.password).digest("hex");
+            userInfos.push(user);
+            write("./data/Content/userInfo.json",userInfos,()=>{
+                res.send({code:0,success:"注册成功"})
+            })
+        }
+    })
 });
-//登录
+//登录  前后台成功
 app.post("/login",(req,res)=>{
     let user=req.body;
     user.password=crpyto.createHash("md5").update(user.password).digest("hex");
+    console.log(user.password);
     read("./data/Content/userInfo.json",userInfos=>{
-        userInfos.forEach(item=>{
-            if(item.username==user.userName&&item.password==user.password){
+        let newUser=userInfos.find(item=>item.username==user.username);
+        if(newUser){
+            if(newUser.password==user.password){
                 console.log("登录");
                 res.send({code:0,error:"登录成功",user});
-            }else if(item.password!==user.password) {
+            }else if(newUser.password!==user.password) {
                 console.log("密码错误");
                 res.send({code:1,error:"密码错误"})
-            }else {
-                console.log("用户名错误");
-                res.send({code:2,error:"用户不存在"})
             }
-        })
+        }else {
+            res.send({code:2,error:"用户不存在"})
+        }
     })
 });
 //退出

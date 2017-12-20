@@ -3,22 +3,26 @@ html {
 }
 
 .personal {
+  height:93%;
   position: fixed;
   top: 0;
-  bottom: .5rem;
+  //bottom: .5rem;
   left: 0;
   right: 0;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   box-sizing: content-box;
   overflow: scroll;
   .login {
-    padding: 0 .2rem;
-    position: relative;
-    top: .5rem;
+    padding: 0 .4rem;
     width: 100%;
+    height: 2.5rem;
+    background: url("../../../mock/img/personal/personal-bg.png") no-repeat center ;
+    background-size: 100%;
+    color: #000;
     .login-btn {
       display: inline-block;
+      margin-top: .8rem;
       width: 2.2rem;
       height: .8rem;
       line-height: .8rem;
@@ -28,20 +32,24 @@ html {
       margin-left: -1.1rem;
       border: 1px solid #d3d3d3;
       border-radius: .1rem;
+      overflow-x: hidden;
       color: #000;
     }
-    .login-set {
+    .logout {
       position: absolute;
+      margin-top: .8rem;
+      z-index: 11;
       right: .1rem;
       font-size: .12rem;
       height: .8rem;
       line-height: .8rem;
-      color: #8d8d8d;
+      color: #606060;
     }
   }
   .order {
     width: 100%;
-    margin-top: 2.2rem;
+    padding: 0 .4rem;
+    margin-top: .4rem;
     font-size: .4rem;
     .all-or {
       position: absolute;
@@ -49,7 +57,7 @@ html {
       font-size: .12rem;
       height: .6rem;
       line-height: .6rem;
-      color: #8d8d8d;
+      color: #606060;
     }
     .or-info {
       span {
@@ -60,21 +68,25 @@ html {
         text-align: center;
         i {
           font-size: .36rem;
-          color: #028004;
+          color: #71a225;
         }
       }
     }
   }
   .person-info {
     font-size: .38rem;
-    margin-top: .6rem;
+    margin-top: .4rem;
     display: flex;
     flex-direction: column;
     flex: 1;
     .info-my {
-        margin-bottom: .2rem;
+      background: #f1f1f1;
+      height: .8rem;
+      line-height: .8rem;
+      padding-left: .4rem;
     }
     li {
+      padding: 0 .4rem;
       color: #000;
       border-bottom: 1px solid #d3d3d3;
       height: 1rem;

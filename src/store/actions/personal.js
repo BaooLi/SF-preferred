@@ -3,7 +3,7 @@
  */
 
 import * as types from '../action-types';
-import {reg, login, logout, validate, changepassword} from '../../api/personal';
+import {reg, login, logout, validate, changepassword,} from '../../api/personal';
 import {push} from 'react-router-redux'
 export default {
     reg(user){
@@ -29,7 +29,7 @@ export default {
                     payload: {success, error, user}
                 });
                 if (code == 0) {
-                    dispatch(push('/profile'));
+                    dispatch(push('/personal'));
                 }
             })
         }
@@ -48,7 +48,7 @@ export default {
     },
     clearMessages(){
         return {
-            type: types.CLEAR_MESSAGES
+            type: types.CLEARMESSAGE
         }
     },
     validate(){

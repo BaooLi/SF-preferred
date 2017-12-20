@@ -25,4 +25,6 @@ export function validate() {
 // 修改密码
 export function changepassword(user) {
     return post('./changepassword')
-}
+};
+
+// 清除alert信息

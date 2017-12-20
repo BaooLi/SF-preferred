@@ -34,3 +34,5 @@ export const LOGOUT="LOGOUT";
 export const CHANGEPASSWORD="CHANGEPASSWORD";
 // 验证保护
 export const VALIDATE = 'VALIDATE';
+//Alert清除信息
+export const CLEARMESSAGE = 'CLEARMESSAGE';

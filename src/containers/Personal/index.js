@@ -4,16 +4,22 @@ import {connect} from 'react-redux';
 import actions from '../../store/actions/personal';
 import {Link} from 'react-router-dom';
 class Personal extends Component {
+    handleLogout=()=>{
+        this.props.logout();
+    };
     render() {
         return (
             <div className="personal">
                 <div className="login">
-                    <Link to='/login' className="login-btn">登录</Link>
-                    <span className="login-set">设置 <i className="spe">&gt;</i></span>
+                    {
+                        this.props.user?<span className="login-btn">{this.props.user.username}</span>:<Link to='/login' className="login-btn">登录</Link>
+
+                    }
+                    <span className="logout" onClick={this.handleLogout}>退出 <i className="spe">&gt;</i></span>
                 </div>
                 <div className="order">
                     我的优选订单
-                    <Link to="" className="all-or">全部订单<i className="spe">&gt;</i></Link>
+                    <span to="" className="all-or">全部订单<i className="spe">&gt;</i></span>
                     <div className="or-info">
                             <span>
                                 <i className="iconfont icon-weibiaoti2fuzhi04"></i>

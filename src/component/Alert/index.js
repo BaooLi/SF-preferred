@@ -33,6 +33,6 @@ class Alert extends Component {
     }
 }
 export default connect(
-    state => state.session,
+    state => state.personal,
     actions
 )(Alert)
