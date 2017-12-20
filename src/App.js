@@ -15,6 +15,7 @@ import createHashHistory from "history/createHashHistory"
 import {ConnectedRouter} from "react-router-redux"
 import Search from "./containers/Search/index";
 import Home from "./containers/Home/index";
+import PictureTextDetail from "./containers/Details/PictureTextDetail/index";
 let history=createHashHistory();
 export default class App extends Component{
     render(){
@@ -32,6 +33,7 @@ export default class App extends Component{
                                 <Route path="/search" component={Search}/>
                                 <Route path="/detail/:id" component={Detail}/>
                                 <Route path="/comments/:id" component={Comments}/>
+                                <Route path="/pictureTextDetail/:id" component={PictureTextDetail}/>
                             </Switch>
                         </div>
                     </ConnectedRouter>
