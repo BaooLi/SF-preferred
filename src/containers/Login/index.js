@@ -13,9 +13,6 @@ class Login extends Component {
         let password = this.password.value;
         this.props.login({username, password});
     };
-    handleChange = () => {
-
-    };
 
     render() {
         return (
@@ -31,7 +28,7 @@ class Login extends Component {
                     className="log-btn">登&nbsp;录
                 </div>
                 <div className="quick-log">
-                    <Link to="/reg">手机快速注册</Link>
+                    <Link to="/reg">快速注册</Link>
                     <Link to='/changepassword' className="change-pd">修改密码</Link>
                 </div>
                 <Alert></Alert>

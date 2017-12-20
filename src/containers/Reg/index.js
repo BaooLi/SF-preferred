@@ -17,7 +17,7 @@ class Reg extends Component{
         let password = this.password.value;
         let usertest =/^[a-zA-Z0-9_-]{4,16}$/;
         let pdtest = /^(\w){6,8}$/;
-        if (usertest.test(username)||pdtest.test(password)){
+        if (usertest.test(username)&&pdtest.test(password)){
             this.props.reg({username, password});
         }else {
             this.setState({msg:'用户名或密码不符合规则'})
