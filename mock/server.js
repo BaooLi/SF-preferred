@@ -130,10 +130,12 @@ app.get("/public/details",(req,res)=>{
 app.get("/public/classification",(req,res)=>{
     let keyWord=req.query.keyWord||"";
     let type=req.query.type;
+    console.log(keyWord, type);
     if(keyWord.length>0){
         let classifications=res.data.filter(item=>item.classification===keyWord);
         type?classifications=commoditySort(classifications,type):null;
-        res.send({code:0,classifications,success:"成功获取分类页数据"});
+
+        res.send({code:0,classifications,success:"成功获取分类页数据",type});
     }else {
         res.send({code:1,err:"访问错误请检查路径参数"});
     }
@@ -314,17 +316,11 @@ app.post("/login",(req,res)=>{
     let user=req.body;
     user.password=crpyto.createHash("md5").update(user.password).digest("hex");
     read("./data/Content/userInfo.json",userInfos=>{
-<<<<<<< HEAD
-        userInfos.forEach(item=>{
-            if(item.username==user.userName&&item.password==user.password){
-                req.session.user=user
-                console.log("登录");
-=======
+
         let newUser=userInfos.find(item=>item.username==user.username);
         if(newUser){
             if(newUser.password==user.password){
                 req.session.user=newUser;
->>>>>>> bf0443576ba4cf91d074e1c41bfa064d53f7d114
                 res.send({code:0,error:"登录成功",user});
             }else if(newUser.password!==user.password) {
                 res.send({code:1,error:"密码错误"})

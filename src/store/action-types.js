@@ -14,16 +14,23 @@ export const FETCH_SLIDERS_SUCCESS="FETCH_SLIDERS_SUCCESS";
 
 //获取分类数据
 export const GET_LIST="GET_LIST";
-//获取成功
+//获取分类数据成功
 export const GET_LIST_SUCCESS="GET_LIST_SUCCESS";
 
+//获取每个分类数据
+export const GET_CLASSIFICATION='GET_CLASSIFICATION';
+//获取每个分类数据成功
+export const GET_CLASSIFICATION_SUCCESS='GET_CLASSIFICATION_SUCCESS';
+
+
 //热门搜索
+
 export const HOT_SEARCH="HOT_SEARCH";
 
 //历史记录
 export const HISTORICAL="HISTORICAL";
 
-<<<<<<< HEAD
+
 //查询详情数据
 export const SEARCH_DETAIL="SEARCH_DETAIL";
 
@@ -33,10 +40,10 @@ export const FIND_CART="FIND_CART";
 //添加购物车
 export const ADD_CART="ADD_CART";
 
-//添加购物车
+//是否添加
 export const IS_LOGIN="IS_LOGIN";
 
-=======
+
 
 // 登录
 export const LOGIN="LOGIN";
@@ -50,4 +57,4 @@ export const CHANGEPASSWORD="CHANGEPASSWORD";
 export const VALIDATE = 'VALIDATE';
 //Alert清除信息
 export const CLEARMESSAGE = 'CLEARMESSAGE';
->>>>>>> bf0443576ba4cf91d074e1c41bfa064d53f7d114
+

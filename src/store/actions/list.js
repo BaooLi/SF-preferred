@@ -1,5 +1,6 @@
 import * as types from '../action-types';
-import {getListData} from '../../api/list'
+import {getListData,getClassificationData} from '../../api/list'
+
 
 
 export default {
@@ -11,6 +12,15 @@ export default {
             dispatch({
                 type:types.GET_LIST_SUCCESS,
                 payload:getListData()
+            })
+        }
+    },
+    fetchClassifications(keyWord,type){
+        return function (dispatch,getState){
+            dispatch({type:types.GET_CLASSIFICATION});
+            dispatch({type:types.GET_CLASSIFICATION_SUCCESS,
+                payload:getClassificationData(keyWord,type)
+
             })
         }
     }

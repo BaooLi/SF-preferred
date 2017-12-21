@@ -8,18 +8,18 @@ import Cart from "./containers/Cart/index";
 import Personal from "./containers/Personal/index";
 import Login from "./containers/Login/index";
 import Reg from "./containers/Reg/index";
-<<<<<<< HEAD
 import Detail from "./containers/Details/index";
 import Comments from "./containers/Details/Comments/index";
-=======
 import Change from "./containers/Change/index";
->>>>>>> bf0443576ba4cf91d074e1c41bfa064d53f7d114
 import Tab from "./component/Tab/index";
-import createHashHistory from "history/createHashHistory"
-import {ConnectedRouter} from "react-router-redux"
 import Search from "./containers/Search/index";
 import Home from "./containers/Home/index";
+import Classification from './containers/List/Classification/index'
 import PictureTextDetail from "./containers/Details/PictureTextDetail/index";
+
+
+import createHashHistory from "history/createHashHistory"
+import {ConnectedRouter} from "react-router-redux"
 let history=createHashHistory();
 export default class App extends Component{
     render(){
@@ -29,7 +29,7 @@ export default class App extends Component{
                             <Tab/>
                             <Switch>
                                 <Route exact path="/" component={Home}/>
-                                <Route path="/list" component={List}/>
+                                <Route exact path="/list" component={List}/>
                                 <Route path="/cart" component={Cart}/>
                                 <Route path="/personal" component={Personal}/>
                                 <Route path="/login" component={Login}/>
@@ -39,6 +39,7 @@ export default class App extends Component{
                                 <Route path="/detail/:id" component={Detail}/>
                                 <Route path="/comments/:id" component={Comments}/>
                                 <Route path="/pictureTextDetail/:id" component={PictureTextDetail}/>
+                                <Route path="/list/classification/:title" component={Classification}/>
                             </Switch>
                         </div>
                     </ConnectedRouter>
