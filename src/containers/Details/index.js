@@ -16,7 +16,8 @@ class Details extends Component {
 
     componentDidMount() {
         let id = this.props.match.params.id
-        this.props.detailInfo('2b74dfd5-6271-4140-a4f2-d088714dd1a1')
+        //d3e6eb9f-19de-466f-8125-d1421128dea0
+        this.props.detailInfo(id)
     }
 
     handleClick = (event, type) => {
