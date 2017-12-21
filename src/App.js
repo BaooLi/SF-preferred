@@ -8,8 +8,12 @@ import Cart from "./containers/Cart/index";
 import Personal from "./containers/Personal/index";
 import Login from "./containers/Login/index";
 import Reg from "./containers/Reg/index";
+<<<<<<< HEAD
 import Detail from "./containers/Details/index";
 import Comments from "./containers/Details/Comments/index";
+=======
+import Change from "./containers/Change/index";
+>>>>>>> bf0443576ba4cf91d074e1c41bfa064d53f7d114
 import Tab from "./component/Tab/index";
 import createHashHistory from "history/createHashHistory"
 import {ConnectedRouter} from "react-router-redux"
@@ -30,6 +34,7 @@ export default class App extends Component{
                                 <Route path="/personal" component={Personal}/>
                                 <Route path="/login" component={Login}/>
                                 <Route path="/reg" component={Reg}/>
+                                <Route path="/changepassword" component={Change}/>
                                 <Route path="/search" component={Search}/>
                                 <Route path="/detail/:id" component={Detail}/>
                                 <Route path="/comments/:id" component={Comments}/>

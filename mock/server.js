@@ -293,40 +293,45 @@ app.get("/historical",(req,res)=>{
 
 
 //注册
+//注册  前后台成功
 app.post("/reg",(req,res)=>{
-   let user=req.body;
-   read("./data/Content/userInfo.json",userInfos=>{
-       userInfos.forEach(item=>{
-           if(item.username==user.userName){
-               res.send({code:1,error:"用户名已经存在请重新输入"})
-           }else {
-               user.password=crpyto.createHash("md5").update(user.password).digest("hex");
-               userInfos.push(user);
-               write("./data/Content/userInfo.json",userInfos,()=>{
-                   res.send({code:0,success:"注册成功"})
-               })
-           }
-       })
-   })
+    let user=req.body;
+    read("./data/Content/userInfo.json",userInfos=>{
+        let newUser=userInfos.find(item=>item.username==user.username);
+        if(newUser){
+            res.send({code:1,error:"用户名已经存在请重新输入"})
+        }else {
+            user.password=crpyto.createHash("md5").update(user.password).digest("hex");
+            userInfos.push(user);
+            write("./data/Content/userInfo.json",userInfos,()=>{
+                res.send({code:0,success:"注册成功"})
+            })
+        }
+    })
 });
-//登录
+//登录  前后台成功
 app.post("/login",(req,res)=>{
     let user=req.body;
     user.password=crpyto.createHash("md5").update(user.password).digest("hex");
     read("./data/Content/userInfo.json",userInfos=>{
+<<<<<<< HEAD
         userInfos.forEach(item=>{
             if(item.username==user.userName&&item.password==user.password){
                 req.session.user=user
                 console.log("登录");
+=======
+        let newUser=userInfos.find(item=>item.username==user.username);
+        if(newUser){
+            if(newUser.password==user.password){
+                req.session.user=newUser;
+>>>>>>> bf0443576ba4cf91d074e1c41bfa064d53f7d114
                 res.send({code:0,error:"登录成功",user});
-            }else if(item.password!==user.password) {
-                console.log("密码错误");
+            }else if(newUser.password!==user.password) {
                 res.send({code:1,error:"密码错误"})
-            }else {
-                console.log("用户名错误");
-                res.send({code:2,error:"用户不存在"})
             }
-        })
+        }else {
+            res.send({code:2,error:"用户不存在"})
+        }
     })
 });
 //退出
@@ -346,18 +351,19 @@ app.get("/validate",(req,res)=>{
 app.post("/changepassword",(req,res)=>{
     let {user,newpassword}=req.body;
     read("./data/Content/userInfo.json",userInfos=>{
-        userInfos.forEach(item=>{
-            if(item.username==user.userName&&item.password==user.password){
-                item.password=crpyto.createHash("md5").update(newpassword).digest("hex");
-                write("./data/Content/userInfo.json",userInfos,()=>{
-                    res.send({code:0,success:"修改密码成功"});
-                });
-            }else{
-                res.send({code:1,error:"密码错误"});
-            }
-        })
+        console.log(userInfos);
+        let newUser=userInfos.find(item=>item.username==user.username);// 找到用户
+        if(newUser.password==user.password){  //判断密码 是否一样
+            newUser.password=crpyto.createHash("md5").update(newpassword).digest("hex");
+            write("./data/Content/userInfo.json",userInfos,()=>{
+                res.send({code:0,success:"修改密码成功"});
+            });
+        }else{
+            res.send({code:1,error:"密码错误"});
+        }
     })
 });
+
 
 // newpassword=crpyto.createHash("md5").update(user.password).digest("hex");
 //公共
