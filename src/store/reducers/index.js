@@ -7,7 +7,7 @@ import classification from './classification'
 import personal from "./personal";
 import detail from './details'
 
-let reducers=combineReducers({
+let reducers = combineReducers({
     search, home, list, classification, detail, personal
 })
 
