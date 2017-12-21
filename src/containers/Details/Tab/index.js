@@ -46,7 +46,7 @@ class DetailFooter extends Component {
                 <a href="javascript:void(0);">
                     <span onClick={this.handleClick}>加入到购物车</span>
                 </a>
-                <Link to="/dingdan">
+                <Link to="/cart">
                     <span>一键购买</span>
                 </Link>
             </div>
