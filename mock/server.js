@@ -122,10 +122,12 @@ app.get("/public/details",(req,res)=>{
 app.get("/public/classification",(req,res)=>{
     let keyWord=req.query.keyWord||"";
     let type=req.query.type;
+    console.log(keyWord, type);
     if(keyWord.length>0){
         let classifications=res.data.filter(item=>item.classification===keyWord);
         type?classifications=commoditySort(classifications,type):null;
-        res.send({code:0,classifications,success:"成功获取分类页数据"});
+
+        res.send({code:0,classifications,success:"成功获取分类页数据",type});
     }else {
         res.send({code:1,err:"访问错误请检查路径参数"});
     }

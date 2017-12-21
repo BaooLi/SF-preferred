@@ -1,30 +1,30 @@
 import React,{Component} from "react";
-import Header from '../../component/Header/index'
+import ListSearch from './ListSearch/index'
 import Tab from '../../component/Tab/index'
 import {connect} from "react-redux"
 import actions from "../../store/actions/list"
 import './index.less';
 import {Link} from 'react-router-dom';
 
- class List extends Component{
+class List extends Component{
     componentDidMount(){
         this.props.fetchLists();
     }
     render(){
-        let dataLists=this.props.list.listDatas;
-        console.log(this.props);
+        let dataLists=this.props.listDatas;
         return(
             <div>
-                <Header/>
-                <ul>
+                <ListSearch/>
+                {/*分类*/}
+                <ul className="dataLists">
                     {
                         dataLists&&dataLists.map((item,index)=>(
-                            <li key={index}>
-                                <Link key={index} to='/list/classification'>
+                            <li key={index} className="content-list">
+                                <Link key={index} to={{pathname:`/list/classification/${item.title}`}}>
 
-                                    <img src={item.listImg} alt=""/>
-                                    <h3>{item.title}</h3>
-                                    <p>{item.mark}</p>
+                                    <img src={item.listImg} className="listPicture"/>
+                                    <h3 className="listTitle">{item.title}</h3>
+                                    <p className="listMark">{item.mark}</p>
                                 </Link>
                             </li>
                         ))
@@ -36,6 +36,6 @@ import {Link} from 'react-router-dom';
     }
 }
 export default connect(
-    state=>state,
+    state=>state.list,
     actions
 )(List);

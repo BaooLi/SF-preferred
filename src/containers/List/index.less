@@ -1,34 +1,32 @@
 html,body{
-   background-color: #f2f2f2;
-}
-ul {
-  margin-top:50px;
-  display: flex;
-  flex-wrap: wrap;
-  padding-bottom: 20px;
-  li {
-    position:relative;
-    width: 50%;
-    height:20%;
-    text-align: center;
-    margin: 1px 0;
-    border:1px solid #f0f0f0;
-    box-sizing:border-box;
-    border-left:none;
-    img{width: 100%;height:100%}
-    h3{
-      position:absolute;
-      left:17px;
-      top:8px;
-      color:#000000;
+  .dataLists{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: .2rem;
+    .content-list{
+      position:relative;
+      width: 50%;
+      height:20%;
+      text-align: center;
+      margin: 0.02rem 0;
+      border:0.03rem solid #f2f2f2;
+      box-sizing:border-box;
+      border-left:none;
+      .listPicture{width: 100%;height:100%}
+      .listTitle{
+        position:absolute;
+        left: .4rem;
+        top:0.08rem;
+        color:#000000;
 
-    }
-    p{
-      position:absolute;
-      left:17px;
-      top:60px;
-      color:#a4a4a4;
-      font-size: 13px;
+      }
+      .listMark{
+        position:absolute;
+        left:.45rem;
+        top:1rem;
+        color:#a4a4a4;
+        font-size: .25rem;
+      }
     }
   }
 }
