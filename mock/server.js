@@ -12,6 +12,14 @@ let retrievData=require("./retrievData/index"); //获取数据执行的函数
 
 let commoditySort=require("./commoditySort/index");//商品排序
 
+app.set('view engine','ejs')
+
+//指定模板位置
+app.set('views', __dirname + '/views');
+
+app.get("/baiduMap", function(req, res) {
+    res.render('home.ejs', {});
+});
 
 
 let read=(url,cb)=>{
@@ -122,10 +130,12 @@ app.get("/public/details",(req,res)=>{
 app.get("/public/classification",(req,res)=>{
     let keyWord=req.query.keyWord||"";
     let type=req.query.type;
+    console.log(keyWord, type);
     if(keyWord.length>0){
         let classifications=res.data.filter(item=>item.classification===keyWord);
         type?classifications=commoditySort(classifications,type):null;
-        res.send({code:0,classifications,success:"成功获取分类页数据"});
+
+        res.send({code:0,classifications,success:"成功获取分类页数据",type});
     }else {
         res.send({code:1,err:"访问错误请检查路径参数"});
     }
@@ -215,7 +225,7 @@ app.post("/removeCart",(req,res)=>{
 });
 
 //清空购物车
-app.delete("/emptiedCart",(req,res)=>{
+app.get("/emptiedCart",(req,res)=>{
     let userName=req.query.userName;
     if (!req.query.userName) return res.sendStatus(400);
     read("./data/Content/userCommodity.json",userCommodities=>{
@@ -285,39 +295,39 @@ app.get("/historical",(req,res)=>{
 
 
 //注册
+//注册  前后台成功
 app.post("/reg",(req,res)=>{
-   let user=req.body;
-   read("./data/Content/userInfo.json",userInfos=>{
-       userInfos.forEach(item=>{
-           if(item.username==user.userName){
-               res.send({code:1,error:"用户名已经存在请重新输入"})
-           }else {
-               user.password=crpyto.createHash("md5").update(user.password).digest("hex");
-               userInfos.push(user);
-               write("./data/Content/userInfo.json",userInfos,()=>{
-                   res.send({code:0,success:"注册成功"})
-               })
-           }
-       })
-   })
+    let user=req.body;
+    read("./data/Content/userInfo.json",userInfos=>{
+        let newUser=userInfos.find(item=>item.username==user.username);
+        if(newUser){
+            res.send({code:1,error:"用户名已经存在请重新输入"})
+        }else {
+            user.password=crpyto.createHash("md5").update(user.password).digest("hex");
+            userInfos.push(user);
+            write("./data/Content/userInfo.json",userInfos,()=>{
+                res.send({code:0,success:"注册成功"})
+            })
+        }
+    })
 });
-//登录
+//登录  前后台成功
 app.post("/login",(req,res)=>{
     let user=req.body;
     user.password=crpyto.createHash("md5").update(user.password).digest("hex");
     read("./data/Content/userInfo.json",userInfos=>{
-        userInfos.forEach(item=>{
-            if(item.username==user.userName&&item.password==user.password){
-                console.log("登录");
+
+        let newUser=userInfos.find(item=>item.username==user.username);
+        if(newUser){
+            if(newUser.password==user.password){
+                req.session.user=newUser;
                 res.send({code:0,error:"登录成功",user});
-            }else if(item.password!==user.password) {
-                console.log("密码错误");
+            }else if(newUser.password!==user.password) {
                 res.send({code:1,error:"密码错误"})
-            }else {
-                console.log("用户名错误");
-                res.send({code:2,error:"用户不存在"})
             }
-        })
+        }else {
+            res.send({code:2,error:"用户不存在"})
+        }
     })
 });
 //退出
@@ -337,18 +347,19 @@ app.get("/validate",(req,res)=>{
 app.post("/changepassword",(req,res)=>{
     let {user,newpassword}=req.body;
     read("./data/Content/userInfo.json",userInfos=>{
-        userInfos.forEach(item=>{
-            if(item.username==user.userName&&item.password==user.password){
-                item.password=crpyto.createHash("md5").update(newpassword).digest("hex");
-                write("./data/Content/userInfo.json",userInfos,()=>{
-                    res.send({code:0,success:"修改密码成功"});
-                });
-            }else{
-                res.send({code:1,error:"密码错误"});
-            }
-        })
+        console.log(userInfos);
+        let newUser=userInfos.find(item=>item.username==user.username);// 找到用户
+        if(newUser.password==user.password){  //判断密码 是否一样
+            newUser.password=crpyto.createHash("md5").update(newpassword).digest("hex");
+            write("./data/Content/userInfo.json",userInfos,()=>{
+                res.send({code:0,success:"修改密码成功"});
+            });
+        }else{
+            res.send({code:1,error:"密码错误"});
+        }
     })
 });
+
 
 // newpassword=crpyto.createHash("md5").update(user.password).digest("hex");
 //公共
