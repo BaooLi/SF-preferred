@@ -142,7 +142,7 @@ app.get("/public/search",(req,res)=>{
         if(!flag){
             historical=[...historical,keyWord];
             write("./data/Content/historical.json",historical,()=>{
-                console.log("写入成功");
+               // console.log("写入成功");
             })
         }
     });
@@ -158,55 +158,51 @@ app.get("/public/search",(req,res)=>{
 //public/cart 添加购物车    修改数量
 app.post("/public/cart",(req,res)=>{
     if (!req.body) return res.sendStatus(400);
-    let {userName,recommendID,count}=req.body;
-    let ss=res.data.find(item=>item.recommendID==recommendID); //商品
+    let {userName,recommendID,count,selected}=req.body;
+    let info=res.data.find(item=>item.recommendID==recommendID); //商品
+    let newList;
     read("./data/Content/userCommodity.json",userCommodities=>{
-        if(userCommodities.length==0){
-            ss.count=count;//加属性 数量
-            let aa={userName,list:[ss]}; //[{用户id, list:[{}{}]}]
-            userCommodities.push(aa)
+        let oldCart=userCommodities.find(item=>item.userName==userName);
+        if(oldCart){
+                let oldInfo=oldCart.list.find(item=>item.recommendID==info.recommendID);
+                if(oldInfo){
+                    oldInfo.count = count;
+                    oldInfo.selected = selected;
+                }else {
+                    info.count = count;
+                    info.selected = selected;
+                    oldCart.list.push(info);
+                }
+            newList = oldCart.list;
         }else {
-            let fff=userCommodities.some(item=>item.userName==userName);
-            if(fff){
-                userCommodities.forEach(item=>{
-                    let flag=item.list.some(dd=>dd.recommendID==ss.recommendID);
-                    if(flag){
-                        item.list.map(dd=>{
-                            if(dd.recommendID==ss.recommendID&&item.userName==userName){
-                                dd.count=count;
-                                return dd;
-                            }else {
-                                return item.list
-                            }
-                        })
-                    }else {
-                        ss.count=count;
-                        item.list.push(ss);
-                    }
-                })
-            }else {
-                ss.count=count;
-                let aa={userName,list:[]};
-                aa.list.push(ss);
-                userCommodities=[...userCommodities,aa]
-            }
+            info.count = count;
+            info.selected = true;
+            let newCart={userName,list:[info]};
+            userCommodities=[...userCommodities,newCart];
+            newList = newCart.list;
         }
         write("./data/Content/userCommodity.json",userCommodities,()=>{
-            res.send({code:0,success:"写入完成"})
+            res.json({code:0,success:"写入完成",data:newList})
         })
     });
 });
-//删除购物车
+
+//删除购物车 删除某一项 post请求，需要传的参数：userName,recommendID
+//先通过userName找到这条数据
+//找到返回true 过滤这条数据的list：[{id},{id}]，根据ID删除这一项(对象)，返回删除后的新数组
+//遍历数据库中的数据，通过userName找到那一项数据，把它替换成删除后的那一项 ，写入数据库。
 app.post("/removeCart",(req,res)=>{
     if (!req.body) return res.sendStatus(400);
     let {userName,recommendID}=req.body;
     read("./data/Content/userCommodity.json",userCommodities=>{
-        let userCommoditie=userCommodities.find(item=>item.userName==userName);
-        if(userCommoditie){
+        let userCommoditie=userCommodities.find(item=>item.userName==userName);//先通过userName找到这条数据
+        if(userCommoditie){//找到返回true 过滤这条数据的list：[{id},{id}]，根据ID删除这一项(对象)，返回删除后的新数组
             userCommoditie.list=userCommoditie.list.filter(key=>key.recommendID!=recommendID);
+            //遍历数据库中的数据，通过userName找到那一项数据，把它替换成删除后的那一项
             userCommodities.map(item=>item.userName==userName?userCommoditie:item)
             write("./data/Content/userCommodity.json",userCommodities,()=>{
-                res.send({code:0,success:"删除成功"})
+                console.log(userCommoditie.list);
+                res.send({code:0,success:"删除成功",shopData:userCommoditie.list})
             })
         }else {
             res.send({code:1,error:"没有找到该商品"})
@@ -214,21 +210,24 @@ app.post("/removeCart",(req,res)=>{
     })
 });
 
-//清空购物车
-app.delete("/emptiedCart",(req,res)=>{
+//清空购物车 需要路径传参数 userName
+// 读取数据，[userName:"",list:[]]，通过userName找到那条，并把数组中对应那条数据删除，写入文件。
+app.get("/emptiedCart",(req,res)=>{
     let userName=req.query.userName;
+    console.log(userName);
     if (!req.query.userName) return res.sendStatus(400);
     read("./data/Content/userCommodity.json",userCommodities=>{
+        //读取数据，[userName:"",list:[]]，通过userName找到那条，并把数组中对应那条数据删除，写入文件。
         userCommodities=userCommodities.filter(item=>item.userName!=userName)
         write("./data/Content/userCommodity.json",userCommodities,()=>{
             res.send({code:0,success:"成功清空购物车"})
         })
     })
 });
-//查看
+//查看，通过userName查看其中某一项，并返回这条数据：[userName:"",list:[]]，需要路径传参数 userName
 app.get("/findCart",(req,res)=>{
     let userName=req.query.userName;
-    console.log(userName);
+    //console.log(userName);
     if (!req.query.userName) return res.sendStatus(400);
     read("./data/Content/userCommodity.json",userCommodities=>{
        let userCommoditie=userCommodities.find(item=>item.userName==userName);
@@ -243,15 +242,15 @@ app.get("/findCart",(req,res)=>{
 //搜索 search    传参 关键字 keyWords 排序
 app.get("/public/search",(req,res)=>{
     let keyWord=req.query.keyWord||"";
-    console.log(keyWord);
+   // console.log(keyWord);
     let type=req.query.type;
     keyWord&&read("./data/Content/historical.json",historical=>{
         let flag =historical.some(item=>item==keyWord);
         if(!flag){
             historical=[...historical,keyWord];
-            console.log(historical);
+            //console.log(historical);
             write("./data/Content/historical.json",historical,()=>{
-                console.log("写入成功");
+              //  console.log("写入成功");
             })
         }
     });
@@ -275,7 +274,7 @@ app.get("/historical",(req,res)=>{
         if(type=="undefined"){
             res.send({code:0,success:"成功获取历史记录",historical})
         }else{
-            console.log("呵呵");
+           // console.log("呵呵");
             write("./data/Content/historical.json",[],()=>{
                 res.send({code:0,success:"清除历史记录成功"})
             })
@@ -308,13 +307,13 @@ app.post("/login",(req,res)=>{
     read("./data/Content/userInfo.json",userInfos=>{
         userInfos.forEach(item=>{
             if(item.username==user.userName&&item.password==user.password){
-                console.log("登录");
+               // console.log("登录");
                 res.send({code:0,error:"登录成功",user});
             }else if(item.password!==user.password) {
                 console.log("密码错误");
                 res.send({code:1,error:"密码错误"})
             }else {
-                console.log("用户名错误");
+               // console.log("用户名错误");
                 res.send({code:2,error:"用户不存在"})
             }
         })

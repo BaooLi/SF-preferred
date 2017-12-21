@@ -1,10 +1,17 @@
 import React,{Component} from "react";
-export default class Cart extends Component{
+  // import CartNo from './CartNo/index';
+  import CartShop from './CartShop/index';
+  // import CartUp from './CartUp/index';
+import {connect} from 'react-redux';
+import actions from '../../store/actions/cart';
+ export default class Cart extends Component{
     render(){
         return(
             <div>
-               购物车
+                <CartShop/>
+
             </div>
         )
     }
 }
+//

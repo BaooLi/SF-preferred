@@ -30,3 +30,39 @@ export const REFRESH_RECOMMENDS = 'REFRESH_RECOMMENDS';
 //刷新为你推荐数据成功
 export const REFRESH_RECOMMENDS_SUCCESS = 'REFRESH_RECOMMENDS_SUCCESS';
 
+
+
+//获取购物车数据
+export const GET_CART="GET_CART";
+//获取成功
+export const GET_CART_SUCCESS="GET_CART_SUCCESS";
+
+//产品数量加减
+export const UPDATE_CART = 'UPDATE_CART';
+//删除购物车 删除某一项
+export const DEL_CARTITEM="DEL_CARTITEM";
+
+//清空购物车
+export const CLEAR_CARTITEM="CLEAR_CARTITEM";
+
+//查看购物车其中某一项
+export const LOOK_CART="LOOK_CART";
+
+//更改是否选中的状态
+export const SELECTED_STATE="SELECTED_STATE";
+//全选更改，下面的也更改状态
+export const CHANGE_EVERY="CHANGE_EVERY";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
