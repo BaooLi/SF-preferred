@@ -9,7 +9,7 @@ import createHistory from "history/createHashHistory"
 const history=createHistory();
 let router=routerMiddleware(history);//路由中间件
 
-let store= applyMiddleware(router,thunk,promise)(createStore)(reducers);
+let store= applyMiddleware(router,thunk,promise,logger)(createStore)(reducers);
 
 window.store=store;
 export default store;

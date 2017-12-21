@@ -5,50 +5,96 @@ import {connect} from 'react-redux';
 import actions from '../../../store/actions/cart';
 
 class CartShop extends Component {
-    constructor(){
+    constructor() {
         super();
-        this.state={count:0};
-   }
-      componentDidMount(){
-          this.props.fetchCart();
-     }
-    componentWillReceiveProps(){
+        this.state = {isEditing: false, allState: false};
+    }
+
+    componentDidMount() {
         this.props.fetchCart();
     }
 
+    changeItemState = (id)=> {
+        // this.props.changeSelectState(id);
+
+    }
+    edit = ()=> {
+        this.setState({isEditing: !this.state.isEditing})
+    }
+    changeAll = ()=> {
+        this.setState({allState: !this.state.allState}, ()=> {
+            this.props.changeEvery(this.state.allState)
+        });
+
+    }
+    clearShopCar = (userName)=> {
+        this.props.clearCartData(userName);
+         clearTimeout(timer)
+        let timer= setTimeout(()=>{
+             this.setState({allState:!this.state.allState});
+         },500)
+
+    }
+    allPrice=()=>{
+        if (isSelected) {
+            return this.state.tatolPrice= ()=>{
+                this.products.reduce((prev,next)=> {
+                    if (!next.isSelected)return prev;
+                    return prev + next.recommendPrice * next.count;
+                }, 0);
+            }
+        }
+    };
     render() {
-        let newCart=this.props.cartData;
-        let products=newCart?newCart.list:[];
-
-
+        let newCart = this.props.cartData;
+        let products = newCart ? newCart.list : [];
         return (
             <div className="cart-shop">
                 <div className="top">
                     <i className="iconfont icon-fanhui"></i>
                     <span className="dizhi">北京市 北京</span>
-                    <Link to="CartUp"><span className="bianji">编辑</span></Link>
+                    <Link to="CartUp">
+                    </Link>
+                    <span onClick={this.edit} className="bianji">{this.state.isEditing ? "完成" : "编辑"}</span>
                 </div>
                 <div className="container">
                     <div className="better">
-                        <i className="iconfont icon-duihao3"></i>
+                        <input onChange={this.changeAll} type="checkbox" checked={this.state.allState}/>
                         <h5>优选普通商品</h5>
                     </div>
                     <ul className='products'>
                         {
-                            products.length>0&&products.map((item, index)=> (
-                                <li key={index} className="product">
+                            products.length > 0 && products.map((item, index)=> (
+                                <li key={index} className="product-item">
                                     <div className="product-left">
-                                        <i className="iconfont icon-duihao3"></i>
+                                        <input onClick={()=>this.changeItemState(item.recommendID)} type="checkbox"
+                                               checked={item.selected}/>
+
                                         <img src={item.recommendImg} alt=""/>
                                     </div>
                                     <div className="detail">
                                         <p className="p1">{item.recommendTitle}</p>
                                         <span className="p3">￥</span>
                                         <span className="p4">{item.recommendPrice}</span>
+                                        {
+                                            this.state.isEditing ? <span onClick={()=>this.props.removeCartData({
+                                                userName: "hh",
+                                                recommendID: item.recommendID
+                                            })}><i className='iconfont icon-shanchu'></i></span> : null
+                                        }
+
                                         <span className="count">
-                 <i className="iconfont icon-jianhao3" onClick={()=>this.props.upDate({userName:"hh",recommendID:item.recommendID,count:item.count-1})}></i>
+                 <i onClick={()=>this.props.upDate({
+                     userName: "hh",
+                     recommendID: item.recommendID,
+                     count: item.count - 1
+                 })} className="iconfont icon-jianhao3"></i>
                            <b>{item.count}</b>
-                          <i className="iconfont icon-jiahao" onClick={()=>this.props.upDate({userName:"hh",recommendID:item.recommendID,count:item.count+1})}></i>
+                          <i className="iconfont icon-jiahao" onClick={()=>this.props.upDate({
+                              userName: "hh",
+                              recommendID: item.recommendID,
+                              count: item.count + 1
+                          })}></i>
                  </span>
                                     </div>
                                 </li>
@@ -56,19 +102,21 @@ class CartShop extends Component {
                         }
 
                     </ul>
+
                 </div>
                 <div className="wei">
                     <h5>——— 为你推荐 ———</h5>
                 </div>
                 <div className="shop-footer">
                     <div className="footer-left">
-                        <i className="iconfont icon-duihao3"></i>
+                        <input type="checkbox" className="foot-put"/>
                         <span className="span1">总计:</span>
-                        <span className="span2">￥97</span>
+                        <span className="span2">￥88</span>
                         <span className="span3">商品金额:</span>
-                        <span className="span4">￥97</span><span className="span5">(不含运费)</span>
+                        <span className="span4">￥88</span><span className="span5">(不含运费)</span>
                     </div>
-                    <button>结算</button>
+
+                    {this.state.isEditing ?<button>清空购物车</button> :<button>结算</button>}
                 </div>
 
             </div>
@@ -80,3 +128,10 @@ export default connect(
     state => state.cart,
     actions
 )(CartShop)
+
+/*
+ {this.allPricee}
+ <button className='clear-shop' onClick={this.clearShopCar({userName: "hh"})}>清空购物车</button>
+ */
+
+

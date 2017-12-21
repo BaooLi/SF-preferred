@@ -45,10 +45,14 @@
     height:1.22rem;
     border-bottom:0.02rem solid #f0f2f6;
 }
-.container .better .iconfont{
+.container .better input{
     float:left;
+    width:.4rem;
+    height:.4rem;
+    border-radius:50%;
     margin-right:.4rem;
-    line-height:1.22rem;
+    margin-top:.45rem;
+    background:#f0f2f6;
 }
 .container .better h5{
     float:left;
@@ -56,58 +60,70 @@
     color:#050505;
     margin-top:0.4rem;
 }
-.container .products{
+
+.container .products-list{
     width:100%;
 
 }
-.container .product{
+.container .product-item{
     border-bottom:0.02rem solid #f0f2f6;
-    margin-bottom:.2rem;
+    margin-top:.35rem;
 }
-
-.product .product-left{
+.product-item .product-left{
     float: left;
-    width: 40%;
+    width: 45%;
     height: 2rem;
 }
-.product-left .iconfont{
-    margin-top:1.29rem;
+.product-left input{
+    width:.4rem;
+    height:.4rem;
+    border-radius:50%;
+    background:#f0f2f6;
+}
+.product-left .active{
+    background:green;
 }
 .product-left  img{
-    width: 80%;
-    height: 95%;
-    margin-top:.3rem;
+    width: 75%;
+    height:95%;
+    margin-left:.1rem;
 }
 .container .products .detail{
-    width: 50%;
+    width: 45%;
     float: right;
     margin-right: .3rem;
 }
-.container .products .detail .p1{
-    margin-top:.4rem;
+.products .detail .icon-shanchu{
+
 }
-.container .products .detail .p1,.detail .p2{
-    font-size:0.28rem;
+.container .detail .p1{
+    margin-top:.3rem;
+    font-size:.32rem;
     line-height:0.5rem;
-
 }
-.container .products .detail .p3{
+
+.container .detail .p3{
     color:#fa6400;
     font-size:0.36rem;
 
 }
-.container .products .detail .p4{
+.container .detail .p4{
     color:#fa6400;
     font-size:0.36rem;
+    margin-right:.2rem;
 }
 .count{
-    margin-left: .5rem;
+    margin-left: .2rem;
 }
 .count .icon-jianhao3{
-    margin-right:.25rem;
+    margin-right:.2rem;
+
 }
 .count .icon-jiahao{
-    margin-left:.25rem;
+    margin-left:.2rem;
+}
+.count .icon-shanchu{
+    margin-right:.3rem;
 }
 .wei{
     height:2rem;
@@ -132,18 +148,23 @@
     width:60%;
     float:left;
 }
-.shop-footer .footer-left .iconfont{
-    text-align:center;
-    margin:.36rem .36rem .36rem 0;
+.shop-footer .footer-left .foot-put{
+    width:.4rem;
+    height:.4rem;
+    background:#f0f2f6;
+
 }
 .shop-footer .footer-left .span1{
     font-size:.45rem;
+    position:absolute;
+    left:46px;
+    bottom:.50rem;
 }
 .shop-footer .footer-left .span2{
     color:#fa6400;
     font-size:.45rem;
     position:absolute;
-    left:105px;
+    left:96px;
     bottom:25px;
 }
 .shop-footer .footer-left .span3{

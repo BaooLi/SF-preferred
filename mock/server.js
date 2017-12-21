@@ -156,51 +156,47 @@ app.get("/public/search",(req,res)=>{
 });
 
 //public/cart 添加购物车    修改数量
+//public/cart 添加购物车    修改数量
 app.post("/public/cart",(req,res)=>{
     if (!req.body) return res.sendStatus(400);
-    let {userName,recommendID,count}=req.body;
-    console.log(req.body);
-    let ss=res.data.find(item=>item.recommendID==recommendID); //商品
+    let {userName,recommendID,count,selected}=req.body;
+    let info=res.data.find(item=>item.recommendID==recommendID); //商品
+    let newList;
     read("./data/Content/userCommodity.json",userCommodities=>{
-        if(userCommodities.length==0){
-            ss.count=count;//加属性 数量
-            let aa={userName,list:[ss]}; //[{用户id, list:[{}{}]}]
-            userCommodities.push(aa)
-        }else {
-            let fff=userCommodities.some(item=>item.userName==userName);
-            if(fff){
-                userCommodities.forEach(item=>{
-                    let flag=item.list.some(dd=>dd.recommendID==ss.recommendID);
-                    if(flag){
-                        item.list.map(dd=>{
-                            if(dd.recommendID==ss.recommendID&&item.userName==userName){
-                                dd.count=count;
-                                return dd;
-                            }else {
-                                return item.list
-                            }
-                        })
-                    }else {
-                        ss.count=count;
-                        item.list.push(ss);
-                    }
-                })
+        let oldCart=userCommodities.find(item=>item.userName==userName);
+        if(oldCart){
+            let oldInfo=oldCart.list.find(item=>item.recommendID==info.recommendID);
+            if(oldInfo){
+                oldInfo.count = count;
+                oldInfo.selected = selected;
             }else {
-                ss.count=count;
-                let aa={userName,list:[]};
-                aa.list.push(ss);
-                userCommodities=[...userCommodities,aa]
+                info.count = count;
+                info.selected = selected;
+                oldCart.list.push(info);
             }
+            newList = oldCart.list;
+        }else {
+            info.count = count;
+            info.selected = true;
+            let newCart={userName,list:[info]};
+            userCommodities=[...userCommodities,newCart];
+            newList = newCart.list;
         }
         write("./data/Content/userCommodity.json",userCommodities,()=>{
-            res.send({code:0,success:"写入完成"})
+            res.json({code:0,success:"写入完成",data:newList})
         })
     });
 });
+
+
+
+
+
 //删除购物车
 app.post("/removeCart",(req,res)=>{
     if (!req.body) return res.sendStatus(400);
     let {userName,recommendID}=req.body;
+    console.log(userName, recommendID);
     read("./data/Content/userCommodity.json",userCommodities=>{
         let userCommoditie=userCommodities.find(item=>item.userName==userName);
         if(userCommoditie){
@@ -210,7 +206,7 @@ app.post("/removeCart",(req,res)=>{
                 res.send({code:0,success:"删除成功"})
             })
         }else {
-            res.send({code:1,error:"没有找到该商品"})
+            res.send({code:1,error:"没有找到该商品",shopData:userCommoditie.list})
         }
     })
 });

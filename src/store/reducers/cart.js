@@ -26,24 +26,53 @@ export default function (state=initState,action) {
 
             };
         case types.UPDATE_CART:
+            console.log(action);
             return {
-                ...state.cartData.list,
-                count:action.payload.count
+                ...state,
+                cartData:{
+                    list:action.payload.data
+                }
             };
-        // case types.SUB:
-        //     let cartData=state.cartList.map(item=>{
-        //                   if(item.recommendID==action.payload.recommendID){
-        //                       console.log(item);
-        //                       return item.count-1;
-        //                  }else {
-        //                      return item
-        //                   }
-        //               });
-        //     return {
-        //         ...state.cartList,
-        //         cartData
-        //     };
+        case types.SELECTED_STATE:
+            console.log(action.id
+
+            );
+            return {
+                cartData:{
+                    list:state.cartData.list.map(item=>{
+                        return item.recommendID==action.id
+
+                            ?{...item,selected:!item.selected}:item;
+                    })
+                },
+
+            }
+        case types.DEL_CARTITEM:
+            return {
+                ...state,
+                cartData: {
+                    list: action.payload.shopData
+                }
+            }
+        case types.CHANGE_EVERY:
+            return {
+                cartData:{
+                    list:state.cartData.list.map(item=>{
+                        return {...item,selected:action.statusAll}
+                    })
+                }
+            }
+        case types.CLEAR_CARTITEM:
+            return {
+                ...action.payload
+            }
+        case types.LOOK_CART:
+            return {
+                ...state,
+
+            }
         default:
             return state;
     }
 }
+
