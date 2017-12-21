@@ -7,10 +7,8 @@ export default class ScrollList extends Component {
                 this.timer?clearInterval(this.timer):null
                 this.timer=setTimeout(()=>{
                     let {offsetHeight, scrollHeight, scrollTop} = nextProps.element
-                    if (offsetHeight + scrollTop + 100 > scrollHeight) {
-                        console.log('daole');
+                    if (offsetHeight + scrollTop + 50 > scrollHeight) {
                         nextProps.element.addEventListener('touchend',()=>{
-                            console.log(2);
                             this.props.history.push(`/pictureTextDetail/${id}`)
                         })
                     }
