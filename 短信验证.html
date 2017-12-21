@@ -1,0 +1,89 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>API接口测试 www.api51.cn</title>
+</head>
+<body>
+<br/>
+<h1>必填参数</h1>
+<br/>
+手机号：<input type='text' id='mobile' value='' />
+<br/>
+<br/>
+<button onclick='sendmsg()'>发送</button>
+<br/>
+
+
+
+
+
+<br/><br/><br/><br/>
+API接口测试 www.api51.cn
+<script src="https://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script>
+    //无参数单发接口
+    function sendmsg(){
+        var mobile = $('#mobile').val();
+        var token ='504e4faf682f95c66dbacf47229d9526';
+        var msg = '【API无忧】您的验证码为1234';
+        var country_code = '86';
+        $.ajax({
+            type:'POST',
+            url:'http://www.api51.cn/api/smsApi/sendmsg',
+            data:{
+                'mobile':mobile,
+                'msg':msg,
+                'country_code':country_code,
+                'token':token
+            },
+            dataType: "json",
+            success: function(data){
+                console.log(data)
+                if(data.result==0){
+                    alert('发送成功');
+                }else{
+                    alert(data.errmsg);
+                }
+
+            }
+        })
+    }
+
+
+
+
+    //指定模板ID发送接口
+    function sendSMS(){
+        var mobile = $('#mobile').val();
+        var token = $('#token').val();
+        var sign = $('#sign').val();
+        var tpl_id = $('#tpl_id').val();
+        var params = $('#params').val();
+        var country_code = $('#country_code').val();
+        $.ajax({
+            type:'POST',
+            url:'http://www.api51.cn/api/smsApi/sendcode',
+            data:{
+                'mobile':mobile,
+                'tpl_id':tpl_id,
+                'country_code':country_code,
+                'params':params,
+                'sign':sign,
+                'token':token
+
+            },
+            dataType: "json",
+            success: function(data){
+                console.log(data)
+                if(data.result==0){
+                    alert('发送成功');
+                }else{
+                    alert(data.errmsg);
+                }
+
+            }
+        })
+    }
+</script>
+</body>
+</html>
