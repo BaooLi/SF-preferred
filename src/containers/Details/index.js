@@ -83,7 +83,9 @@ class Details extends Component {
                                 <i></i>
                             </div>
                             <div className="delivery">
-                                <div className="address" onClick={()=>{javascript:location.href='http://localhost:8000/baiduMap'}}>
+                                <div className="address" onClick={() => {
+                                    javascript:location.href = 'http://localhost:8000/baiduMap'
+                                }}>
                                     <span>送至</span>
                                     <p><i></i>北京东城区</p>
                                     <p>由顺丰优选发货，并提供售后服务。如果您在10:30前下单，预计12月15日为您送达！</p>
@@ -107,11 +109,11 @@ class Details extends Component {
                             </div>
                             <div className="userComments">
                                 <div className="bar">
-                                    <h1 className=".clearfix:after {
+                                    <Link to={"/comments/" + this.props.details.recommendID}>
+                                        <h1 className=".clearfix:after {
 "><span>用户评价 ({comments ? comments.length : 0}条)</span></h1>
 
-                                    <Link to={"/comments/" + this.props.details.recommendID}><i
-                                        className="ico-loadmore"></i></Link>
+                                        <i className="ico-loadmore"></i></Link>
                                 </div>
                                 <ul>
                                     {
