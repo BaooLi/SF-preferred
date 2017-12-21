@@ -17,7 +17,7 @@ class Classification extends Component{
         let dataClassifications=this.props.classifications||[];
         console.log(dataClassifications);
         return(
-            <div className="product">
+            <div className="productList">
                 <ListSearch/>
                 <Filter
                     keyWord={this.props.match.params.title}
