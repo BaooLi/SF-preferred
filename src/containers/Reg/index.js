@@ -6,7 +6,7 @@ import './index.less';
 import {connect} from 'react-redux';
 import actions from '../../store/actions/personal';
 import {Link} from 'react-router-dom';
-import Alert from '../../component/Alert';
+// import Alert from '../../component/Alert';
 import axios from 'axios';
 import $ from 'jquery';
 
@@ -42,7 +42,6 @@ class Reg extends Component{
             },
             dataType: "json",
             success: function(data){
-                console.log(data)
                 if(data.result==0){
                     alert('发送成功');
                 }else{
@@ -66,7 +65,6 @@ class Reg extends Component{
                 <button onClick={this.sendmsg} className="msg-btn">发送</button>
                 <div className="reg-btn" onClick={this.handleReg}>注册</div>
                 <div className="reg-warn">{this.state.msg}</div>
-                <Alert></Alert>
                 <div className="reg-footer">
                     注册遇到问题?
                     <Link to="">联系客服</Link> <br/>

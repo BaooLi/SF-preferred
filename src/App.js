@@ -7,19 +7,18 @@ import List from "./containers/List/index";
 import Cart from "./containers/Cart/index";
 import Personal from "./containers/Personal/index";
 import Login from "./containers/Login/index";
+import Change from "./containers/Change/index";
 import Reg from "./containers/Reg/index";
 import Detail from "./containers/Details/index";
 import Comments from "./containers/Details/Comments/index";
-import Change from "./containers/Change/index";
-import Tab from "./component/Tab/index";
+import Tab from "./components/Tab/index";
+import createHashHistory from "history/createHashHistory"
+import {ConnectedRouter} from "react-router-redux"
 import Search from "./containers/Search/index";
 import Home from "./containers/Home/index";
 import Classification from './containers/List/Classification/index'
 import PictureTextDetail from "./containers/Details/PictureTextDetail/index";
-
-
-import createHashHistory from "history/createHashHistory"
-import {ConnectedRouter} from "react-router-redux"
+import MenuVideo from "./containers/Home/MenuVideo/index";
 let history=createHashHistory();
 export default class App extends Component{
     render(){
@@ -37,9 +36,11 @@ export default class App extends Component{
                                 <Route path="/changepassword" component={Change}/>
                                 <Route path="/search" component={Search}/>
                                 <Route path="/detail/:id" component={Detail}/>
+
                                 <Route path="/comments/:id" component={Comments}/>
                                 <Route path="/pictureTextDetail/:id" component={PictureTextDetail}/>
                                 <Route path="/list/classification/:title" component={Classification}/>
+                                <Route path="/menu" component={MenuVideo}/>
                             </Switch>
                         </div>
                     </ConnectedRouter>
