@@ -11,7 +11,11 @@ import ScrollList from "./ScrollList/index";
 class Details extends Component {
     constructor() {
         super();
-        this.state = {num: 1, fade: false}
+        this.state = {num: 1, fade: false, isShow: false}
+    }
+
+    isShow = (value) => {
+        this.setState({isShow: value})
     }
 
     componentDidMount() {
@@ -23,7 +27,7 @@ class Details extends Component {
         let num = parseInt(this.goodNum.placeholder);
         if (type == 'add') {
             num++
-            if(num>1){
+            if (num > 1) {
                 this.setState({fade: false})
             }
             this.setState({num})
@@ -47,7 +51,7 @@ class Details extends Component {
             <div className="detail">
                 <Header id={this.props.details.recommendID}/>
                 <div className="product" ref='scroll'>
-                    <ScrollList history={this.props.history} id={this.props.details.recommendID}
+                    <ScrollList isShow={this.isShow} history={this.props.history} id={this.props.details.recommendID}
                                 element={this.refs.scroll}>
                         <Sliders imgs={img}/>
                         <div className="productInfo">
@@ -130,10 +134,11 @@ class Details extends Component {
                             <div>
                             </div>
                         </div>
-                        <div className="detailMore">
-                            <span className="morelink">释放查看更多详情
-                            <i className="iconfont icon-fanhui"></i></span>
-                        </div>
+                        {this.state.isShow ? (
+                            <div className="detailMore">
+                                <span className="morelink">释放查看更多详情</span>
+                                <i className="icon-arrow-down"></i>
+                            </div>) : null}
                     </ScrollList>
                 </div>
                 <Tab num={this.state.num}/>
