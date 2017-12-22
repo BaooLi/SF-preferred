@@ -11,11 +11,26 @@ import ScrollList from "./ScrollList/index";
 class Details extends Component {
     constructor() {
         super();
-        this.state = {num: 1, fade: false, isShow: false}
+        this.state = {num: 1, fade: false, isShow: false,load:false}
     }
 
     isShow = (value) => {
-        this.setState({isShow: value})
+        this.setState({isShow: value},()=>{
+            this.refs.scroll.addEventListener('touchstart',(event)=>{
+                let start=event.touches[0].clientY;
+                this.refs.scroll.addEventListener('touchmove',(event)=>{
+                    if(start-event.touches[0].clientY>20){
+                        this.setState({load: true})
+                        setTimeout(()=>{
+                            this.props.history.push(`/pictureTextDetail/${this.props.details.recommendID}`)
+                            this.setState({isShow: false})
+                            this.setState({load: false})
+                        },2000)
+
+                    }
+                })
+            })
+        })
     }
 
     componentDidMount() {
@@ -51,7 +66,7 @@ class Details extends Component {
             <div className="detail">
                 <Header id={this.props.details.recommendID}/>
                 <div className="product" ref='scroll'>
-                    <ScrollList isShow={this.isShow} history={this.props.history} id={this.props.details.recommendID}
+                    <ScrollList isShow={this.isShow}
                                 element={this.refs.scroll}>
                         <Sliders imgs={img}/>
                         <div className="productInfo">
@@ -88,11 +103,11 @@ class Details extends Component {
                                 <i></i>
                             </div>
                             <div className="delivery">
-                                <div className="address" onClick={() => {
-                                    javascript:location.href = 'http://localhost:8000/baiduMap'
-                                }}>
+                                <div className="address">
                                     <span>送至</span>
-                                    <p><i></i>北京东城区</p>
+                                    <p  onClick={() => {
+                                        javascript:location.href = 'http://localhost:8000/baiduMap'
+                                    }}><i></i>北京东城区</p>
                                     <p>由顺丰优选发货，并提供售后服务。如果您在10:30前下单，预计12月15日为您送达！</p>
 
                                 </div>
@@ -134,14 +149,13 @@ class Details extends Component {
                             <div>
                             </div>
                         </div>
-                        {this.state.isShow ? (
-                            <div className="detailMore">
-                                <span className="morelink">释放查看更多详情</span>
-                                <i className="icon-arrow-down"></i>
-                            </div>) : null}
+                            <div className="detailMore" ref="detailMore">
+                                <span className="morelink">{this.state.load?(<i className="jiazai"></i>):'上拉查看更多详情'}</span>
+                                <h2></h2>
+                            </div>
                     </ScrollList>
                 </div>
-                <DetailFooter num={this.state.num}/>
+                <DetailFooter num={this.state.num} img={img[0]}/>
             </div>
         )
     }

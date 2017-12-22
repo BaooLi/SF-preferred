@@ -8,7 +8,7 @@ import actions from '../../../store/actions/details'
 class DetailFooter extends Component {
     constructor() {
         super();
-        this.state = {goodNum: 0}
+        this.state = {goodNum: 0,cartflay:false}
     }
 
     componentDidMount() {
@@ -19,13 +19,20 @@ class DetailFooter extends Component {
     }
 
     handleClick = () => {
-        let goodNum = this.props.num;
+        let goodNum = this.props.num+this.state.goodNum;
         this.setState({goodNum});
         this.props.addCart({
             username: this.props.username||"",
             recommendID: this.props.details.recommendID,
             count: goodNum
         })
+        if(!this.state.cartflay){
+            this.setState({cartflay:true},()=>{
+                setTimeout(()=>{
+                    this.setState({cartflay:false});
+                },2000)
+            });
+        }
     }
 
     render() {
@@ -40,6 +47,8 @@ class DetailFooter extends Component {
                     </i>
                 </a>
                 <a href="javascript:void(0);">
+                    {this.state.cartflay?(<h1><img src={this.props.img} alt=""/></h1>):null}
+
                     <span onClick={this.handleClick}>加入到购物车</span>
                 </a>
                 {
