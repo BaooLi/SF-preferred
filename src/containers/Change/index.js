@@ -6,7 +6,7 @@ import './index.less';
 import {connect} from 'react-redux';
 import actions from '../../store/actions/personal';
 
-import Alert from '../../components/Alert';
+import Alert from '../../component/Alert';
 class Change extends Component {
     constructor() {
         super();

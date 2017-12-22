@@ -1,1 +1,38 @@
-import React, {Component} from 'react';import './index.less';import {Link} from 'react-router-dom'import Search from "./SearchTop/index";import HomeSlider from "./Swiper/index";import Scroll from "./Scroll/index";import Nav from "./Nav/index";import VipOnly from "./VipOnly/index";import NewProduct from "./NewProduct/index";import Recommend from "./Recommend/index";import CountDown from "./CountDown/index";import {connect} from 'react-redux';import actions from '../../store/actions/home';import {upLoadMore, downRefresh} from '../../utils'import {TransitionGroup, CSSTransition} from 'react-transition-group';import Time from "./Time/index";class Home extends Component {    constructor() {        super();        this.state = {isShow: false}    }    componentDidMount() {        this.props.fetchSliders();        this.props.getRecommendDatasljb();        //upLoadMore(document.body, this.props.getRecommendDatas);        downRefresh(this.content, this.props.refreshRecommendDatasljb);    }    change = () => {        let distance = document.getElementById('recommend').offsetTop;        window.scrollTo(0, distance);        setTimeout(() => {            this.setState({isShow: !this.state.isShow}, () => {                console.log(this.state.isShow);            }, 1000);        })    }    backTop = () => {        window.scrollTo(0, 0);        setTimeout(() => {            this.setState({isShow: !this.state.isShow}, () => {                console.log(this.state.isShow);            }, 1000);        })    }    render() {        let homeDatas = this.props.homeDatas;        let homeCarousel = homeDatas ? homeDatas.homeCarousel : [];        let homeNavigation = homeDatas ? homeDatas.homeNavigation : [];        let privilegesHome = homeDatas ? homeDatas.privileges : [];        let spikeHome = homeDatas ? homeDatas.spike : [];        let recommendHome = this.props.recommend ? this.props.recommend : [];        return (            <div className='home ljb'>                <div ref={content => this.content = content} className='main-content ljb'>                    <Search/>                    <div className="laod-gif ljb"></div>                    <HomeSlider sliders={homeCarousel}/>                    <Nav navImages={homeNavigation}/>                    <img className='ljb-img' style={{width: "100%"}} src="../../../mock/img/home/icon/bg02.jpg" alt=""/>                    <Time/>                    <CountDown spike={spikeHome}/>                    <Scroll/>                    <VipOnly privileges={privilegesHome}/>                    <img className='ljb-img' style={{width: "100%"}}                         src="https://ps.sfbest.com/mapp/resource/32/32b91fb1f26b6796ba7798e5550c1b6a.jpg" alt=""/>                    <NewProduct/>                    <img id="recommend"  className='ljb-img' style={{width: "100%"}}                         src="https://ps.sfbest.com/mapp/resource/32/32c5a318cbcbd1b78cb75afc08147aae.jpg" alt=""/>                    <Recommend recommend={recommendHome}                               loadingFlag={this.props.loadingFlag}                               hasMore={this.props.hasMore}                               getRecommendDatas={this.props.getRecommendDatasljb}                    />                    {                        this.state.isShow == true ? <a className='back-top ljb' onClick={this.backTop}>回到顶部</a> :                            <a className='back-top ljb' onClick={this.change}>为你推荐</a>                    }                </div>            </div>        )    }}export default connect(state => state.home, actions)(Home)// <HomeSlider sliders={this.props.homeImages.homeCarousel}/>//  <HomeSlider sliders={homeCarousel}/>/*{                       this.state.isShow==true? <a className='back-top' href='javascript: scroll(0, 0)'>回到顶部</a>:<a className='back-top'   onClick={()=>this.scrollToAnchor('recommend')}>为你推荐</a>                    }  <div className='home'>                <Search/>                <div className='main-content' ref={content=>this.content=content}>                    <HomeSlider sliders={homeCarousel}/>                    <Nav navImages={homeNavigation}/>                    <img style={{width: "100%", height: '100%'}} src="../../../mock/img/home/icon/bg02.jpg" alt=""/>                    <Time/>                    <CountDown/>                    <Scroll/>                    <Scroll/>                    <VipOnly/>                    <img style={{width: "100%", height: '100%'}}                         src="https://ps.sfbest.com/mapp/resource/32/32b91fb1f26b6796ba7798e5550c1b6a.jpg" alt=""/>                    <NewProduct/>                    <img id="recommend" style={{width: "100%", height: '100%'}}                         src="https://ps.sfbest.com/mapp/resource/32/32c5a318cbcbd1b78cb75afc08147aae.jpg" alt=""/>                    <Recommend/>                    {                        this.state.isShow == true ? <a className='back-top' onClick={this.backTop}>回到顶部</a> :                            <a className='back-top' onClick={this.change}>为你推荐</a>                    }                </div>            </div> */
+import React,{Component} from "react";
+import {getCarousel,getRecommend} from "../../api/index"
+import "./index.less"
+import {
+    Route,
+    Link
+} from "react-router-dom"
+
+export default class d extends Component{
+    constructor(){
+        super();
+        this.state={homeCarousel:[],recommend:[],offset:0,hasMore:true, decide:false};
+    }
+       // async getData(){
+    //     if(!this.state.decide&&this.state.offset<13){
+    //         this.setState({decide:true});
+    //         let  {recommend,hasMore}=await getRecommend(this.state);
+    //         this.setState({recommend:[...this.state.recommend,...recommend],hasMore,decide:false},()=>{
+    //             console.log(this.state.offset);
+    //             this.setState({offset:this.state.offset+5})
+    //         });
+    //     }
+    // }
+    render(){
+        return (
+                     <div>
+                         <Link to="/search"> <input type="text"/></Link>
+                         <div className="content">
+                               <div className="sm-title">
+                                 <h2>为你推荐</h2>
+                                 <p>全球美食 精选好货</p>
+                             </div>
+                         </div>
+                     </div>
+
+        );
+    }
+}

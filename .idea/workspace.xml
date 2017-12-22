@@ -1,230 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30222b96-8537-4309-9235-becce185ab05" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mock/img/home/icon/bg02.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mock/img/home/icon/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mock/img/home/icon/search.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mock/img/home/video/video.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Loading/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Loading/index.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Home/CountDown/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Home/CountDown/index.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Home/MenuVideo/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Home/MenuVideo/index.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Home/Nav/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Home/Nav/index.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Home/NewProduct/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Home/NewProduct/index.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Home/Recommend/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Home/Recommend/index.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Home/Scroll/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Home/Scroll/index.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Home/SearchTop/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Home/SearchTop/index.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Home/Swiper/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Home/Swiper/index.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Home/Time/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Home/Time/index.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Home/VipOnly/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Home/VipOnly/index.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/utils.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/SF preferred'.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/markdown-exported-files.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/data/Content/userInfos.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/member/li1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/member/li2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/member/li3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/member/li4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/member/li5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/member/li6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/navigation/f1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/navigation/f10.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/navigation/f11.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/navigation/f12.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/navigation/f13.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/navigation/f14.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/navigation/f15.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/navigation/f16.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/navigation/f17.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/navigation/f18.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/navigation/f19.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/navigation/f2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/navigation/f20.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/navigation/f3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/navigation/f4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/navigation/f5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/navigation/f6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/navigation/f7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/navigation/f8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/navigation/f9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (1).jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (10).jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (11).jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (12).jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (13).jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (14).jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (15).jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (16).jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (17).jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (18).jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (19).jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (2).jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (20).jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (21).jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (22).jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (23).jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (24).jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (25).jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (26).jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (27).jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (28).jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (3).jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (4).jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (5).jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (6).jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (7).jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (8).jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (9).jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/12.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/13.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/14.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/15.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/16.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/20.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/21.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/22.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/23.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/24.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/25.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/26.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/27.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/28.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/29.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/30.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/31.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/32.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/33.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/34.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/35.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/36.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/37.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/38.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/39.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/40.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/41.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/42.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/43.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/44.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/45.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/46.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/12.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/13.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/14.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/15.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/16.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/17.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/18.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/19.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/20.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/21.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/22.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/23.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/24.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/25.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/26.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/27.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/28.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/29.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/30.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/31.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/32.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/33.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/34.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/35.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/36.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/37.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/38.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/39.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/40.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/li/middle_1800014079_1_1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/li/middle_1800211305_1_04.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/li/middle_1800254145_4_0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/li/middle_w_1800122482_1_7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/li/middle_w_1800215627_1_1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/swiper/detail-s-.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/swiper/original_w_1800122482_1_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/swiper/original_w_1800122482_1_3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/swiper/original_w_1800122482_1_4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/swiper/original_w_1800122482_1_5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/swiper/original_w_1800122482_1_6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/图文/20151226132951_53.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/图文/20151226132954_172.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/图文/20151226132955_588.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/图文/20151226132957_643.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/图文/20151226133000_323.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/图文/20151226133002_0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/图文/20151226133004_878.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/图文/20151226133005_750.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/图文/20151226133008_541.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/图文/20151226133009_612.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/图文/20151226133011_69.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/图文/20151226133013_420.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/图文/20151226133015_289.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/图文/20151226133016_44.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/图文/20151226133017_250.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/图文/20151226133019_711.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/图文/20151226133021_312.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/图文/4caee424bbab7622a6ca5f95e63b805d.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/containers/BaiduMap/index.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/containers/BaiduMap/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/containers/List/Classification/index.less" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
+    <list default="true" id="a4acf436-f853-435b-97cb-7f5e72a4e5ea" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/yarn.lock" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mock/data/Content/historical.json" afterPath="$PROJECT_DIR$/mock/data/Content/historical.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mock/data/Content/userCommodity.json" afterPath="$PROJECT_DIR$/mock/data/Content/userCommodity.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mock/data/Content/userInfo.json" afterPath="$PROJECT_DIR$/mock/data/Content/userInfo.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mock/server.js" afterPath="$PROJECT_DIR$/mock/server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ProtecteRouter.js" afterPath="$PROJECT_DIR$/src/ProtecteRouter.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/api/cart.js" afterPath="$PROJECT_DIR$/src/api/cart.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/api/home.js" afterPath="$PROJECT_DIR$/src/api/home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Tab/index.js" afterPath="$PROJECT_DIR$/src/components/Tab/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Tab/index.less" afterPath="$PROJECT_DIR$/src/components/Tab/index.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Cart/index.js" afterPath="$PROJECT_DIR$/src/containers/Cart/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Change/index.js" afterPath="$PROJECT_DIR$/src/containers/Change/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Details/DetailFooter/index.js" afterPath="$PROJECT_DIR$/src/containers/Details/DetailFooter/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Details/index.js" afterPath="$PROJECT_DIR$/src/containers/Details/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Home/index.js" afterPath="$PROJECT_DIR$/src/containers/Home/index.js" />
@@ -233,9 +25,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/List/Listsearch/index.js" afterPath="$PROJECT_DIR$/src/containers/List/Listsearch/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/List/Listsearch/index.less" afterPath="$PROJECT_DIR$/src/containers/List/Listsearch/index.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/List/index.js" afterPath="$PROJECT_DIR$/src/containers/List/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Login/index.js" afterPath="$PROJECT_DIR$/src/containers/Login/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Reg/index.js" afterPath="$PROJECT_DIR$/src/containers/Reg/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Search/HotSearch/index.js" afterPath="$PROJECT_DIR$/src/containers/Search/HotSearch/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Search/HotSearch/index.less" afterPath="$PROJECT_DIR$/src/containers/Search/HotSearch/index.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Search/index.js" afterPath="$PROJECT_DIR$/src/containers/Search/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Search/index.less" afterPath="$PROJECT_DIR$/src/containers/Search/index.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/store/action-types.js" afterPath="$PROJECT_DIR$/src/store/action-types.js" />
@@ -246,7 +37,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/store/reducers/home.js" afterPath="$PROJECT_DIR$/src/store/reducers/home.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/store/reducers/index.js" afterPath="$PROJECT_DIR$/src/store/reducers/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/store/reducers/search.js" afterPath="$PROJECT_DIR$/src/store/reducers/search.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -261,11 +51,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/containers/Change/index.js">
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mock/server.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="231">
-              <caret line="22" column="35" lean-forward="true" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="54" />
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -275,27 +65,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/containers/Search/index.less" />
-        <option value="$PROJECT_DIR$/src/containers/Search/index.js" />
-        <option value="$PROJECT_DIR$/mock/data/Content/historical.json" />
-        <option value="$PROJECT_DIR$/mock/server.js" />
-        <option value="$PROJECT_DIR$/src/components/Tab/index.js" />
-        <option value="$PROJECT_DIR$/src/ProtecteRouter.js" />
-        <option value="$PROJECT_DIR$/src/containers/Details/DetailFooter/index.js" />
-        <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/containers/Home/index.less" />
-        <option value="$PROJECT_DIR$/src/containers/Home/SearchTop/index.less" />
-        <option value="$PROJECT_DIR$/src/containers/List/Listsearch/index.js" />
-        <option value="$PROJECT_DIR$/src/containers/List/Filter/index.js" />
-        <option value="$PROJECT_DIR$/src/containers/List/Listsearch/index.less" />
-        <option value="$PROJECT_DIR$/mock/data/Content/userInfo.json" />
-        <option value="$PROJECT_DIR$/mock/data/Content/userCommodity.json" />
-      </list>
-    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
@@ -309,9 +78,10 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="7" />
+    <option name="x" value="-83" />
+    <option name="y" value="17" />
     <option name="width" value="1909" />
-    <option name="height" value="1019" />
+    <option name="height" value="1017" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -328,7 +98,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -351,66 +120,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SF-preferred" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SF-preferred" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="containers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SF-preferred" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SF-preferred" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="containers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Change" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SF-preferred" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SF-preferred" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="mock" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -419,12 +135,6 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
-    <property name="restartRequiresConfirmation" value="false" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\feng\Desktop\xiangmu\SF-preferred\mock" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -440,9 +150,6 @@
   </component>
   <component name="RunManager" selected="Node.js.server.js">
     <configuration default="false" name="server.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="server.js" working-dir="$PROJECT_DIR$/mock">
-      <method />
-    </configuration>
-    <configuration default="false" name="ProtecteRouter.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="ProtecteRouter.js" working-dir="$PROJECT_DIR$/src">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -511,14 +218,12 @@
       <recursive>false</recursive>
       <method />
     </configuration>
-    <list size="2">
+    <list size="1">
       <item index="0" class="java.lang.String" itemvalue="Node.js.server.js" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.ProtecteRouter.js" />
     </list>
     <recent_temporary>
-      <list size="2">
+      <list size="1">
         <item index="0" class="java.lang.String" itemvalue="Node.js.server.js" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.ProtecteRouter.js" />
       </list>
     </recent_temporary>
   </component>
@@ -527,41 +232,31 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="30222b96-8537-4309-9235-becce185ab05" name="Default" comment="" />
-      <created>1513918758827</created>
+      <changelist id="a4acf436-f853-435b-97cb-7f5e72a4e5ea" name="Default" comment="" />
+      <created>1513926759305</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1513918758827</updated>
-      <workItem from="1513918761998" duration="4910000" />
-      <workItem from="1513923772379" duration="349000" />
+      <updated>1513926759305</updated>
+      <workItem from="1513926761822" duration="29000" />
+      <workItem from="1513926805631" duration="8000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5259000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <option name="totallyTimeSpent" value="37000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="7" y="0" width="1909" height="1019" extended-state="0" />
+    <frame x="-83" y="17" width="1909" height="1017" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1776351" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287827" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24986623" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992035" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18202503" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2923777" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -569,6 +264,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -579,270 +275,22 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="1" />
-    </breakpoint-manager>
+    <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/containers/List/Listsearch/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/List/index.js">
+    <entry file="file://$PROJECT_DIR$/mock/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/List/Listsearch/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Search/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="30" column="32" lean-forward="true" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Search/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="13" lean-forward="true" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ProtecteRouter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="6" column="55" lean-forward="false" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Tab/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Details/DetailFooter/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="48" column="41" lean-forward="true" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="25" column="43" lean-forward="false" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mock/img/home/video/video.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mock/img/home/icon/bg02.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mock/img/home/swiper2/a1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mock/img/详情页/图文/20151226132957_643.jpg" />
-    <entry file="file://$PROJECT_DIR$/src/containers/Home/Time/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1188">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Home/VipOnly/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Home/MenuVideo/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Home/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1089">
-          <caret line="32" column="21" lean-forward="false" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Home/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1617">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Home/NewProduct/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Home/Nav/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mock/img/home/icon/search.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Home/SearchTop/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="62" column="3" lean-forward="false" selection-start-line="62" selection-start-column="3" selection-end-line="62" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Home/SearchTop/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="17" column="39" lean-forward="false" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/List/Classification/index.less" />
-    <entry file="file://$PROJECT_DIR$/src/containers/List/Filter/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/List/Filter/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/List/Classification/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-26">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/List/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/List/Listsearch/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/List/Listsearch/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/List/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mock/data/Content/userInfo.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="70" lean-forward="true" selection-start-line="0" selection-start-column="70" selection-end-line="0" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mock/data/Content/historical.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mock/data/Content/userCommodity.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1004">
-          <caret line="1" column="3" lean-forward="false" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mock/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="351" column="24" lean-forward="true" selection-start-line="351" selection-start-column="24" selection-end-line="351" selection-end-column="24" />
-          <folding>
-            <element signature="e#7919#8366#0" expanded="false" />
-            <element signature="e#8440#9266#0" expanded="false" />
-            <element signature="e#9471#9843#0" expanded="false" />
-            <element signature="e#9888#10466#0" expanded="false" />
-            <element signature="e#10510#11105#0" expanded="false" />
-            <element signature="e#11142#11237#0" expanded="false" />
-            <element signature="e#11280#11471#0" expanded="false" />
-            <element signature="e#11519#12288#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Personal/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Change/index.js">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
-          <caret line="22" column="35" lean-forward="true" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="54" />
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>

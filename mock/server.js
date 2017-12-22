@@ -299,14 +299,12 @@ app.get("/historical",(req,res)=>{
 //注册  前后台成功
 app.post("/reg",(req,res)=>{
     let user=req.body;
-    console.log(user,"====");
     read("./data/Content/userInfo.json",userInfos=>{
         let newUser=userInfos.find(item=>item.username==user.username);
         if(newUser){
             res.send({code:1,error:"用户名已经存在请重新输入"})
         }else {
             user.password=crpyto.createHash("md5").update(user.password).digest("hex");
-            console.log("=====aaaaa");
             userInfos.push(user);
             write("./data/Content/userInfo.json",userInfos,()=>{
                 res.send({code:0,success:"注册成功"})

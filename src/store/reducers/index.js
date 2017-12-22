@@ -5,7 +5,7 @@ import list from "./list";
 
 import classification from './classification'
 import personal from "./personal";
-import detail from './details';
+import detail from './details'
 
 import cart from './cart'
 

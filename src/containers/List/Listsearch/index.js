@@ -4,7 +4,7 @@ import './index.less'
 export default class ListSearch extends Component{
     render(){
         return(
-            <div className='searchList'>
+            <div className='search-list'>
                 <i className="iconfont icon-sousuo1"></i>
                 <Link to="/search">
                     <input placeholder='搜索优选商品'

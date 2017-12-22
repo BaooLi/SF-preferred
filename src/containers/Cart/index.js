@@ -1,4 +1,3 @@
-
 import React, {Component} from "react";
 import './index.less';
 import {Link} from 'react-router-dom';
@@ -131,4 +130,7 @@ export default connect(
     state => ({...state.cart,...state.personal}),
     actions
 )(Cart)
-
+/*
+onClick={()=>this.props.subCount({this.props.userName,item.})}
+onClick={()=>this.props.subCount({userName:"hh",recommendID:item.recommendID,count:item.count})}
+*/
