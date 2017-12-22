@@ -22,6 +22,19 @@
       }
     }
   }
+  h2{
+    padding-top: 7%;
+    width: 100%;
+    animation:isShow 2s infinite;
+    -webkit-animation:isShow 2s infinite;
+    .jiazai{
+      display: inline-block;
+      width: 100%;
+      background:url("../img/jiazai.jpg") no-repeat center center;
+      background-size: 40%;
+      height: 2rem;
+    }
+  }
   .user-comments {
     padding-top: 17%;
     padding-bottom: 17%;
@@ -34,6 +47,8 @@
       line-height: .5rem;
     }
     .comments {
+      overflow: scroll;
+      height: 70%;
       li {
         width: 100%;
         margin-top: .3rem;
@@ -63,4 +78,9 @@
 
     }
   }
+}
+@keyframes isShow {
+  0%   {height: 0}
+  50%   {height: 7%}
+  100% {height: 0}
 }
