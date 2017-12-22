@@ -11,12 +11,11 @@ import ScrollList from "./ScrollList/index";
 class Details extends Component {
     constructor() {
         super();
-        this.state = {num: 1, fade: true}
+        this.state = {num: 1, fade: false}
     }
 
     componentDidMount() {
         let id = this.props.match.params.id
-        //d3e6eb9f-19de-466f-8125-d1421128dea0
         this.props.detailInfo(id)
     }
 
@@ -24,15 +23,17 @@ class Details extends Component {
         let num = parseInt(this.goodNum.placeholder);
         if (type == 'add') {
             num++
+            if(num>1){
+                this.setState({fade: false})
+            }
             this.setState({num})
-            this.state.fade ? null : this.setState({fade: true})
         } else if (type == 'sub') {
             num--
             if (num <= 0) {
                 num = 1
+                this.setState({fade: true})
             }
             this.setState({num})
-            this.state.fade ? this.setState({fade: false}) : null
         }
     }
 
@@ -96,7 +97,7 @@ class Details extends Component {
                                     <div className="goods-nums">
                                         <i onClick={(event) => {
                                             this.handleClick(event, 'add')
-                                        }} className={this.state.fade ? "add" : "add fade"}></i>
+                                        }} className="add"></i>
                                         <input ref={input => this.goodNum = input} type="text"
                                                placeholder={this.state.num}/>
                                         <i onClick={(event) => {
