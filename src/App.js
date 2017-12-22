@@ -19,6 +19,7 @@ import Home from "./containers/Home/index";
 import Classification from './containers/List/Classification/index'
 import PictureTextDetail from "./containers/Details/PictureTextDetail/index";
 import MenuVideo from "./containers/Home/MenuVideo/index";
+import OrderList from "./containers/Details/OrderList/index";
 let history=createHashHistory();
 export default class App extends Component{
     render(){
@@ -41,6 +42,7 @@ export default class App extends Component{
                                 <Route path="/pictureTextDetail/:id" component={PictureTextDetail}/>
                                 <Route path="/list/classification/:title" component={Classification}/>
                                 <Route path="/menu" component={MenuVideo}/>
+                                <Route path="/orderlist" component={OrderList}/>
                             </Switch>
                         </div>
                     </ConnectedRouter>
