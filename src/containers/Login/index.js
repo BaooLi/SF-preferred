@@ -5,7 +5,7 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import './index.less';
 import {Link} from 'react-router-dom';
-import Alert from '../../component/Alert';
+import Alert from '../../components/Alert';
 import actions from '../../store/actions/personal';
 class Login extends Component {
     handleClick = () => {

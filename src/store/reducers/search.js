@@ -18,7 +18,7 @@ export default function (state=initSearch,action) {
             return {...state,hotSearch:action.payload.hotSearch};
         case types.HISTORICAL:
             return {...state,historical:action.payload.historical};
-            default :
-         return state;
+        default :
+            return state;
     }
 }

@@ -1,6 +1,6 @@
 import React,{Component} from "react";
 import ListSearch from './ListSearch/index'
-import Tab from '../../component/Tab/index'
+import Tab from '../../components/Tab/index'
 import {connect} from "react-redux"
 import actions from "../../store/actions/list"
 import './index.less';

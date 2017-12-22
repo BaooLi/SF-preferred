@@ -43,7 +43,7 @@ class DetailFooter extends Component {
                     <span onClick={this.handleClick}>加入到购物车</span>
                 </a>
                 {
-                    this.props.username?<Link to="/cart">
+                    this.props.username?<Link to={{pathname:`/cart`,state:this.props.username}}>
                         <span>一键购买</span>
                     </Link>:<Link to="/login">
                         <span>一键购买</span>

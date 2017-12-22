@@ -7,7 +7,6 @@ export default class Filter extends Component{
         let type = event.target.dataset.type;
         this.props.fetchClassifications(this.props.keyWord,type);
     };
-
     render(){
         return(
             <div className="filter-bar" onClick={this.changeType}>
