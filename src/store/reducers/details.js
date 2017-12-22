@@ -17,7 +17,7 @@ export default function (state = initSearch, action) {
         case types.FIND_CART:
             return {...state, carNum: action.payload};
         case types.ADD_CART:
-            return {...state, carNum: state.carNum+action.payload};
+            return {...state, carNum: action.payload};
         default :
             return state;
     }
