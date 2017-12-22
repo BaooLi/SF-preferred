@@ -5,10 +5,18 @@
 ![Alt text](./SF-02.png)
 
 
-####代码克隆：
+#### 代码克隆：
 
 git clone https://github.com/xiexiaoge/SF-preferred
 启动项目：npm run dev
+#### 技术运用
+
+react
+react-iscroll
+react-redux
+react-router
+react-swipe
+express
 
 
 ### 初始化项目
@@ -29,9 +37,6 @@ npm install es6-promise history react react-dom react-redux react-router-dom rea
 ```
 npm install babel-core babel-loader babel-preset-es2015 babel-preset-react babel-preset-stage-0 css-loader file-loader url-loader html-webpack-plugin less less-loader style-loader webpack webpack-dev-server html-webpack-plugin -D
 ```
-
-###资源文件
-写项目需要用到的图片，psd，数据js文件
 
 
 
