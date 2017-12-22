@@ -14,7 +14,6 @@
   position: absolute;
   top: 7.5%;
   width: 100%;
-  padding-bottom: 20%;
   overflow: scroll;
   height: 85%;
   .productInfo {
@@ -127,7 +126,6 @@
     }
     .delivery {
       width: 100%;
-      padding-bottom: .3rem;
       .address {
         position: relative;
         width: 100%;
@@ -245,6 +243,7 @@
       }
       ul {
         margin-top: .2rem;
+        margin-bottom: .2rem;
         li {
           width: 100%;
           p {
@@ -274,7 +273,11 @@
     }
   }
   .detailMore {
+    animation:isShow 4s ;
+    transition-duration: 5s;
     text-align: center;
+    width: 100%;
+    background-color: #f5f5f5;
     .morelink {
       display: inline-block;
       padding: 0 1.28rem 0 0.2134rem;
@@ -289,53 +292,9 @@
   }
 
 }
-@keyframes move_right {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateX(120px);
-    transform: translateX(120px);
-  }
-}
-@-webkit-keyframes move_left {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-    -webkit-transform: translateX(-120px);
-    transform: translateX(-120px);
-  }
-}
-@keyframes move_left {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-    -webkit-transform: translateX(-120px);
-    transform: translateX(-120px);
-  }
-}
-.move_right {
-  -webkit-animation-name            : move_right;
-  animation-name            : move_right;
-  -webkit-animation-duration        : 1s;
-  animation-duration        : 1s;
-  -webkit-animation-iteration-count : 1;
-  animation-iteration-count : 1;
-  -webkit-animation-fill-mode : forwards;
-  animation-fill-mode : forwards;
-}
-.move_left {
-  -webkit-animation-name            : move_left;
-  animation-name            : move_left;
-  -webkit-animation-duration        : 1s;
-  animation-duration        : 1s;
-  -webkit-animation-iteration-count : 1;
-  animation-iteration-count : 1;
-  -webkit-animation-fill-mode : forwards;
-  animation-fill-mode : forwards;
+@keyframes isShow {
+  0%   {opacity: 0;padding-bottom: 0}
+  25%  {opacity: 0.4;padding-bottom: 10%}
+  50%  {opacity: 0.7;padding-bottom: 15%}
+  100% {opacity: 1;padding-bottom: 20%}
 }
