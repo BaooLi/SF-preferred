@@ -2,44 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4acf436-f853-435b-97cb-7f5e72a4e5ea" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/component/Alert/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/component/Alert/index.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/component/Header/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/component/Header/index.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/component/Tab/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/component/Tab/index.less" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mock/data/Content/historical.json" afterPath="$PROJECT_DIR$/mock/data/Content/historical.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mock/data/Content/userCommodity.json" afterPath="$PROJECT_DIR$/mock/data/Content/userCommodity.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mock/data/Content/userInfo.json" afterPath="$PROJECT_DIR$/mock/data/Content/userInfo.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mock/server.js" afterPath="$PROJECT_DIR$/mock/server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ProtecteRouter.js" afterPath="$PROJECT_DIR$/src/ProtecteRouter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/api/cart.js" afterPath="$PROJECT_DIR$/src/api/cart.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/api/home.js" afterPath="$PROJECT_DIR$/src/api/home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Cart/index.js" afterPath="$PROJECT_DIR$/src/containers/Cart/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Change/index.js" afterPath="$PROJECT_DIR$/src/containers/Change/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Details/DetailFooter/index.js" afterPath="$PROJECT_DIR$/src/containers/Details/DetailFooter/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Details/index.js" afterPath="$PROJECT_DIR$/src/containers/Details/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Home/index.js" afterPath="$PROJECT_DIR$/src/containers/Home/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Home/index.less" afterPath="$PROJECT_DIR$/src/containers/Home/index.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/List/Filter/index.js" afterPath="$PROJECT_DIR$/src/containers/List/Filter/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/List/Listsearch/index.js" afterPath="$PROJECT_DIR$/src/containers/List/Listsearch/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/List/Listsearch/index.less" afterPath="$PROJECT_DIR$/src/containers/List/Listsearch/index.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/List/index.js" afterPath="$PROJECT_DIR$/src/containers/List/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Login/index.js" afterPath="$PROJECT_DIR$/src/containers/Login/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Reg/index.js" afterPath="$PROJECT_DIR$/src/containers/Reg/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Search/index.js" afterPath="$PROJECT_DIR$/src/containers/Search/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Search/index.less" afterPath="$PROJECT_DIR$/src/containers/Search/index.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/store/action-types.js" afterPath="$PROJECT_DIR$/src/store/action-types.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/store/actions/cart.js" afterPath="$PROJECT_DIR$/src/store/actions/cart.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/store/actions/home.js" afterPath="$PROJECT_DIR$/src/store/actions/home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/store/index.js" afterPath="$PROJECT_DIR$/src/store/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/store/reducers/cart.js" afterPath="$PROJECT_DIR$/src/store/reducers/cart.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/store/reducers/home.js" afterPath="$PROJECT_DIR$/src/store/reducers/home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/store/reducers/index.js" afterPath="$PROJECT_DIR$/src/store/reducers/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/store/reducers/search.js" afterPath="$PROJECT_DIR$/src/store/reducers/search.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/SF-preferred.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -54,11 +23,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mock/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+            <state relative-caret-position="-33">
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="35" column="38" lean-forward="true" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -73,6 +52,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/mock/server.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
       </list>
     </option>
   </component>
@@ -88,8 +68,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-50" />
-    <option name="y" value="16" />
+    <option name="x" value="-19" />
+    <option name="y" value="18" />
     <option name="width" value="1909" />
     <option name="height" value="1017" />
   </component>
@@ -133,38 +113,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SF-preferred" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SF-preferred" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="containers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SF-preferred" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SF-preferred" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mock" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -281,15 +229,16 @@
       <updated>1513926759305</updated>
       <workItem from="1513926761822" duration="29000" />
       <workItem from="1513926805631" duration="8000" />
-      <workItem from="1513926970812" duration="1391000" />
+      <workItem from="1513926970812" duration="2242000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1428000" />
+    <option name="totallyTimeSpent" value="2279000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-50" y="16" width="1909" height="1017" extended-state="1" />
+    <frame x="-19" y="18" width="1909" height="1017" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24986623" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -298,7 +247,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16647662" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -339,8 +288,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mock/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        <state relative-caret-position="-33">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="35" column="38" lean-forward="true" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
           <folding />
         </state>
       </provider>
