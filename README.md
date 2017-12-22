@@ -5,10 +5,18 @@
 ![Alt text](./SF-02.png)
 
 
-####代码克隆：
+#### 代码克隆：
 
 git clone https://github.com/xiexiaoge/SF-preferred
 启动项目：npm run dev
+#### 技术运用
+
+react
+react-iscroll
+react-redux
+react-router
+react-swipe
+express
 
 
 ### 初始化项目
