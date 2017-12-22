@@ -6,7 +6,7 @@ class Header extends Component {
     render() {
         return (
             <div className="detailHeader">
-                <i onClick={()=>this.props.history.goBack()}></i>
+                <i className="iconfont icon-fanhui" onClick={()=>this.props.history.goBack()}></i>
                 <a href="javascript:void(0);">
                     <span>商品</span>
                 </a>

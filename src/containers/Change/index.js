@@ -5,8 +5,8 @@ import React, {Component} from 'react';
 import './index.less';
 import {connect} from 'react-redux';
 import actions from '../../store/actions/personal';
-import {Link} from 'react-router-dom';
-import Alert from '../../component/Alert';
+
+import Alert from '../../components/Alert';
 class Change extends Component {
     constructor() {
         super();
@@ -20,16 +20,15 @@ class Change extends Component {
         let pdtest = /^(\w){6,8}$/;
         if (newpassword==newpasswordFirst) {
             if (pdtest.test(newpassword)){
-                this.props.changepassword({user:this.props.user,newpassword});
+                let user={username:this.props.username,password}
+                this.props.changepassword({user,newpassword});
             }
         }else{
             this.setState({msg:'两次输入的新密码不一致'});
         }
     };
-    componentDidMount(){
-        this.props.validate();
-    }
     render() {
+        console.log(this.props);
         return (
             <div className="reg">
                 <div className="reg-header">

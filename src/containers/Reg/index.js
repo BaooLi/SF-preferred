@@ -6,7 +6,8 @@ import './index.less';
 import {connect} from 'react-redux';
 import actions from '../../store/actions/personal';
 import {Link} from 'react-router-dom';
-// import Alert from '../../component/Alert';
+
+import Alert from '../../components/Alert';
 import axios from 'axios';
 import $ from 'jquery';
 

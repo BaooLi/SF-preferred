@@ -1,21 +1,22 @@
-import * as types from "../action-types";
+import * as types from '../action-types'
+
 import {push} from "react-router-redux"
 
 import {getSearch, getHotSearch, getHistorical} from "../../api/search"
 let actions= {
-    fetchSearch(keyWords){
+    fetchSearch(keyWords,type){
         return function (dispatch, getState) {
             dispatch({
                 type: types.SEARCH
             });
-            getSearch(keyWords).then(res => {
+            getSearch(keyWords,type).then(res => {
                 let {code, error, success,searchs} = res;
                 if(code==0){
                     dispatch({
                         type: types.SEARCH_SUCCESS,
-                        payload: searchs
+                        payload: {searchs,type}
                     });
-                    dispatch(push(`/list/${keyWords}`))
+                    dispatch(push(`/searchlist/${keyWords}`))
                 }
 
             })

@@ -3,7 +3,7 @@
  */
 
 import * as types from '../action-types';
-import {reg, login, logout, validate, changepassword} from '../../api/personal';
+import {reg, login, logout, validateUser, changepassword} from '../../api/personal';
 import {push} from 'react-router-redux'
 export default {
     //注册
@@ -54,14 +54,14 @@ export default {
             type: types.CLEARMESSAGE
         }
     },
-    //判断有没有登录
+    // //判断有没有登录
     validate(){
         return function (dispatch, getState) {
-            validate().then(result => {
+            validateUser().then(result => {
                 let {code, success, error, user} = result;
                 dispatch({
                     type: types.VALIDATE,
-                    payload: {success, error, user}
+                    payload: user
                 });
             });
         }

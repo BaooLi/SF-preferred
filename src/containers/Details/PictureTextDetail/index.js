@@ -13,7 +13,7 @@ class PictureTextDetail extends Component {
         }
         return (
             <div className="pictureText">
-                <div className="head">图文详情<i onClick={()=>{this.props.history.goBack()}}></i></div>
+                <div className="head">图文详情<i className="iconfont icon-fanhui" onClick={()=>{this.props.history.goBack()}}></i></div>
                 <ul>
                     {
                         img.length == 0?(<li>暂无图文详情</li>):

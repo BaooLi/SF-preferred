@@ -1592,7 +1592,7 @@ deep-diff@^0.3.5:
   version "0.3.8"
   resolved "http://registry.npm.taobao.org/deep-diff/download/deep-diff-0.3.8.tgz#c01de63efb0eec9798801d40c7e0dae25b582c84"
 
-deep-equal@^1.0.1:
+deep-equal@1.0.1, deep-equal@^1.0.1:
   version "1.0.1"
   resolved "http://registry.npm.taobao.org/deep-equal/download/deep-equal-1.0.1.tgz#f5d260292b660e084eff4cdbc9f08ad3247448b5"
 
@@ -2742,6 +2742,10 @@ isarray@0.0.1:
 isarray@1.0.0, isarray@^1.0.0, isarray@~1.0.0:
   version "1.0.0"
   resolved "http://registry.npm.taobao.org/isarray/download/isarray-1.0.0.tgz#bb935d48582cba168c06834957a54a3e07124f11"
+
+iscroll@^5.2.0:
+  version "5.2.0"
+  resolved "http://registry.npm.taobao.org/iscroll/download/iscroll-5.2.0.tgz#d513307088b5b25a4f893af474804468481829c8"
 
 isexe@^2.0.0:
   version "2.0.0"
@@ -4017,6 +4021,12 @@ react-dom@^16.2.0:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
     prop-types "^15.6.0"
+
+react-iscroll@^2.0.3:
+  version "2.0.3"
+  resolved "http://registry.npm.taobao.org/react-iscroll/download/react-iscroll-2.0.3.tgz#365cc5a3f6300d0c01dd337745a50d80be634860"
+  dependencies:
+    deep-equal "1.0.1"
 
 react-lazyload@^2.3.0:
   version "2.3.0"

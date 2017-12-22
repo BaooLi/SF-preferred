@@ -6,8 +6,8 @@ export let getDetails=(id)=>{
 };
 
 //查看此详情商品是否在购物车
-export let findGoodsCart=(userName)=>{
-    return  get(`/findCart?userName=${userName}`);
+export let findGoodsCart=(username)=>{
+    return  get(`/findCart?username=${username}`);
 };
 
 //添加数据到购物车

@@ -17,13 +17,11 @@ class Tab extends Component{
                     </NavLink>
                     <NavLink to="/list">
                         <i className="iconfont icon-fenlei">
-
                         </i>
                         <span>分类</span>
                     </NavLink>
-                    <NavLink to="/cart">
+                    <NavLink to={{pathname:`/cart`,state:this.props.username}}>
                         <i className="iconfont icon-cart">
-
                          </i>
                         <span>购物车</span>
                     </NavLink>

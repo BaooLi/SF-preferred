@@ -1,9 +1,5 @@
 import React, {Component} from 'react'
 export default class ScrollList extends Component {
-    constructor(){
-        super();
-        this.state={flag:false}
-    }
     componentWillReceiveProps(nextProps) {
         if (nextProps.element) {
             let id=this.props.id
@@ -11,14 +7,12 @@ export default class ScrollList extends Component {
                 this.timer?clearInterval(this.timer):null
                 this.timer=setTimeout(()=>{
                     let {offsetHeight, scrollHeight, scrollTop} = nextProps.element
-                    if(offsetHeight + scrollTop + 20 > scrollHeight){
-                        this.props.isShow(true)
+                    if (offsetHeight + scrollTop + 50 > scrollHeight) {
                         nextProps.element.addEventListener('touchend',()=>{
                             this.props.history.push(`/pictureTextDetail/${id}`)
-                            this.props.isShow(false)
                         })
                     }
-                },10)
+                },12)
             })
         }
     }

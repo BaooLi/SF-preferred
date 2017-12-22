@@ -7,13 +7,15 @@ class Personal extends Component {
     handleLogout=()=>{
         this.props.logout();
     };
+    componentDidMount(){
+        this.props.validate();
+    }
     render() {
         return (
             <div className="personal">
                 <div className="login">
                     {
-                        this.props.user?<span className="login-btn">{this.props.user.username}</span>:<Link to='/login' className="login-btn">登录</Link>
-
+                        this.props.username?<span className="login-btn">{this.props.username}</span>:<Link to='/login' className="login-btn">登录</Link>
                     }
                 </div>
                 <div className="order">
@@ -56,6 +58,6 @@ class Personal extends Component {
     }
 }
 export default connect(
-    state => state.personal,
+    state=>state.personal,
     actions
 )(Personal)

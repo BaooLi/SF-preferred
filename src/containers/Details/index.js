@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 import './index.less'
 import Header from "./Header/index";
 import Sliders from "./Sliders/index";
-import Tab from "./Tab";
+import DetailFooter from "./DetailFooter";
 import {connect} from 'react-redux'
 import actions from '../../store/actions/details'
 import ScrollList from "./ScrollList/index";
@@ -11,15 +11,11 @@ import ScrollList from "./ScrollList/index";
 class Details extends Component {
     constructor() {
         super();
-        this.state = {num: 1, fade: false, isShow: false}
-    }
-
-    isShow = (value) => {
-        this.setState({isShow: value})
+        this.state = {num: 1, fade: false}
     }
 
     componentDidMount() {
-        let id = this.props.match.params.id
+        let id = this.props.match.params.id;
         this.props.detailInfo(id)
     }
 
@@ -27,7 +23,7 @@ class Details extends Component {
         let num = parseInt(this.goodNum.placeholder);
         if (type == 'add') {
             num++
-            if (num > 1) {
+            if(num>1){
                 this.setState({fade: false})
             }
             this.setState({num})
@@ -51,7 +47,7 @@ class Details extends Component {
             <div className="detail">
                 <Header id={this.props.details.recommendID}/>
                 <div className="product" ref='scroll'>
-                    <ScrollList isShow={this.isShow} history={this.props.history} id={this.props.details.recommendID}
+                    <ScrollList history={this.props.history} id={this.props.details.recommendID}
                                 element={this.refs.scroll}>
                         <Sliders imgs={img}/>
                         <div className="productInfo">
@@ -134,14 +130,13 @@ class Details extends Component {
                             <div>
                             </div>
                         </div>
-                        {this.state.isShow ? (
-                            <div className="detailMore">
-                                <span className="morelink">释放查看更多详情</span>
-                                <i className="icon-arrow-down"></i>
-                            </div>) : null}
+                        <div className="detailMore">
+                            <span className="morelink">释放查看更多详情
+                            <i className="iconfont icon-fanhui"></i></span>
+                        </div>
                     </ScrollList>
                 </div>
-                <Tab num={this.state.num}/>
+                <DetailFooter num={this.state.num}/>
             </div>
         )
     }

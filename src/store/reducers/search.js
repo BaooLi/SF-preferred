@@ -1,10 +1,10 @@
-import * as types from "../action-types";
-
+import * as types from '../action-types'
 let initSearch={
     loading:false,
     searchs:[],
     hotSearch:[],
-    historical:[]
+    historical:[],
+    type:"undefined"
 };
 
 export default function (state=initSearch,action) {
@@ -12,7 +12,8 @@ export default function (state=initSearch,action) {
         case types.SEARCH:
             return {...state, loading:true};
         case types.SEARCH_SUCCESS:
-            return {...state,searchs:action.payload,loading:false};
+            let type=action.payload.type?action.payload.type:"undefined";
+            return {...state,searchs:action.payload.searchs,type,loading:false};
         case types.HOT_SEARCH:
             return {...state,hotSearch:action.payload.hotSearch};
         case types.HISTORICAL:

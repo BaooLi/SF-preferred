@@ -1,12 +1,252 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7aec85be-9941-48fd-8aa6-7761ce426840" name="Default" comment="">
+    <list default="true" id="30222b96-8537-4309-9235-becce185ab05" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mock/img/home/icon/bg02.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mock/img/home/icon/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mock/img/home/icon/search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mock/img/home/video/video.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Loading/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Loading/index.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Home/CountDown/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Home/CountDown/index.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Home/MenuVideo/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Home/MenuVideo/index.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Home/Nav/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Home/Nav/index.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Home/NewProduct/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Home/NewProduct/index.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Home/Recommend/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Home/Recommend/index.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Home/Scroll/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Home/Scroll/index.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Home/SearchTop/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Home/SearchTop/index.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Home/Swiper/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Home/Swiper/index.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Home/Time/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Home/Time/index.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Home/VipOnly/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Home/VipOnly/index.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/utils.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/SF preferred'.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/markdown-exported-files.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/data/Content/userInfos.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/member/li1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/member/li2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/member/li3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/member/li4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/member/li5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/member/li6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/navigation/f1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/navigation/f10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/navigation/f11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/navigation/f12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/navigation/f13.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/navigation/f14.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/navigation/f15.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/navigation/f16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/navigation/f17.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/navigation/f18.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/navigation/f19.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/navigation/f2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/navigation/f20.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/navigation/f3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/navigation/f4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/navigation/f5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/navigation/f6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/navigation/f7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/navigation/f8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/navigation/f9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (1).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (10).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (11).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (12).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (13).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (14).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (15).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (16).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (17).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (18).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (19).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (2).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (20).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (21).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (22).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (23).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (24).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (25).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (26).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (27).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (28).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (3).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (4).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (5).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (6).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (7).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (8).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/home/recommend/recommend (9).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/13.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/14.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/15.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/16.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/20.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/21.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/22.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/23.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/24.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/25.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/26.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/27.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/28.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/29.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/30.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/31.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/32.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/33.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/34.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/35.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/36.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/37.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/38.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/39.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/40.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/41.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/42.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/43.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/44.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/45.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/46.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/水果/9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/13.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/14.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/15.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/16.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/17.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/18.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/19.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/20.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/21.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/22.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/23.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/24.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/25.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/26.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/27.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/28.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/29.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/30.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/31.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/32.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/33.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/34.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/35.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/36.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/37.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/38.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/39.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/40.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/分类页/海鲜/9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/li/middle_1800014079_1_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/li/middle_1800211305_1_04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/li/middle_1800254145_4_0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/li/middle_w_1800122482_1_7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/li/middle_w_1800215627_1_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/swiper/detail-s-.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/swiper/original_w_1800122482_1_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/swiper/original_w_1800122482_1_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/swiper/original_w_1800122482_1_4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/swiper/original_w_1800122482_1_5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/swiper/original_w_1800122482_1_6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/图文/20151226132951_53.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/图文/20151226132954_172.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/图文/20151226132955_588.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/图文/20151226132957_643.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/图文/20151226133000_323.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/图文/20151226133002_0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/图文/20151226133004_878.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/图文/20151226133005_750.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/图文/20151226133008_541.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/图文/20151226133009_612.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/图文/20151226133011_69.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/图文/20151226133013_420.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/图文/20151226133015_289.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/图文/20151226133016_44.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/图文/20151226133017_250.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/图文/20151226133019_711.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/图文/20151226133021_312.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mock/img/详情页/图文/4caee424bbab7622a6ca5f95e63b805d.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/containers/BaiduMap/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/containers/BaiduMap/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/containers/List/Classification/index.less" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mock/data/Content/historical.json" afterPath="$PROJECT_DIR$/mock/data/Content/historical.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mock/data/Content/userCommodity.json" afterPath="$PROJECT_DIR$/mock/data/Content/userCommodity.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mock/data/Content/userInfo.json" afterPath="$PROJECT_DIR$/mock/data/Content/userInfo.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mock/server.js" afterPath="$PROJECT_DIR$/mock/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Details/ScrollList/index.js" afterPath="$PROJECT_DIR$/src/containers/Details/ScrollList/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ProtecteRouter.js" afterPath="$PROJECT_DIR$/src/ProtecteRouter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/api/cart.js" afterPath="$PROJECT_DIR$/src/api/cart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/api/home.js" afterPath="$PROJECT_DIR$/src/api/home.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Tab/index.js" afterPath="$PROJECT_DIR$/src/components/Tab/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Tab/index.less" afterPath="$PROJECT_DIR$/src/components/Tab/index.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Cart/index.js" afterPath="$PROJECT_DIR$/src/containers/Cart/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Details/DetailFooter/index.js" afterPath="$PROJECT_DIR$/src/containers/Details/DetailFooter/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Details/index.js" afterPath="$PROJECT_DIR$/src/containers/Details/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Details/index.less" afterPath="$PROJECT_DIR$/src/containers/Details/index.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Home/index.js" afterPath="$PROJECT_DIR$/src/containers/Home/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Home/index.less" afterPath="$PROJECT_DIR$/src/containers/Home/index.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/List/Filter/index.js" afterPath="$PROJECT_DIR$/src/containers/List/Filter/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/List/Listsearch/index.js" afterPath="$PROJECT_DIR$/src/containers/List/Listsearch/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/List/Listsearch/index.less" afterPath="$PROJECT_DIR$/src/containers/List/Listsearch/index.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/List/index.js" afterPath="$PROJECT_DIR$/src/containers/List/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Reg/index.js" afterPath="$PROJECT_DIR$/src/containers/Reg/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Search/HotSearch/index.js" afterPath="$PROJECT_DIR$/src/containers/Search/HotSearch/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Search/HotSearch/index.less" afterPath="$PROJECT_DIR$/src/containers/Search/HotSearch/index.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Search/index.js" afterPath="$PROJECT_DIR$/src/containers/Search/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Search/index.less" afterPath="$PROJECT_DIR$/src/containers/Search/index.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/store/action-types.js" afterPath="$PROJECT_DIR$/src/store/action-types.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/store/actions/cart.js" afterPath="$PROJECT_DIR$/src/store/actions/cart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/store/actions/home.js" afterPath="$PROJECT_DIR$/src/store/actions/home.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/store/index.js" afterPath="$PROJECT_DIR$/src/store/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/store/reducers/cart.js" afterPath="$PROJECT_DIR$/src/store/reducers/cart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/store/reducers/home.js" afterPath="$PROJECT_DIR$/src/store/reducers/home.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/store/reducers/index.js" afterPath="$PROJECT_DIR$/src/store/reducers/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/store/reducers/search.js" afterPath="$PROJECT_DIR$/src/store/reducers/search.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,175 +260,46 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/containers/Details/OrderList/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="24" column="45" lean-forward="true" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-                <element signature="e#246#378#0" expanded="false" />
-                <element signature="e#395#697#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/containers/Details/ScrollList/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/containers/Details/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="48" column="54" lean-forward="true" selection-start-line="48" selection-start-column="54" selection-end-line="48" selection-end-column="54" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-                <element signature="n#!!block;n#componentDidMount#0;n#Details#0" expanded="false" />
-                <element signature="e#687#1121#0" expanded="false" />
-                <element signature="e#2178#3216#0" expanded="false" />
-                <element signature="e#3690#3821#0" expanded="false" />
-                <element signature="e#4090#5001#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/containers/Details/Tab/index.js">
+        <entry file="file://$PROJECT_DIR$/src/containers/Change/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="48" column="27" lean-forward="false" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="231">
+              <caret line="22" column="35" lean-forward="true" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="54" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="AMD JavaScript File" />
-        <option value="HTML File" />
-        <option value="JavaScript File" />
-        <option value="Less File" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>input</find>
-      <find>&quot;graphicOrigin&quot;</find>
-      <find>node</find>
-      <find>C:/Program Files/nodejs/node</find>
-      <find>search</find>
-      <find>HEAD</find>
-      <find>chan</find>
-      <find>userName</find>
-      <find>product</find>
-      <find>padding-bottom</find>
-      <find>delivery</find>
-      <find>detailMore</find>
-      <find>暂无评价</find>
-      <find>userComments</find>
-      <find>personal-bg.jpg</find>
-      <find>info</find>
-      <find>修改密码</find>
-      <find>my</find>
-      <find>border</find>
-      <find>余额</find>
-    </findStrings>
-    <dirStrings>
-      <dir>$PROJECT_DIR$/node_modules/node-forge/tests</dir>
-      <dir>$PROJECT_DIR$/build</dir>
-      <dir>$PROJECT_DIR$</dir>
-    </dirStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/containers/Home/history/tiao.html" />
-        <option value="$PROJECT_DIR$/src/containers/Home/SearchTop/index.js" />
-        <option value="$PROJECT_DIR$/src/api/search.js" />
-        <option value="$PROJECT_DIR$/src/store/reducers/search.js" />
-        <option value="$PROJECT_DIR$/src/store/actions/search.js" />
+        <option value="$PROJECT_DIR$/src/containers/Search/index.less" />
         <option value="$PROJECT_DIR$/src/containers/Search/index.js" />
-        <option value="$PROJECT_DIR$/src/containers/Search/HotSearch/index.js" />
-        <option value="$PROJECT_DIR$/src/components/Tab/index.less" />
-        <option value="$PROJECT_DIR$/src/containers/List/index.js" />
-        <option value="$PROJECT_DIR$/src/containers/Reg/index.js" />
-        <option value="$PROJECT_DIR$/src/containers/Home/Nav/index.less" />
-        <option value="$PROJECT_DIR$/src/containers/Home/Nav/index.js" />
-        <option value="$PROJECT_DIR$/src/containers/Home/CountDown/index.js" />
-        <option value="$PROJECT_DIR$/src/containers/Home/CountDown/index.less" />
-        <option value="$PROJECT_DIR$/src/store/actions/home.js" />
-        <option value="$PROJECT_DIR$/src/utils.js" />
-        <option value="$PROJECT_DIR$/src/store/reducers/cart.js" />
-        <option value="$PROJECT_DIR$/src/store/actions/cart.js" />
-        <option value="$PROJECT_DIR$/src/Cart/index.js" />
-        <option value="$PROJECT_DIR$/src/Cart/CartShop/index.js" />
-        <option value="$PROJECT_DIR$/src/Cart/CartNo/index.js" />
-        <option value="$PROJECT_DIR$/src/api/home.js" />
-        <option value="$PROJECT_DIR$/src/api/cart.js" />
+        <option value="$PROJECT_DIR$/mock/data/Content/historical.json" />
         <option value="$PROJECT_DIR$/mock/server.js" />
-        <option value="$PROJECT_DIR$/src/store/reducers/index.js" />
-        <option value="$PROJECT_DIR$/src/store/action-types.js" />
-        <option value="$PROJECT_DIR$/src/store/reducers/home.js" />
-        <option value="$PROJECT_DIR$/src/containers/Home/Swiper/index.js" />
-        <option value="$PROJECT_DIR$/src/containers/Home/Swiper/index.less" />
-        <option value="$PROJECT_DIR$/src/containers/Home/index.less" />
-        <option value="$PROJECT_DIR$/src/containers/Home/NewProduct/index.less" />
-        <option value="$PROJECT_DIR$/src/containers/Home/VipOnly/index.less" />
-        <option value="$PROJECT_DIR$/src/containers/Home/Scroll/index.less" />
-        <option value="$PROJECT_DIR$/src/containers/Home/Scroll/index.js" />
-        <option value="$PROJECT_DIR$/src/containers/Home/NewProduct/index.js" />
-        <option value="$PROJECT_DIR$/src/containers/Home/VipOnly/index.js" />
-        <option value="$PROJECT_DIR$/src/containers/Home/MenuVideo/index.less" />
-        <option value="$PROJECT_DIR$/src/containers/Home/MenuVideo/index.js" />
-        <option value="$PROJECT_DIR$/src/containers/Home/Recommend/index.js" />
-        <option value="$PROJECT_DIR$/src/containers/Home/Recommend/index.less" />
-        <option value="$PROJECT_DIR$/src/containers/Home/index.js" />
-        <option value="$PROJECT_DIR$/src/containers/Cart/CartShop/index.css" />
-        <option value="$PROJECT_DIR$/src/containers/Cart/CartShop/index.js" />
-        <option value="$PROJECT_DIR$/src/containers/Cart/CartShop/index.less" />
-        <option value="$PROJECT_DIR$/src/containers/Details/index.js" />
+        <option value="$PROJECT_DIR$/src/components/Tab/index.js" />
+        <option value="$PROJECT_DIR$/src/ProtecteRouter.js" />
+        <option value="$PROJECT_DIR$/src/containers/Details/DetailFooter/index.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/containers/Details/OrderList/index.less" />
-        <option value="$PROJECT_DIR$/src/containers/Details/OrderList/index.js" />
-        <option value="$PROJECT_DIR$/src/containers/Details/index.less" />
-        <option value="$PROJECT_DIR$/src/containers/Details/ScrollList/index.js" />
-        <option value="$PROJECT_DIR$/src/containers/Details/Tab/index.js" />
+        <option value="$PROJECT_DIR$/src/containers/Home/index.less" />
+        <option value="$PROJECT_DIR$/src/containers/Home/SearchTop/index.less" />
+        <option value="$PROJECT_DIR$/src/containers/List/Listsearch/index.js" />
+        <option value="$PROJECT_DIR$/src/containers/List/Filter/index.js" />
+        <option value="$PROJECT_DIR$/src/containers/List/Listsearch/index.less" />
+        <option value="$PROJECT_DIR$/mock/data/Content/userInfo.json" />
+        <option value="$PROJECT_DIR$/mock/data/Content/userCommodity.json" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
     <package-json value="$PROJECT_DIR$/package.json" />
-  </component>
-  <component name="JsFlowSettings">
-    <service-enabled>false</service-enabled>
-    <exe-path />
-    <annotation-enable>false</annotation-enable>
-    <other-services-enabled>false</other-services-enabled>
   </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
@@ -198,31 +309,10 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1296" />
-    <option name="height" value="696" />
+    <option name="x" value="7" />
+    <option name="width" value="1909" />
+    <option name="height" value="1019" />
   </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-          <State>
-            <id>Internationalization issues</id>
-          </State>
-        </expanded-state>
-        <selected-state>
-          <State>
-            <id>LossyEncoding</id>
-          </State>
-        </selected-state>
-      </profile-state>
-    </entry>
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -238,11 +328,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SF preferred'" />
+              <option name="myItemId" value="SF-preferred" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -252,21 +343,7 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SF preferred'" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="SF-preferred" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SF preferred'" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -277,14 +354,10 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="containers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SF preferred'" />
+              <option name="myItemId" value="SF-preferred" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -299,14 +372,10 @@
               <option name="myItemId" value="containers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Details" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SF preferred'" />
+              <option name="myItemId" value="SF-preferred" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -322,17 +391,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Details" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tab" />
+              <option name="myItemId" value="Change" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SF preferred'" />
+              <option name="myItemId" value="SF-preferred" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -340,100 +405,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="containers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Details" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Sliders" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SF preferred'" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SF-preferred" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="containers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Details" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ScrollList" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SF preferred'" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SF-preferred" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="containers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cart" />
+              <option name="myItemId" value="mock" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
-    <property name="SearchEverywhereHistoryKey" value="prefix&#9;null&#9;null&#10;C:/Program Files/nodejs/node&#9;null&#9;null&#10;node&#9;FILE&#9;file:///Users/lijiabao/Desktop/SFnew/SF-preferred/node_modules/babel-core/lib/api/node.js" />
-    <property name="list.type.of.created.stylesheet" value="Less" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../jiazai/slider" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\SF-preferred\src\containers\Search" />
-      <recent name="F:\SF-preferred" />
-      <recent name="F:\SF-preferred\src\containers\Search\Input" />
-      <recent name="F:\SF-preferred\src\containers\Home" />
-      <recent name="F:\SF-preferred\mock" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\MyDownloads\productshun\SF-preferred\src\containers\Details" />
-      <recent name="$PROJECT_DIR$/mock/img/home" />
-      <recent name="$PROJECT_DIR$/src/containers/Home" />
-      <recent name="$PROJECT_DIR$/src/containers" />
-      <recent name="$PROJECT_DIR$/src" />
+      <recent name="C:\Users\feng\Desktop\xiangmu\SF-preferred\mock" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -449,58 +439,10 @@
     </option>
   </component>
   <component name="RunManager" selected="Node.js.server.js">
-    <configuration default="false" name="server.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="/usr/local/bin/node" path-to-js-file="server.js" working-dir="$PROJECT_DIR$/mock">
-      <EXTENSION ID="com.jetbrains.nodejs.remote.docker.NodeJSDockerRunConfigurationExtension">
-        <option name="envVars">
-          <list />
-        </option>
-        <option name="extraHosts">
-          <list />
-        </option>
-        <option name="links">
-          <list />
-        </option>
-        <option name="networkDisabled" value="false" />
-        <option name="networkMode" value="bridge" />
-        <option name="portBindings">
-          <list />
-        </option>
-        <option name="publishAllPorts" value="false" />
-        <option name="version" value="1" />
-        <option name="volumeBindings">
-          <list />
-        </option>
-      </EXTENSION>
+    <configuration default="false" name="server.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="server.js" working-dir="$PROJECT_DIR$/mock">
       <method />
     </configuration>
-    <configuration default="false" name="search.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="search.js" working-dir="$PROJECT_DIR$/src/store/reducers">
-      <method />
-    </configuration>
-    <configuration default="false" name="index.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="index.js" working-dir="$PROJECT_DIR$/mock/retrievData">
-      <method />
-    </configuration>
-    <configuration default="false" name="App.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="/usr/local/bin/node" path-to-js-file="App.js" working-dir="$PROJECT_DIR$/src">
-      <EXTENSION ID="com.jetbrains.nodejs.remote.docker.NodeJSDockerRunConfigurationExtension">
-        <option name="envVars">
-          <list />
-        </option>
-        <option name="extraHosts">
-          <list />
-        </option>
-        <option name="links">
-          <list />
-        </option>
-        <option name="networkDisabled" value="false" />
-        <option name="networkMode" value="bridge" />
-        <option name="portBindings">
-          <list />
-        </option>
-        <option name="publishAllPorts" value="false" />
-        <option name="version" value="1" />
-        <option name="volumeBindings">
-          <list />
-        </option>
-      </EXTENSION>
+    <configuration default="false" name="ProtecteRouter.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="ProtecteRouter.js" working-dir="$PROJECT_DIR$/src">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -569,66 +511,36 @@
       <recursive>false</recursive>
       <method />
     </configuration>
-    <list size="4">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Node.js.server.js" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.search.js" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.index.js" />
-      <item index="3" class="java.lang.String" itemvalue="Node.js.App.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.ProtecteRouter.js" />
     </list>
     <recent_temporary>
-      <list size="4">
+      <list size="2">
         <item index="0" class="java.lang.String" itemvalue="Node.js.server.js" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.App.js" />
-        <item index="2" class="java.lang.String" itemvalue="Node.js.index.js" />
-        <item index="3" class="java.lang.String" itemvalue="Node.js.search.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.ProtecteRouter.js" />
       </list>
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b2fd594f-efd8-4c94-98fe-93c04cce8369" name="Default" comment="" />
-      <created>1513315271902</created>
+      <changelist id="30222b96-8537-4309-9235-becce185ab05" name="Default" comment="" />
+      <created>1513918758827</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1513315271902</updated>
-      <workItem from="1513315273327" duration="2197000" />
-      <workItem from="1513317628794" duration="43000" />
-      <workItem from="1513319378711" duration="14208000" />
-      <workItem from="1513345287938" duration="1746000" />
-      <workItem from="1513352161666" duration="9314000" />
-      <workItem from="1513388044303" duration="256000" />
-      <workItem from="1513392368589" duration="6519000" />
-      <workItem from="1513421691295" duration="6087000" />
-      <workItem from="1513438464775" duration="6825000" />
-      <workItem from="1513482021078" duration="772000" />
-      <workItem from="1513486755266" duration="10259000" />
-      <workItem from="1513513288842" duration="5407000" />
-      <workItem from="1513519736346" duration="13169000" />
-      <workItem from="1513562858433" duration="24876000" />
-      <workItem from="1513590652735" duration="4301000" />
-      <workItem from="1513599857415" duration="439000" />
-      <workItem from="1513865081353" duration="14648000" />
+      <updated>1513918758827</updated>
+      <workItem from="1513918761998" duration="4910000" />
+      <workItem from="1513923772379" duration="349000" />
     </task>
-    <task id="LOCAL-00001" summary="提交订单">
-      <created>1513923451278</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1513923451279</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133033000" />
+    <option name="totallyTimeSpent" value="5259000" />
   </component>
-  <component name="TodoView" selected-index="2">
+  <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -638,495 +550,300 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="696" extended-state="6" />
+    <frame x="7" y="0" width="1909" height="1019" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24960254" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285968" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32965517" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2087447" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1776351" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287827" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992035" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18202503" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2923777" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32965517" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39036757" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2537931" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20380817" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="提交订单" />
-    <option name="LAST_COMMIT_MESSAGE" value="提交订单" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="1" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/store/reducers/cart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/actions/cart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="622">
-          <caret line="45" column="77" lean-forward="false" selection-start-line="45" selection-start-column="77" selection-end-line="45" selection-end-column="77" />
-          <folding>
-            <element signature="e#1563#1701#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1361">
-          <caret line="79" column="26" lean-forward="false" selection-start-line="79" selection-start-column="26" selection-end-line="79" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cart/index.js" />
-    <entry file="file://$PROJECT_DIR$/src/Cart/CartShop/index.js" />
-    <entry file="file://$PROJECT_DIR$/src/api/cart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cart/CartNo/index.js" />
-    <entry file="file://$PROJECT_DIR$/src/api/home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mock/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="285" column="4" lean-forward="true" selection-start-line="285" selection-start-column="4" selection-end-line="285" selection-end-column="4" />
-          <folding>
-            <element signature="e#1834#2245#0" expanded="false" />
-            <element signature="e#2299#2881#0" expanded="false" />
-            <element signature="e#3069#3179#0" expanded="false" />
-            <element signature="e#3271#3668#0" expanded="false" />
-            <element signature="e#3779#4157#0" expanded="false" />
-            <element signature="e#4233#4984#0" expanded="false" />
-            <element signature="e#7968#8410#0" expanded="false" />
-            <element signature="e#8484#9320#0" expanded="false" />
-            <element signature="e#9525#9900#0" expanded="false" />
-            <element signature="e#9937#10476#0" expanded="false" />
-            <element signature="e#10513#11155#0" expanded="false" />
-            <element signature="e#11192#11260#0" expanded="false" />
-            <element signature="e#11303#11459#0" expanded="false" />
-            <element signature="e#11507#12046#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/reducers/list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/reducers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/actions/list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Home/Swiper/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="46" column="1" lean-forward="false" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="e#42#80#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Home/Swiper/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/reducers/home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="36" column="56" lean-forward="true" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/action-types.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1620">
-          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Home/NewProduct/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="76" column="1" lean-forward="false" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Home/Scroll/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="26" column="17" lean-forward="false" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Home/Scroll/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="2" column="41" lean-forward="true" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-            <element signature="e#1077#3558#0" expanded="false" />
-            <element signature="e#1996#2748#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Home/NewProduct/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="7" column="152" lean-forward="true" selection-start-line="7" selection-start-column="152" selection-end-line="7" selection-end-column="152" />
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Home/VipOnly/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="29" column="18" lean-forward="true" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Home/MenuVideo/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/actions/home.js">
+    <entry file="file://$PROJECT_DIR$/src/containers/List/Listsearch/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="24" />
+          <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Home/index.less">
+    <entry file="file://$PROJECT_DIR$/src/containers/List/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="15" column="15" lean-forward="false" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Home/Recommend/index.less">
+    <entry file="file://$PROJECT_DIR$/src/containers/List/Listsearch/index.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="76" column="23" lean-forward="true" selection-start-line="76" selection-start-column="23" selection-end-line="76" selection-end-column="23" />
+        <state relative-caret-position="495">
+          <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Home/Recommend/index.js">
+    <entry file="file://$PROJECT_DIR$/src/containers/Search/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="44" column="1" lean-forward="false" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="99">
+          <caret line="30" column="32" lean-forward="true" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/Search/index.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="true" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ProtecteRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="6" column="55" lean-forward="false" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Tab/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/Details/DetailFooter/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="48" column="41" lean-forward="true" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="25" column="43" lean-forward="false" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mock/img/home/video/video.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="37" lean-forward="true" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Home/MenuVideo/index.js">
+    <entry file="file://$PROJECT_DIR$/mock/img/home/icon/bg02.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mock/img/home/swiper2/a1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mock/img/详情页/图文/20151226132957_643.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/containers/Home/Time/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-          <folding />
+        <state relative-caret-position="-1188">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Cart/CartNo/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Cart/CartShop/index.css" />
-    <entry file="file://$PROJECT_DIR$/src/containers/Cart/CartShop/index.less">
+    <entry file="file://$PROJECT_DIR$/src/containers/Home/VipOnly/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Cart/CartShop/index.js">
+    <entry file="file://$PROJECT_DIR$/src/containers/Home/MenuVideo/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="60" column="19" lean-forward="false" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-            <element signature="e#1276#1615#0" expanded="false" />
-            <element signature="e#1680#1876#0" expanded="false" />
-            <element signature="e#2064#3880#0" expanded="false" />
-            <element signature="e#4122#4208#0" expanded="false" />
-            <element signature="e#4225#4729#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/Home/index.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1089">
+          <caret line="32" column="21" lean-forward="false" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/Home/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1617">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/Home/NewProduct/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/Home/Nav/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mock/img/home/icon/search.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/Home/SearchTop/index.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="62" column="3" lean-forward="false" selection-start-line="62" selection-start-column="3" selection-end-line="62" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/Home/SearchTop/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="17" column="39" lean-forward="false" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/List/Classification/index.less" />
+    <entry file="file://$PROJECT_DIR$/src/containers/List/Filter/index.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/List/Filter/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/List/Classification/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-26">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/List/index.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/List/Listsearch/index.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/List/Listsearch/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/List/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mock/data/Content/userInfo.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="70" lean-forward="true" selection-start-line="0" selection-start-column="70" selection-end-line="0" selection-end-column="70" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mock/data/Content/historical.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Home/VipOnly/index.js">
+    <entry file="file://$PROJECT_DIR$/mock/data/Content/userCommodity.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        <state relative-caret-position="-1004">
+          <caret line="1" column="3" lean-forward="false" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Home/index.js">
+    <entry file="file://$PROJECT_DIR$/mock/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="98" column="19" lean-forward="true" selection-start-line="98" selection-start-column="19" selection-end-line="98" selection-end-column="19" />
+        <state relative-caret-position="259">
+          <caret line="351" column="24" lean-forward="true" selection-start-line="351" selection-start-column="24" selection-end-line="351" selection-end-column="24" />
           <folding>
-            <element signature="e#1359#1570#0" expanded="false" />
+            <element signature="e#7919#8366#0" expanded="false" />
+            <element signature="e#8440#9266#0" expanded="false" />
+            <element signature="e#9471#9843#0" expanded="false" />
+            <element signature="e#9888#10466#0" expanded="false" />
+            <element signature="e#10510#11105#0" expanded="false" />
+            <element signature="e#11142#11237#0" expanded="false" />
+            <element signature="e#11280#11471#0" expanded="false" />
+            <element signature="e#11519#12288#0" expanded="false" />
           </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Home/Time/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Details/img/product-ico.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/Personal/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="60" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="44" column="50" lean-forward="false" selection-start-line="44" selection-start-column="50" selection-end-line="44" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Details/Comments/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="12" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Details/Comments/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="65" lean-forward="true" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="65" />
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Details/Header/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Cart/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Details/Tab/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="38" column="32" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="46" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Details/OrderList/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="117" column="22" lean-forward="false" selection-start-line="117" selection-start-column="22" selection-end-line="117" selection-end-column="22" />
-          <folding>
-            <element signature="e#253#453#0" expanded="false" />
-            <element signature="e#463#1194#0" expanded="false" />
-            <element signature="e#1210#1860#0" expanded="false" />
-            <element signature="e#1394#1856#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Details/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="275" column="22" lean-forward="false" selection-start-line="275" selection-start-column="22" selection-end-line="275" selection-end-column="22" />
-          <folding>
-            <element signature="e#5307#5547#0" expanded="false" />
-            <element signature="e#5611#6258#0" expanded="false" />
-            <element signature="e#6426#6686#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Details/OrderList/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="24" column="45" lean-forward="true" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#246#378#0" expanded="false" />
-            <element signature="e#395#697#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Details/ScrollList/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Details/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="48" column="54" lean-forward="true" selection-start-line="48" selection-start-column="54" selection-end-line="48" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <element signature="n#!!block;n#componentDidMount#0;n#Details#0" expanded="false" />
-            <element signature="e#687#1121#0" expanded="false" />
-            <element signature="e#2178#3216#0" expanded="false" />
-            <element signature="e#3690#3821#0" expanded="false" />
-            <element signature="e#4090#5001#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Details/Sliders/index.js">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Details/Tab/index.js">
+    <entry file="file://$PROJECT_DIR$/src/containers/Change/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="48" column="27" lean-forward="false" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="231">
+          <caret line="22" column="35" lean-forward="true" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>

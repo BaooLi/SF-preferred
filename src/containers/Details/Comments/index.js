@@ -11,7 +11,7 @@ class Comments extends Component {
         return (
             <div className="detailComments">
                 <div className="head">
-                    <span><i onClick={this.props.history.goBack}></i>用户评价</span>
+                    <span><i className="iconfont icon-fanhui" onClick={this.props.history.goBack}></i>用户评价</span>
                 </div>
                 <div className="user-comments">
                     <div className="com-number">

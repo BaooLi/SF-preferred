@@ -18,7 +18,7 @@ export function logout() {
 };
 
 // 验证
-export function validate() {
+export function validateUser() {
     return get('/validate');
 };
 
