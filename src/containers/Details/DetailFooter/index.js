@@ -30,7 +30,8 @@ class DetailFooter extends Component {
         this.props.addCart({
             username: this.props.username || "",
             recommendID: this.props.details.recommendID,
-            count: goodNum
+            count: goodNum,
+            selected:true
         })
         if (!this.state.cartflay) {
             this.setState({cartflay: true}, () => {

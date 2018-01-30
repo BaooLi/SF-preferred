@@ -18,6 +18,8 @@ class Cart extends Component {
         this.props.validate();
        setTimeout(()=>{
            this.props.fetchCart(this.props.username);
+         let allState = this.props.cartData.list.every(item => item.selected);
+         this.setState({allState});
        })
     }
 
@@ -59,7 +61,7 @@ class Cart extends Component {
 
     render() {
         let newCart = this.props.cartData;
-        let products = newCart ? newCart.list : [];
+        let products = newCart.list.length>0 ? newCart.list : [];
         return (
             <div className="cart-shop">
                 <div className="top">
@@ -79,7 +81,7 @@ class Cart extends Component {
                            {products.length > 0 && products.map((item, index) => (
                                <li key={index} className="product-item">
                                    <div className="product-left">
-                                       <input onClick={() => this.changeItemState(item.recommendID)} type="checkbox" className="changeItemState"
+                                       <input onChange={() => this.changeItemState(item.recommendID)} type="checkbox" className="changeItemState"
                                               checked={item.selected}/>
 
                                        <img className='pro-image' src={item.recommendImg} alt=""/>
@@ -100,13 +102,15 @@ class Cart extends Component {
      <i onClick={() => this.props.upDate({
          username: this.props.username,
          recommendID: item.recommendID,
-         count: item.count - 1
+         count: item.count - 1,
+       selected:true
      })} className="iconfont icon-jianhao3"></i>
                <b>{item.count}</b>
               <i className="iconfont icon-jiahao" onClick={() => this.props.upDate({
                   username: this.props.username,
                   recommendID: item.recommendID,
-                  count: item.count + 1
+                  count: item.count + 1,
+                   selected:true
               })}></i>
      </span>
                                       </div>
