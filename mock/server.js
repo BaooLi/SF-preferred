@@ -236,10 +236,10 @@ app.get("/emptiedCart",(req,res)=>{
         })
     })
 });
+
 //查看
 app.get("/findCart",(req,res)=>{
     let username=req.query.username;
-    console.log(username,"======");
     if (!req.query.username) return res.sendStatus(400);
     read("./data/Content/userCommodity.json",userCommodities=>{
        let userCommoditie=userCommodities.find(item=>item.username==username);

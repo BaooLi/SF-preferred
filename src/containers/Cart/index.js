@@ -46,6 +46,16 @@ class Cart extends Component {
 //  },500)
 
     }
+    computedMoney=()=> {
+      if(this.props.cartData.list.length>0){
+        console.log(this.props.cartData.list);
+        var total=this.props.cartData.list.reduce((prev, next) => {
+          return prev + next.count * parseFloat(next.recommendPrice);
+        }, 0)
+      }
+     return total;
+    }
+
 
     render() {
         let newCart = this.props.cartData;
@@ -109,16 +119,15 @@ class Cart extends Component {
                    </div>
                    <div className="shop-footer">
                        <div className="footer-left">
-                           <input type="checkbox"/>
-                           <span className="span1">总计:</span>
-                           <span className="span2">￥
-            </span>
-                           <span className="span3">商品金额:</span>
-                           <span className="span4">￥97</span><span className="span5">(不含运费)</span>
+                           <span className="span1" >总计:￥{this.computedMoney()}</span>
+
+
+
+
                        </div>
      <div className="button-car">
-         <b className='clear-shop' onClick={() => this.clearShopCar(this.props.username)}>清空</b>
-         <b className="settlement">结算</b>
+         <span className='clear-shop' >{this.state.isEditing ? <span onClick={() => this.clearShopCar(this.props.username)}>清空</span> : "结算"}</span>
+
      </div>
                    </div>
                </div>

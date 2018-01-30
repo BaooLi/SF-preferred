@@ -13,10 +13,11 @@ class DetailFooter extends Component {
 
     componentDidMount() {
         //如果用户已登录，查看此商品在购物车中的数量
-        let username = this.props.username;
+      console.log(this.props,'详情');
+      let username = this.props.username;
         let id = this.props.details.recommendID
         if (username) {
-            this.props.findCart(username, id)
+            this.props.findCart(username, id);
             setInterval(() => {
                 this.setState({goodNum: this.props.carNum})
             }, 300)
@@ -43,7 +44,7 @@ class DetailFooter extends Component {
     render() {
         return (
             <div className="detailFooter">
-                <Link to="/cart">
+                <Link to={{pathname:`/cart`,state:this.props.username}} >
                     <i className="glyphicon glyphicon-shopping-cart">
                         <em className="goodNum">{this.state.goodNum}</em></i>
                 </Link>

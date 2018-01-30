@@ -82,4 +82,6 @@ export const LOOK_CART="LOOK_CART";
 export const SELECTED_STATE="SELECTED_STATE";
 //全选更改，下面的也更改状态
 export const CHANGE_EVERY="CHANGE_EVERY";
+export const TOTAL_MONEY="TOTAL_MONEY";
+
 

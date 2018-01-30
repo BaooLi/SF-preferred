@@ -13,6 +13,9 @@ class Login extends Component {
         let password = this.password.value;
         this.props.login({username, password});
     };
+
+
+
     render() {
         return (
             <div className="log">
@@ -21,7 +24,7 @@ class Login extends Component {
                     顺丰优选登录
                 </div>
                 <input ref={input => this.username = input} type="text" placeholder="请输入手机号/邮箱/用户名" className="input"/>
-                <input ref={input => this.password = input} type="text" placeholder="请输入密码" className="input"/>
+                <input ref={input => this.password = input} type="password" placeholder="请输入密码" className="input"/>
                 <div
                     onClick={this.handleClick}
                     className="log-btn">登&nbsp;录
